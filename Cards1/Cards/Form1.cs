@@ -390,7 +390,8 @@ namespace Cards
 
 
         public void button4_Click(object sender, EventArgs e)
-        {   
+        {
+           
             #region  тусуем калоду 36 изначально, раздаём по одной, игроку и машине.///////////////////////////////////////////////
         button4.Enabled = false;
                 
@@ -483,7 +484,7 @@ namespace Cards
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)

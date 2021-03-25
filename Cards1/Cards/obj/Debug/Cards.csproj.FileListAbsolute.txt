@@ -20,3 +20,13 @@ D:\2021гуч\CARDS\Cards1\Cards\obj\Debug\Cards.csproj.GenerateResource.cache
 D:\2021гуч\CARDS\Cards1\Cards\obj\Debug\Cards.csproj.CoreCompileInputs.cache
 D:\2021гуч\CARDS\Cards1\Cards\obj\Debug\Cards.exe
 D:\2021гуч\CARDS\Cards1\Cards\obj\Debug\Cards.pdb
+D:\Cards1\Cards\bin\Debug\Cards.exe.config
+D:\Cards1\Cards\bin\Debug\Cards.exe
+D:\Cards1\Cards\bin\Debug\Cards.pdb
+D:\Cards1\Cards\obj\Debug\Cards.csprojAssemblyReference.cache
+D:\Cards1\Cards\obj\Debug\Cards.Form1.resources
+D:\Cards1\Cards\obj\Debug\Cards.Properties.Resources.resources
+D:\Cards1\Cards\obj\Debug\Cards.csproj.GenerateResource.cache
+D:\Cards1\Cards\obj\Debug\Cards.csproj.CoreCompileInputs.cache
+D:\Cards1\Cards\obj\Debug\Cards.exe
+D:\Cards1\Cards\obj\Debug\Cards.pdb
