@@ -1,0 +1,1 @@
+select * from [dbo].[Everybay] t1  inner join[dbo].[Category] t2 on t1.[id_categ] = t2.[id_categ]   where id_user =65

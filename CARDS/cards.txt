@@ -1,0 +1,16 @@
+таблица- Cards
+ card - карта
+ digniy - достоинство
+ quantity - количество
+
+Table - Suit
+  suit - масть
+  suit_nuber - номер масти
+
+
+
+
+  heard - черва
+  bubi - буби
+  spades - пики
+  crosses - крести
