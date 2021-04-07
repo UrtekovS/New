@@ -1,0 +1,15 @@
+https://github.com/UrtekovS/Web-shop/tree/master/shop 
+GitHub – Скачать полностью репозиторий - git clone 
+Добавить - git add --all
+git commit -m коментарий(подписать)
+
+git push – отправить на сайт
+
+
+HTTPS://GITHUB.COM/GRISMANSS/SHOPREP - GITHUB GRISMANSS/  
+
+
+Шаблоны - https://teroni.ru/bootstrap-shablony/landing/3812-bootstrap-shablon-landing-page-banking.html
+
+D:\open_server\видео
+zaq1Q2wsx# - P.R. Urtekov73@mail.ru
