@@ -9,9 +9,10 @@ session_start();
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Магазин бытовой техники</title>
+  <title>Ежедневник</title>
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
-  <script src="jsj/jquery-3.6.0.min.js"></script>  
+  <script src="jsj/jquery-3.6.0.min.js"></script> 
+  
 
   <!-- Bootstrap core CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -51,6 +52,7 @@ session_start();
   <!-- Custom styles for this template -->
   <link href="Css/carousel.css" rel="stylesheet">
   <link href="Css/style.css" rel="stylesheet">
+  <link href="Css/style(for).css" rel="stylesheet">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
   <link href="Css/dashboard.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -62,7 +64,10 @@ session_start();
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-fluid ">
-        <a class="navbar-brand"></a><img class="my_brend" src="img/brend.jpg"></a>
+        <a class="navbar-brand" ></a><img class="my_brend" src="img/brend.jpg"></a>
+        <li class="nav-item">
+            <a class="nav-link" id="#" href="weathet_forecast.php">Погода</a>
+          </li>
         <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
@@ -85,7 +90,7 @@ session_start();
         <div>
 
           <div id="authorized">
-            <a class="navbar-brand" href="diary.php"><span id="login_user"></span></a>
+            <a class="navbar-brand" href="user_kabinet.php"><span id="login_user"></span></a>
 
             <a class="navbar-brand" href="index.php" id="exit_button">Выход</a>
           </div>
@@ -153,7 +158,7 @@ session_start();
                 <label class="form-check-label">Подтверждение пароля</label>
                 <input type="password" id="pass2" class="form-control" required>
                 <label class="form-check-label">Дата рождения</label>
-                <input type="date" id="date_of_brith" class="form-control" required>
+                <input type="date" id="date_of_birth" class="form-control" required>
                 <label class="form-check-label">Пол</label>
                 <select id="sex" class="form-select" aria-label="Default select example">
                   <option value="1" selected>М</option>

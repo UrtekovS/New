@@ -16,19 +16,19 @@ $date_of_brith=$_POST['date_of_brith'];
 $sex=$_POST['sex'];
 $s="";
 if ($email!="" && $phone!="")
-    $s="SELECT * FROM users WHERE email='$email' or phone='$phone'";
+    $s="SELECT * FROM `users` WHERE `email`='$email' OR`phone`='$phone'";
 else if ($email==""){
-    $s="SELECT * FROM users WHERE phone='$phone'";
+    $s="SELECT * FROM `users` WHERE `phone`='$phone'";
 }
 else{
-    $s="SELECT * FROM users WHERE email='$email' ";
+    $s="SELECT * FROM `users` WHERE `email`='$email'";
 }
 $r=mysqli_query($link,$s);
 $n=mysqli_num_rows($r);
 if ($n!=0){
     //header("Location:index.php?mess=Данный email или телефон уже зарегистрирован");
     echo "Данный email или телефон уже зарегистрирован";
-   //echo $s;
+   echo $s;
 }
 else{
     $s1="INSERT INTO `users`( `last_name`, `first_name`, `patronymic`, 

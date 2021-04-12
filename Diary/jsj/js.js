@@ -1,6 +1,6 @@
 autorizationStatus();
 load_nformation_top();
-registration();
+//registration();
 let show_modal_registration=document.getElementById("show_modal_registration");
 show_modal_registration.onclick=function(){
     let form_registration=document.getElementById("form_registration");
@@ -68,7 +68,7 @@ function registration(){
         data: {last_name: last_name, first_name:first_name,patronymic:patronymic,
             date_of_brith:date_of_brith,sex:sex,email:email,phone:phone, pass1:pass1} ,
         success: function(data){
-            //alert(data);
+            alert(data);
             message_registration.style.display="block";
             message_registration2.style.display="block";
             message_registration2.innerHTML=data;
@@ -155,11 +155,11 @@ function load_nformation_top(){
             let d=JSON.parse(data);
             let s="";
             for(let i=0; i<d.length; i++){
-            s+="<div class='col-lg-4>"+
-            "<img class='rounded-circle' src='img/info_img/"+d[i]['foto']+"' alt='Generic placeholder image' width='140' height='140'>"+
+            s+="<div class='col-lg-4'>"+
+            "<img class='rounded-circle' src='img/info_img/"+d[i]["photo"]+"' alt='Generic placeholder image' width='140' height='140'>"+
             "<h2>"+d[i]['name_inf']+"</h2>"+
             "<p>"+d[i]['informat']+"</p>"+
-            "<p><a class='btn btn-secondary' href='#' role='button'>View details &raquo;</a></p>"+
+            "<p><a class='btn btn-secondary' href='write_feedback.php?id_tovar="+d[i]['id']+"' role='button' >Оставить отзыв, или рекомендации для улучшения сайта &raquo;</a></p>"+
           "</div><!-- /.col-lg-4 -->";
         }
         let load_nformation=document.getElementById("load_nformation");

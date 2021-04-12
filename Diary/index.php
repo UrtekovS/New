@@ -14,7 +14,7 @@ include("header.php");
     "title" => [],
     "description" => []
   ];
-  for ($i = 0; $i < 3; $i++) {
+  for ($i = 0; $i<4; $i++) {
     $row = mysqli_fetch_array($q);
     $mas['img'][$i] = $row[3];
     $mas['title'][$i] = $row[1];
@@ -73,6 +73,19 @@ include("header.php");
           </div>
         </div>
       </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <rect width="100%" height="100%" fill="#777" />
+          <img src="img/carusele_img/<?= $mas['img'][3]; ?>">
+        </svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1><?= $mas['title'][3]; ?></h1>
+            <h3><?= $mas['description'][3]; ?></h3>
+          </div>
+        </div>
+      </div
     </div>
     <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -82,7 +95,9 @@ include("header.php");
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </a> 
-    <div class="container" id="clok">
+    
+  </div>
+  <div class="container" id="clok">
       <div class="row">
 
         <div class="col-md-6 col-md-offset-3">
@@ -93,8 +108,6 @@ include("header.php");
 
       </div><!-- ./row -->
     </div><!-- ./container -->   
-  </div>
- 
   
 </script>
   <script>

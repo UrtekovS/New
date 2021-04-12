@@ -34,3 +34,125 @@ body {
   display: none;
 
 } 
+#the_calendar{
+  width:170px;
+  margin-left: 7%;
+ 
+}
+#t_DayDiary1{
+  margin-left: 7%;
+}
+#cnopDl{
+  background-color: #FC354C;
+}
+#update{
+  background-color: gold;
+  color: black
+}
+
+
+
+<!--Часы-->
+#clok2{
+  margin-top: 0%;
+  transform: scale(1, 1);
+}
+@media (min-width: 120px) {
+  #date {
+    font-size: 2.5rem;
+  }
+
+  #time {
+    font-size: 10rem;
+  }
+
+  #time span {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+}
+main.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.nightmode {
+  background-color: #121212;
+  background-image: linear-gradient(to right, #274046, #E6DADA);
+  color: #fff;
+  text-shadow: 1px 1px 1px black;
+}
+
+.daymode {
+  background-color: #87ceeb;
+  background-image: linear-gradient(to bottom left, #87ceeb 0%, #fff 100%);
+  color: #333;
+  text-shadow: 1px 1px 10px white;
+}
+
+.clocktext {
+  display: block;
+  margin: 0;
+  padding: 1px 0 0 0;
+  width: 100%;
+  text-align: center;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+#date {
+  font-size: 50px;
+  padding-top: 15px;
+}
+
+#time {
+  font-size: 5rem;
+  margin: 1px 0 0 0;
+}
+
+
+
+@media (min-width: 150px) {
+  #date {
+    font-size:50px;
+  }
+
+  #time {
+    font-size: 50px;
+  }
+
+  #time span {
+    font-size: 50px;
+    line-height: 2;
+  }
+}
+
+@media (min-width: 200px) {
+  #date {
+    font-size: 3rem;
+  }
+
+  #time {
+    font-size: 11rem;
+  }
+
+  #time span {
+    font-size: 3rem;
+    line-height: 2;
+  }
+}
+
+@media (min-width: 250px) {
+  #date {
+    font-size: 50px;
+  }
+
+  #time {
+    font-size: 50px;
+  }
+
+  #time span {
+    font-size: 50px;
+    line-height: 2;
+  }
+}
