@@ -159,7 +159,7 @@ function load_nformation_top(){
             "<img class='rounded-circle' src='img/info_img/"+d[i]["photo"]+"' alt='Generic placeholder image' width='140' height='140'>"+
             "<h2>"+d[i]['name_inf']+"</h2>"+
             "<p>"+d[i]['informat']+"</p>"+
-            "<p><a class='btn btn-secondary' href='write_feedback.php?id_tovar="+d[i]['id']+"' role='button' >Оставить отзыв, или рекомендации для улучшения сайта &raquo;</a></p>"+
+            "<p><a class='btn btn-secondary' href='write_feedback.php?id="+d[i]['id']+"' role='button' >Оставить отзыв, или рекомендации для улучшения сайта &raquo;</a></p>"+
           "</div><!-- /.col-lg-4 -->";
         }
         let load_nformation=document.getElementById("load_nformation");

@@ -5,10 +5,9 @@ $informat=$_POST['informat'];
 $phone=$_POST['photo'];
 $s="";
 
-$s="INSERT INTO `information`(`name_inf`, `informat`, `photo`) VALUES (name_inf, informat, photo)";
-$r=mysqli_query($link,$s1);
+$s="INSERT INTO `information`(`name_inf`, `informat`, `photo`) VALUES ('$name_inf', '$informat', '$phone')";
+$r=mysqli_query($link,$s);
     //header("Location:index.php?mess=Пользователь успешно зарегистрирован");
     echo "Отзыв добавлен, спасибо!";
-
-
+// echo json_encode($s);
 ?>

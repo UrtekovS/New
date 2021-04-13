@@ -52,7 +52,6 @@ session_start();
   <!-- Custom styles for this template -->
   <link href="Css/carousel.css" rel="stylesheet">
   <link href="Css/style.css" rel="stylesheet">
-  <link href="Css/style(for).css" rel="stylesheet">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
   <link href="Css/dashboard.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

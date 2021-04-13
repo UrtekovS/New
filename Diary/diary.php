@@ -43,17 +43,18 @@ include("header.php");
           <td>Otto</td>
           <td><input type="checkbox" id="inlineCheckbox1" value="option1"></td>
           <td>Выпадающий список</td>
-          <td><button class="btn btn-primary" type="button" id="cnopD">Добавить событие</button>
+          <td>
               <button class="btn btn-primary" type="button" id="cnopDl">Удалить событие</button>
+              <button class="btn btn-primary" type="button" id="update">Редактировать</button>
           </td>
         </tr>
       </tbody>
     </table>
-
-    <div >      
-      <button class="btn btn-primary" type="button" id="update">Редактировать</button>
-    </div>
   </div>
+  <div>
+  <button class="btn btn-primary" type="button" id="cnopD">Добавить событие</button>
+  </div>
+  <script src="jsj/diary_tb.js"></script>
 </body>
 </html>
 <?php

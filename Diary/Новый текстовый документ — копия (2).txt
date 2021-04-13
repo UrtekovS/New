@@ -1,4 +1,4 @@
-githttps://github.com/UrtekovS/Web-shop/tree/master/shop 
+githttps://git/tree/master/shop 
 GitHub – Скачать полностью репозиторий - git clone 
 Добавить - git add --all
 git commit -m коментарий(подписать)

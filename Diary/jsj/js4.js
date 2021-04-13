@@ -1,5 +1,4 @@
-load_user_date();
-history_orders_load();
+load_user_date()
 let message_new_pass=document.getElementById("message_new_pass");
 message_new_pass.style.display="none";
 
@@ -32,9 +31,7 @@ message_update_user_date2.style.display="none";
         email_update.value=user_data['email'];
 
         let date_of_brith_update=document.getElementById("date_of_brith_update");
-        
-        
-        date_of_brith_update.value=user_data['date_of_birth'];
+        date_of_brith_update.value = user_data['date_of_brith_update'];
         let sex_update=document.getElementById("sex_update");
         sex_update.value=user_data['sex'];
 
@@ -45,6 +42,7 @@ message_update_user_date2.style.display="none";
     
         });
 }
+
 
 
 let update_status=document.getElementById("update_status");
@@ -101,7 +99,7 @@ update_status.onclick=function(){
                 email:email_update.value,
                 phone:phone_update.value} ,
             success: function(data){
-                alert(data);
+                //alert(data);
                 let mas=JSON.parse(data);
                 if (mas['status']==1){
                     update_status.onclick();
@@ -118,14 +116,7 @@ update_status.onclick=function(){
                     message_update_user_date.innerHTML=mas['mess'];
                     message_update_user_date2.innerHTML=mas['mess'];
                 }
-                /*message_registration.style.display="block";
-                message_registration2.style.display="block";
-                message_registration2.innerHTML=data;
-                message_registration.innerHTML=data;
-                if (data=="Пользователь успешно зарегистрирован"){
-                    var form_registration=document.getElementById("form_registration");
-                    form_registration.style.display="none";
-                }*/
+               
                 return false;
                 
             }
@@ -174,39 +165,7 @@ function new_password(){
     return false;
 }
 
-function history_orders_load(){
-    $.ajax({
-        url: 'history_orders_load.php',
-        method: 'post',
-        dataType: 'html',
-        data: "" ,
-        success: function(data){
-           // alert(data);
-            let s="<table id='tableId' class='table'>"+
-            "<thead class='thead-dark'>"+
-              "<tr>     <th scope='col'>№</th>"+
-                "<th scope='col'>Дата</th>"+
-                "<th scope='col'>Сумма</th>"+
-                "<th scope='col'>Статус</th>"+
-                "<th scope='col'></th> </tr> </thead>  <tbody>";
-            let mas=JSON.parse(data);
 
-            for(let i=0; i<mas.length; i++){
-                s+="<tr>"+
-                "<th scope='row'>"+mas[i][0]+"</th>"+
-                "<td>"+mas[i][1]+"</td>"+
-                "<td>"+mas[i][2]+"</td>"+
-                "<td>"+mas[i][6]+"</td>"+
-                "<td><a class='btn btn-primary' href='order_composition.php?id_order="+mas[i][0]+"'>Подробнее</a></td> </tr>";
-            }
-            s+=" </tbody>    </table>";
-            let history_orders=document.getElementById("history_orders");
-            history_orders.innerHTML=s;
-
-            
-        }
-    });
-}
 
 
 function to_excel(){

@@ -1,4 +1,4 @@
-autorizationStatus();
+
 load_table();
 
 function load_table(){
@@ -10,7 +10,7 @@ function load_table(){
         dataType: 'html',
         data:"" ,
         success: function(data){
-            alert(data);
+            //alert(data);
             let d=JSON.parse(data);
 
             let s="<table class='table'>"+
@@ -32,8 +32,8 @@ function load_table(){
               "<td>"+d[i][5]+"</td>"+
               "<td><input type='checkbox' id='inlineCheckbox1' value='option1'></td>"+
                 "<td>"+d[i][8]+"</td>"+
-                "<td><button class='btn btn-primary' type='button' id='cnopD'>Добавить событие</button>"+
-                    "<button class='btn btn-primary' type='button' id='cnopDl'>Удалить событие</button>"+
+                "<td><button class='btn btn-primary' type='button' id='cnopDl'>Удалить событие</button>"+
+                    "<button class='btn btn-primary' type='button' id='update'>Редактировать</button>"+
                 "</td>"+
              "</tr>";
                     
