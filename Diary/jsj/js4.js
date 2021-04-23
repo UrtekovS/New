@@ -1,11 +1,11 @@
-load_user_date()
+
 let message_new_pass=document.getElementById("message_new_pass");
 message_new_pass.style.display="none";
 
 
 function load_user_date(){
-let message_update_user_date2=document.getElementById("message_update_user_date2");
-message_update_user_date2.style.display="none";
+//let message_update_user_date2=document.getElementById("message_update_user_date2");
+
     $.ajax({
     url: 'load_user_date.php',
     method: 'post',
@@ -16,24 +16,24 @@ message_update_user_date2.style.display="none";
         let user_data=JSON.parse(data);
     
         let last_name_update=document.getElementById("last_name_update");
-        last_name_update.value=user_data['last_name'];
+        last_name_update.value=user_data["last_name"];
 
         let first_name_update=document.getElementById("first_name_update");
-        first_name_update.value=user_data['first_name'];
+        first_name_update.value=user_data["first_name"];
         
         let patronymic_update=document.getElementById("patronymic_update");
-        patronymic_update.value=user_data['patronymic'];
+        patronymic_update.value=user_data["patronymic"];
 
         let phone_update=document.getElementById("phone_update");
-        phone_update.value=user_data['phone'];
+        phone_update.value=user_data["phone"];
 
         let email_update=document.getElementById("email_update");
-        email_update.value=user_data['email'];
+        email_update.value=user_data["email"];
 
         let date_of_brith_update=document.getElementById("date_of_brith_update");
-        date_of_brith_update.value = user_data['date_of_brith_update'];
+        date_of_brith_update.value = user_data["date_of_brith_update"];
         let sex_update=document.getElementById("sex_update");
-        sex_update.value=user_data['sex'];
+        sex_update.value=user_data["sex"];
 
         
       
@@ -69,7 +69,6 @@ update_status.onclick=function(){
 
  function update_user_date(){
     let message_update_user_date=document.getElementById("message_update_user_date");
-    let message_update_user_date2=document.getElementById("message_update_user_date2");
     let mess="";
     let em=email_update.value.trim();
     let ph=phone_update.value.trim();
@@ -81,9 +80,7 @@ update_status.onclick=function(){
     if (mess.length!=0){
         
         message_update_user_date.style.display="block";
-        message_update_user_date2.style.display="block";
         message_update_user_date.innerHTML=mess;
-        message_update_user_date2.innerHTML=mess;
      
     }
     else{
@@ -104,17 +101,14 @@ update_status.onclick=function(){
                 if (mas['status']==1){
                     update_status.onclick();
                     message_update_user_date.style.display="block";
-                    message_update_user_date2.style.display="block";
                     message_update_user_date.innerHTML=mas['mess'];
-                    message_update_user_date2.innerHTML=mas['mess'];
                     let login_user=document.getElementById("login_user");
                     login_user.innerHTML=mas['login'];
                 }
                 else{
                     message_update_user_date.style.display="block";
-                    message_update_user_date2.style.display="block";
                     message_update_user_date.innerHTML=mas['mess'];
-                    message_update_user_date2.innerHTML=mas['mess'];
+                    
                 }
                
                 return false;
@@ -144,7 +138,7 @@ function new_password(){
             dataType: 'html',
             data: {oldpass:oldpass,newpass:newpass} ,
             success: function(data){
-                alert(data);
+                //alert(data);
                 if(data=="0"){
                     message_new_pass.style.display="block";
                     message_new_pass.innerHTML="Не удалось сменить пароль";

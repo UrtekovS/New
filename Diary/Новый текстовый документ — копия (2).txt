@@ -1,4 +1,4 @@
-githttps://git/tree/master/shop 
+ushgithttps://git/tree/master/shop 
 GitHub – Скачать полностью репозиторий - git clone 
 Добавить - git add --all
 git commit -m коментарий(подписать)
@@ -13,3 +13,7 @@ HTTPS://GITHUB.COM/GRISMANSS/SHOPREP - GITHUB GRISMANSS/
 
 D:\open_server\видео
 zaq1Q2wsx# - P.R. Urtekov73@mail.ru
+
+   https://quato.com.ua/ajax-redaktirovanie-tablic-i-tablichnyx-dannyx/    редактирование таблиц ajax
+
+	https://ruseller.com/lessons.php?rub=32&id=2876

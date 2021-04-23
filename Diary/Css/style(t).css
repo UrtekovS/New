@@ -1,12 +1,60 @@
-#cnopD{
-    background-color: chartreuse;
-    color: darkgreen;
+#submit_load_task{
+    background-color: rgb(3, 78, 68);
+    color: rgb(250, 253, 250);
 }
 #cnopR{
-    background-color:rgb(51, 70, 236);
+    background-color:rgb(5, 119, 128);
     color: white;
 }
 #cnopU{
     background-color: rgb(255, 0, 0);
     color: white;
+}
+#cotegoriye{
+    background-color: rgb(158, 9, 66);
+}
+#clock2{
+    margin-top:0%;
+    background: #FC354C;
+    background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);
+    background: linear-gradient(to right, #0ABFBC, #FC354C);
+}
+#message_add_task{
+    color: rgb(2, 27, 2);
+    background-color: rgb(247, 169, 173);
+    padding-left: 35%;
+    font-size: 24px;
+}
+#message_add_taskc{
+    color: rgb(2, 27, 2);
+    background-color: rgb(27, 250, 7);
+    padding-left: 35%;
+    font-size: 24px;
+}
+#form_load_task{
+    display: dlock;
+    font-size: 14px;
+}
+#task_history{
+    font-size: 14px;
+    color: rgb(2, 27, 2);
+}
+
+#insert_task{
+    background-color: rgb(6, 192, 167);
+    color: rgb(243, 250, 243); 
+}
+#tableE{
+    font-size: 18px;
+}
+.table{
+    font-size: 24px;
+}
+#return{
+    font-size: 24px;
+    color: #8304a3;
+}
+#submit_update_task{
+    color: #f5f7f8;
+    background-color: rgb(6, 192, 167);
 }

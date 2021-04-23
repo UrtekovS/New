@@ -100,12 +100,30 @@ include("header.php");
   <div class="container" id="clok">
       <div class="row">
 
-        <div class="col-md-6 col-md-offset-3">
-
-          <div id="myclock"></div>
-
-        </div>
-
+      <div class="col-md-6 col-md-offset-3">
+      <div id="myclock">
+        <!-- прогноз погоды -->
+        <div id="f69aeff3922466291723630c67b54dad" class="ww-informers-box-854753"><p class="ww-informers-box-854754">
+          <a href="https://world-weather.ru/pogoda/russia/novokuznetsk/">Погода в Новокузнецке</a>
+          <br>
+          <a href="https://world-weather.ru/pogoda/russia/novosibirsk/">https://world-weather.ru/pogoda/russia/novosibirsk/</a>
+          </p>
+        </div><script async type="text/javascript" charset="utf-8" src="https://world-weather.ru/wwinformer.php?userid=f69aeff3922466291723630c67b54dad"></script>
+        <!-- логотип видео -->
+          <div onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">
+          <img style="cursor: pointer;" alt="" id="bege" src="img/brend.jpg" />
+          
+      </div>
+      <video width="200" height="50" controls id="thevideo" style="display: none;">
+            <source src="Test.mp4" type="video/mp4">
+      </video>
+      </div>
+        
+        <style>
+        
+        </style>
+        
+  </div>
       </div><!-- ./row -->
     </div><!-- ./container -->   
   
@@ -123,15 +141,8 @@ include("header.php");
         brandText: 'BootstrapTema',
         brandText2: 'Russia',
       });
-
     });
   </script>
-  
-  <div class="embed-responsive embed-responsive-21by9" id="video">
-    <iframe class="embed-responsive-item" src=""></iframe>
-  </div>
-  <div class="container marketing">
-
     <!-- Three columns of text below the carousel -->
     <div class="row" id="load_nformation">
 

@@ -61,16 +61,15 @@ session_start();
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="header1">
       <div class="container-fluid ">
         <a class="navbar-brand" ></a><img class="my_brend" src="img/brend.jpg"></a>
         <li class="nav-item">
-            <a class="nav-link" id="#" href="weathet_forecast.php">Погода</a>
-          </li>
+        </li>
         <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
-            <button class="btn btn-outline-primary" type="submit">Поиск</button>
+            <button class="btn btn-outline-primary" type="submit" id="Search">Поиск</button>
           </form>
         </div>
       </div>
@@ -82,7 +81,7 @@ session_start();
           </li>
           </div>
           <li class="nav-item">
-            <a class="nav-link" id="chirift_color" href="index.php">Главная</a>
+            <a class="nav-link" id="chirift_colors" href="index.php">Главная</a>
           </li>
 
         </ul>
@@ -138,7 +137,7 @@ session_start();
           </div>
           <div class="modal-body">
             <form onsubmit="return registration();">
-              <p class="my_message" id="message_registration"></p>
+              
               <div class="alert alert-danger" role="alert" id="message_registration2">
               </div>
               <div id="form_registration">

@@ -16,6 +16,14 @@ let patronymic=document.getElementById("patronymic").value;
 let date_of_brith=document.getElementById("date_of_brith").value;
 
 };
+// для запуска видео
+// let video=document.getElementById("video");
+// let videoplay1=document.getElementById("videoplay1");
+// videoplay.onclick=function(){
+//     if(){}
+
+//     //  video[0].src +=autoplay=1;
+// };
 
 
 
@@ -33,7 +41,7 @@ function registration(){
     var patronymic=document.getElementById("patronymic").value;
     var date_of_brith=document.getElementById("date_of_birth").value;
     var sex=document.getElementById("sex").value;
-    var message_registration=document.getElementById("message_registration");
+    // var message_registration=document.getElementById("message_registration");
     var message_registration2=document.getElementById("message_registration2");
     var mess="";
     if (pass1!=pass2){
@@ -50,11 +58,10 @@ function registration(){
 
     if (mess.length!=0){
         
-        message_registration.style.display="block";
+        
         message_registration2.style.display="block";
         message_registration2.innerHTML=mess;
-        message_registration.innerHTML=mess;
-     
+        
     }
     else{
 
@@ -68,11 +75,9 @@ function registration(){
         data: {last_name: last_name, first_name:first_name,patronymic:patronymic,
             date_of_brith:date_of_brith,sex:sex,email:email,phone:phone, pass1:pass1} ,
         success: function(data){
-            alert(data);
-            message_registration.style.display="block";
+            //alert(data);
             message_registration2.style.display="block";
             message_registration2.innerHTML=data;
-            message_registration.innerHTML=data;
             if (data=="Пользователь успешно зарегистрирован"){
                 var form_registration=document.getElementById("form_registration");
                 form_registration.style.display="none";

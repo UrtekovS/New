@@ -1,6 +1,7 @@
 <?php
 include("header.php");
 ?>
+
  <!-- Modal -->
  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -32,7 +33,6 @@ include("header.php");
 <div class="modal-body">
         <form onsubmit="return update_user_date();">
           <p class="my_message" id="message_update_user_date"></p>
-          <div class="alert alert-danger" role="alert" id="message_update_user_date2">
           </div>
           <div id ="form_update_user_date"> 
           <label class="form-check-label">Фамилия</label>
@@ -53,8 +53,8 @@ include("header.php");
             <option value="0">Ж</option>            
           </select>
           <br>
-          <input type="submit" class="btn btn-primary" value="Сохранить изменения" id="submit_update_user_date" disabled>     
           <input type="button" class="btn btn-primary" value="Редактировать личные данные " id="update_status">
+          <input type="submit" class="btn btn-primary" value="Сохранить изменения" id="submit_update_user_date" disabled>     
           </div>
           <a id ="show_modal_registration" class=" btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3">Сменить пароль</a>
         </form>
