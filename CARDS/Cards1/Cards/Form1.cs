@@ -16,7 +16,7 @@ namespace Cards
 
         List<string> lst;
         int n = 1;
-        //string m = "";
+        string m = "";
         int sum;
         int sum1;
 
@@ -46,7 +46,7 @@ namespace Cards
             //MessageBox.Show(r.ToString());
 
             // rand();
-            string m = dataGridView3[0, n].Value.ToString();
+            m = dataGridView3[0, n].Value.ToString();
             n = n + 1;
 
 
@@ -80,7 +80,7 @@ namespace Cards
             }
             else
             {
-                sum +=int.Parse(m[0].ToString().Trim());
+                sum +=int.Parse(m[0].ToString());
             }
             label5.Text = sum.ToString();
            
