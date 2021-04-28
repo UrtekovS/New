@@ -19,17 +19,20 @@
     background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);
     background: linear-gradient(to right, #0ABFBC, #FC354C);
 }
-#message_add_task{
+#message_add_notask{
     color: rgb(2, 27, 2);
-    background-color: rgb(247, 169, 173);
+    background-color: rgba(243, 162, 148, 0.678);
     padding-left: 35%;
     font-size: 24px;
+    display: none;
 }
+
 #message_add_taskc{
     color: rgb(2, 27, 2);
     background-color: rgb(27, 250, 7);
     padding-left: 35%;
     font-size: 24px;
+    display: none;
 }
 #form_load_task{
     display: dlock;

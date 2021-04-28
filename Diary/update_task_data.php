@@ -2,18 +2,50 @@
 include("header.php");
 ?>
 <link href="Css/style(t).css" rel="stylesheet">
+<!-- <div id="task_historye1">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">№</th>
+          <th scope="col">задача</th>
+          <th scope="col">дата и время</th>
+          <th scope="col">выполнено/нет</th>
+          <th scope="col">категория</th>
+          
+        </tr>
+      </thead>
+      <tbody id="tableE">
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td><input type="checkbox" id="inlineCheckbox1" value="option1"></td>
+          <td>Выпадающий список</td>
+          <td>
+          <td><button class="btn btn-primary" type="button" id="cnopDe" onclick="update_task();">Редактировать событие</button>
+            <a href="diary.php" class="btn btn-primary" type="button" id="updater1" >Вернуться!</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div> -->
+  <!-- Форма -->
 <!-- Форма Редактирование задачь -->
-<form onsubmit="return load_udate_task.php();">
+<form>
   <div class="container">
     <div class="modal-body">
       <div>
       <p class="my_message" id="message_add_task1"></p>
-      <p class="my_message" id="message_add_taskc1"></p>
-        <div id="form_load_task">
+        <div id="form_load_tascke">
           <label class="form-check-label">задача</label>
           <input type="text" id="task" class="form-control">
           <label class="form-check-label">дата и время</label>
-          <input type="date" id="my_data" class="form-control">
+          <!-- <input type="date" id="my_data" class="form-control"> -->
+          <div class="form-group row">
+              <div class="col-xs-10">
+                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="my_data">
+              </div>
+            </div>
           <label class="form-check-label" disabled>Категория</label>
           <div id="select_status_id">
               <select class="form-select" id="name_categ">
@@ -29,14 +61,15 @@ include("header.php");
       </div>
       <br>
       <div>
-       <input type="submit" class="btn btn-primary" value="Редактировать событие" id="submit_update_task" onclick="load_udate_task.php();return false;">
+       <input type="submit" class="btn btn-primary" value="Редактировать событие" id="submit_update_task" >
        <br>
        <a type="button" class="nav-link" id="return" href="diary.php">Вернуться!</a>
       </div>
     </div>
-    </form>
+  </form>
     
     <script src="jsj/diary_tb.js"></script>
+    <script src="jsj/update_task.js"></script>
 <?php
 include("footer.php");
 ?>

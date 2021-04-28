@@ -1,6 +1,6 @@
 
 let message_new_pass=document.getElementById("message_new_pass");
-message_new_pass.style.display="none";
+  message_new_pass.style.display="none";
 
 
 function load_user_date(){
@@ -14,7 +14,6 @@ function load_user_date(){
     success: function(data){
         //alert(data);
         let user_data=JSON.parse(data);
-    
         let last_name_update=document.getElementById("last_name_update");
         last_name_update.value=user_data["last_name"];
 
