@@ -35,7 +35,7 @@ include("header.php");
   <div class="container">
     <div class="modal-body">
       <div>
-      <p class="my_message" id="message_add_task1"></p>
+      <p class="my_message" id="message_updata_task"></p>
         <div id="form_load_tascke">
           <label class="form-check-label">задача</label>
           <input type="text" id="task" class="form-control">
@@ -43,7 +43,7 @@ include("header.php");
           <!-- <input type="date" id="my_data" class="form-control"> -->
           <div class="form-group row">
               <div class="col-xs-10">
-                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="my_data">
+                <input class="form-control" type="datetime-local" value="2021-00-00T00:00:00" id="my_data">
               </div>
             </div>
           <label class="form-check-label" disabled>Категория</label>
@@ -63,7 +63,7 @@ include("header.php");
       <div>
        <input type="submit" class="btn btn-primary" value="Редактировать событие" id="submit_update_task" >
        <br>
-       <a type="button" class="nav-link" id="return" href="diary.php">Вернуться!</a>
+       <a type="button" class="nav-link" id="returnn" href="diary.php">Вернуться!</a>
       </div>
     </div>
   </form>

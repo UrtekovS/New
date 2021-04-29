@@ -194,71 +194,7 @@ function add_task() {
   }
 
 }
-// таблица Редактирование задачь
-//var id_ever = document.getElementById('id_ever');
-// function load_update_task(id_ever){
-// $.ajax({
-//   url: 'load_update_task_bd.php',
-//   method: 'post',
-//   dataType: 'html',
-//   data: "",
-//   success: function (data) {
-//     //alert(data);
-//     let d = JSON.parse(data);
-//     let s = "";
-//     if (status_user_button == 1) {
-//       s = "<table class='table'>" +
-//         "<thead>" +
-//         "<tr>" +
-//         "<th scope='col'>№</th>" +
-//         "<th scope='col'>задача</th>" +
-//         "<th scope='col'>дата и время</th>" +
-//         "<th scope='col'>выполнено/нет</th>" +
-//         "<th scope='col'>категория</th>" +
-//         "</tr>" +
-//         "</thead>" +
-//         "<tbody id='tableE'>" +
-//         "<tr>" +
-//         "<th scope='row'>" + d['id_ever'] + "</th>" +
-//         "<td>" + d['task'] + "</td>" +
-//         "<td>" + d['my_data'] + "</td>"
-//       "<td><input type='checkbox' id='inlineCheckbox1' value='option1'></td>" +
-//         "<td>" + d['name_categ'] + "</td>" +
-//         "<td><button class='btn btn-primary' type='button' id='cnopDe' onclick='update_task();'>Редактировать событие</button>" +
-//         "<a href='diary.php?id=" + d['id_ever'] + "' class='btn btn-primary' type='button' id='updater1' >Вернуться!</button>" +
-//         "</td>"
-//       "</tr>"
-//       "</tbody></table>";
-//     }
-//     else {
-//       s = "<table class='table'>" +
-//         "<thead>" +
-//         "<tr>" +
-//         "<th scope='col'>№</th>" +
-//         "<th scope='col'>задача</th>" +
-//         "<th scope='col'>дата и время</th>" +
-//         "<th scope='col'>выполнено/нет</th>" +
-//         "<th scope='col'>категория</th>" +
-//         "</tr>" +
-//         "</thead>" +
-//         "<tbody id='tableE'>" +
-//         "<tr>" +
-//         "<th scope='row'>" + d['id_ever'] + "</th>" +
-//         "<td>" + d['task'] + "</td>" +
-//         "<td>" + d['my_data'] + "</td>"
-//       "<td><input type='checkbox' id='inlineCheckbox1' value='option1'></td>" +
-//         "<td>" + d['name_categ'] + "</td>" +
-//         "<td><button class='btn btn-primary' type='button' id='cnopDe' onclick='update_task(" + d['id_ever'] + ");'>Редактировать событие</button>" +
-//         "<a href='diary.php?id=" + d['id_ever'] + "' class='btn btn-primary' type='button' id='updater1' >Вернуться!</button>" +
-//         "</td>"
-//       "</tr>"
-//       "</tbody></table>";
-//     }
-//     let task_historye1 = document.getElementById('task_historye1');
-//     task_historye1.innerHTML = s;
-//   }
 
-// });
 
 
 

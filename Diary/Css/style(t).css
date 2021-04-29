@@ -53,11 +53,18 @@
 .table{
     font-size: 24px;
 }
-#return{
+#returnn{
     font-size: 24px;
-    color: #8304a3;
+    color: #d46fd4;
 }
 #submit_update_task{
     color: #f5f7f8;
     background-color: rgb(6, 192, 167);
+}
+#message_updata_task{
+    color: rgb(2, 27, 2);
+    background-color: rgb(27, 250, 7);
+    padding-left: 35%;
+    font-size: 24px;
+    display: none;
 }

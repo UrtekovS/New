@@ -71,7 +71,7 @@ include("header.php");
             <!-- календарь со временем -->
             <div class="form-group row">
               <div class="col-xs-10">
-                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="my_data">
+                <input class="form-control" type="datetime-local" value="2021-00-00T00:00:00" id="my_data">
               </div>
             </div>
            <label class="form-check-label" disabled>Категория</label>
