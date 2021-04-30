@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Cards</RootNamespace>
     <AssemblyName>Cards</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +34,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 8.0.23\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -71,6 +76,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CardsDataSet4.xsd</DependentUpon>
     </Compile>
+    <Compile Include="CardsDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CardsDataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="cells.cs" />
     <Compile Include="computerDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -84,10 +94,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -154,6 +173,17 @@
     <None Include="CardsDataSet4.xss">
       <DependentUpon>CardsDataSet4.xsd</DependentUpon>
     </None>
+    <None Include="CardsDataSet5.xsc">
+      <DependentUpon>CardsDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="CardsDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CardsDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CardsDataSet5.xss">
+      <DependentUpon>CardsDataSet5.xsd</DependentUpon>
+    </None>
     <None Include="computerDataSet.xsc">
       <DependentUpon>computerDataSet.xsd</DependentUpon>
     </None>
@@ -182,6 +212,9 @@
     <None Include="Resources\playing-cards-deck-full-complete-PH4NHH.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\ножницы.png" />
+    <None Include="Resources\камень.png" />
+    <None Include="Resources\бумга.jpg.png" />
     <Content Include="Resources\карты\10bapt.jpg" />
     <Content Include="Resources\карты\10bub.jpg" />
     <Content Include="Resources\карты\10he.jpg" />
@@ -203,22 +236,23 @@
     <Content Include="Resources\карты\9bub.jpg" />
     <Content Include="Resources\карты\9he.jpg" />
     <Content Include="Resources\карты\9spa.jpg" />
-    <Content Include="Resources\карты\D bapt.jpg" />
-    <Content Include="Resources\карты\D bub.jpg" />
-    <Content Include="Resources\карты\D he.jpg" />
-    <Content Include="Resources\карты\D spa.jpg" />
-    <Content Include="Resources\карты\K bapt.jpg" />
-    <Content Include="Resources\карты\K bub.jpg" />
-    <Content Include="Resources\карты\K he.jpg" />
-    <Content Include="Resources\карты\K spa.jpg" />
-    <Content Include="Resources\карты\T bapt.jpg" />
-    <Content Include="Resources\карты\T bub.jpg" />
-    <Content Include="Resources\карты\T he.jpg" />
-    <Content Include="Resources\карты\T spa.jpg" />
-    <Content Include="Resources\карты\V bapt.jpg" />
-    <Content Include="Resources\карты\V bub.jpg" />
-    <Content Include="Resources\карты\V he.jpg" />
-    <Content Include="Resources\карты\V spa.jpg" />
+    <Content Include="Resources\карты\Dbapt.jpg" />
+    <Content Include="Resources\карты\Dbub.jpg" />
+    <Content Include="Resources\карты\Dhe.jpg" />
+    <Content Include="Resources\карты\Dspa.jpg" />
+    <Content Include="Resources\карты\Kbapt.jpg" />
+    <Content Include="Resources\карты\Kbub.jpg" />
+    <Content Include="Resources\карты\Khe.jpg" />
+    <Content Include="Resources\карты\Kspa.jpg" />
+    <Content Include="Resources\карты\pocer.png" />
+    <Content Include="Resources\карты\Tbapt.jpg" />
+    <Content Include="Resources\карты\Tbub.jpg" />
+    <Content Include="Resources\карты\The.jpg" />
+    <Content Include="Resources\карты\Tspa.jpg" />
+    <Content Include="Resources\карты\Vbapt.jpg" />
+    <Content Include="Resources\карты\Vbub.jpg" />
+    <Content Include="Resources\карты\Vhe.jpg" />
+    <Content Include="Resources\карты\Vspa.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
