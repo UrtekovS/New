@@ -63,9 +63,9 @@ namespace Cards.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap playing_cards_deck_full_complete_PH4NHH {
+        internal static System.Drawing.Bitmap depositphotos_7461846_stock_illustration_playing_card_back_side_60x90 {
             get {
-                object obj = ResourceManager.GetObject("playing-cards-deck-full-complete-PH4NHH", resourceCulture);
+                object obj = ResourceManager.GetObject("depositphotos_7461846-stock-illustration-playing-card-back-side-60x90", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Cards.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap бумга_jpg {
+        internal static System.Drawing.Bitmap Paper {
             get {
-                object obj = ResourceManager.GetObject("бумга.jpg", resourceCulture);
+                object obj = ResourceManager.GetObject("Paper", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace Cards.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap камень {
+        internal static System.Drawing.Bitmap Rock {
             get {
-                object obj = ResourceManager.GetObject("камень", resourceCulture);
+                object obj = ResourceManager.GetObject("Rock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace Cards.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ножницы {
+        internal static System.Drawing.Bitmap Scissors {
             get {
-                object obj = ResourceManager.GetObject("ножницы", resourceCulture);
+                object obj = ResourceManager.GetObject("Scissors", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

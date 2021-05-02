@@ -110,14 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="CardsDataSet.xsc">
       <DependentUpon>CardsDataSet.xsd</DependentUpon>
     </None>
@@ -199,6 +194,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -212,9 +212,13 @@
     <None Include="Resources\playing-cards-deck-full-complete-PH4NHH.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ножницы.png" />
-    <None Include="Resources\камень.png" />
-    <None Include="Resources\бумга.jpg.png" />
+    <None Include="Resources\scissors.jpg" />
+    <None Include="Resources\paper.jpg" />
+    <None Include="Resources\rock.jpg" />
+    <None Include="Resources\depositphotos_7461846-stock-illustration-playing-card-back-side-60x90.jpg" />
+    <None Include="Resources\Paper1.jpg" />
+    <None Include="Resources\Rock1.jpg" />
+    <None Include="Resources\Scissors1.jpg" />
     <Content Include="Resources\карты\10bapt.jpg" />
     <Content Include="Resources\карты\10bub.jpg" />
     <Content Include="Resources\карты\10he.jpg" />
