@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C544EB91-B0F8-4A9C-A211-C6F570541C70}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Cards</RootNamespace>
+    <AssemblyName>Cards</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 8.0.23\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CardsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CardsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CardsDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CardsDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CardsDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CardsDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CardsDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CardsDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CardsDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CardsDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CardsDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CardsDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cells.cs" />
+    <Compile Include="computerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>computerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DateTable.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="CardsDataSet.xsc">
+      <DependentUpon>CardsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CardsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CardsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CardsDataSet.xss">
+      <DependentUpon>CardsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CardsDataSet1.xsc">
+      <DependentUpon>CardsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CardsDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CardsDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CardsDataSet1.xss">
+      <DependentUpon>CardsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CardsDataSet2.xsc">
+      <DependentUpon>CardsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CardsDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CardsDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CardsDataSet2.xss">
+      <DependentUpon>CardsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CardsDataSet3.xsc">
+      <DependentUpon>CardsDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="CardsDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CardsDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CardsDataSet3.xss">
+      <DependentUpon>CardsDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="CardsDataSet4.xsc">
+      <DependentUpon>CardsDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="CardsDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CardsDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CardsDataSet4.xss">
+      <DependentUpon>CardsDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="CardsDataSet5.xsc">
+      <DependentUpon>CardsDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="CardsDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CardsDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CardsDataSet5.xss">
+      <DependentUpon>CardsDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="computerDataSet.xsc">
+      <DependentUpon>computerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="computerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>computerDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="computerDataSet.xss">
+      <DependentUpon>computerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playing-cards-deck-full-complete-PH4NHH.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scissors.jpg" />
+    <None Include="Resources\paper.jpg" />
+    <None Include="Resources\rock.jpg" />
+    <None Include="Resources\depositphotos_7461846-stock-illustration-playing-card-back-side-60x90.jpg" />
+    <None Include="Resources\Paper1.jpg" />
+    <None Include="Resources\Rock1.jpg" />
+    <None Include="Resources\Scissors1.jpg" />
+    <Content Include="Resources\карты\10bapt.jpg" />
+    <Content Include="Resources\карты\10bub.jpg" />
+    <Content Include="Resources\карты\10he.jpg" />
+    <Content Include="Resources\карты\10spa.jpg" />
+    <Content Include="Resources\карты\4a11a2fcd55f95ddc03818eca0babbe1.jpg" />
+    <Content Include="Resources\карты\6bapt.jpg" />
+    <Content Include="Resources\карты\6bub.jpg" />
+    <Content Include="Resources\карты\6he.jpg" />
+    <Content Include="Resources\карты\6spa.jpg" />
+    <Content Include="Resources\карты\7bapt.jpg" />
+    <Content Include="Resources\карты\7bub.jpg" />
+    <Content Include="Resources\карты\7he.jpg" />
+    <Content Include="Resources\карты\7spa.jpg" />
+    <Content Include="Resources\карты\8bapt.jpg" />
+    <Content Include="Resources\карты\8bub.jpg" />
+    <Content Include="Resources\карты\8ge.jpg" />
+    <Content Include="Resources\карты\8spa.jpg" />
+    <Content Include="Resources\карты\9bapt.jpg" />
+    <Content Include="Resources\карты\9bub.jpg" />
+    <Content Include="Resources\карты\9he.jpg" />
+    <Content Include="Resources\карты\9spa.jpg" />
+    <Content Include="Resources\карты\Dbapt.jpg" />
+    <Content Include="Resources\карты\Dbub.jpg" />
+    <Content Include="Resources\карты\Dhe.jpg" />
+    <Content Include="Resources\карты\Dspa.jpg" />
+    <Content Include="Resources\карты\Kbapt.jpg" />
+    <Content Include="Resources\карты\Kbub.jpg" />
+    <Content Include="Resources\карты\Khe.jpg" />
+    <Content Include="Resources\карты\Kspa.jpg" />
+    <Content Include="Resources\карты\pocer.png" />
+    <Content Include="Resources\карты\Tbapt.jpg" />
+    <Content Include="Resources\карты\Tbub.jpg" />
+    <Content Include="Resources\карты\The.jpg" />
+    <Content Include="Resources\карты\Tspa.jpg" />
+    <Content Include="Resources\карты\Vbapt.jpg" />
+    <Content Include="Resources\карты\Vbub.jpg" />
+    <Content Include="Resources\карты\Vhe.jpg" />
+    <Content Include="Resources\карты\Vspa.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
