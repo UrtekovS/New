@@ -14,7 +14,7 @@ include("header.php");
     "title" => [],
     "description" => []
   ];
-  for ($i = 0; $i<4; $i++) {
+  for ($i = 0; $i < 4; $i++) {
     $row = mysqli_fetch_array($q);
     $mas['img'][$i] = $row[3];
     $mas['title'][$i] = $row[1];
@@ -85,49 +85,53 @@ include("header.php");
             <h3><?= $mas['description'][3]; ?></h3>
           </div>
         </div>
-      </div
+      </div </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+
     </div>
-    <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </a> 
-    
-  </div>
-  <div class="container" id="clok">
+    <!-- Часы -->
+
+    <link href="Css/style.css" rel="stylesheet">
+    <div class="container" id="clok">
       <div class="row">
 
-      <div class="col-md-6 col-md-offset-3">
-      <div id="myclock">
-        <!-- прогноз погоды -->
-        <div id="f69aeff3922466291723630c67b54dad" class="ww-informers-box-854753"><p class="ww-informers-box-854754">
-          <a href="https://world-weather.ru/pogoda/russia/novokuznetsk/">Погода в Новокузнецке</a>
-          <br>
-          <a href="https://world-weather.ru/pogoda/russia/novosibirsk/">https://world-weather.ru/pogoda/russia/novosibirsk/</a>
-          </p>
-        </div><script async type="text/javascript" charset="utf-8" src="https://world-weather.ru/wwinformer.php?userid=f69aeff3922466291723630c67b54dad"></script>
-        <!-- логотип видео -->
-          <div onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">
-          <img style="cursor: pointer;" alt="" id="bege" src="img/brend.jpg" />
-          
-      </div>
-      <video width="200" height="50" controls id="thevideo" style="display: none;">
+        <div class="col-md-6 col-md-offset-3">
+          <div id="myclock">
+            <!-- прогноз погоды -->
+            <div id="f69aeff3922466291723630c67b54dad" class="ww-informers-box-854753">
+              <p class="ww-informers-box-854754">
+                <a href="https://world-weather.ru/pogoda/russia/novokuznetsk/">Погода в Новокузнецке</a>
+                <br>
+                <a href="https://world-weather.ru/pogoda/russia/novosibirsk/">https://world-weather.ru/pogoda/russia/novosibirsk/</a>
+              </p>
+            </div>
+            <script async type="text/javascript" charset="utf-8" src="https://world-weather.ru/wwinformer.php?userid=f69aeff3922466291723630c67b54dad"></script>
+            <!-- логотип видео -->
+            <div onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">
+              <img style="cursor: pointer;" alt="" id="bege" src="img/к.jpg" />
+            </div>
+          </div>
+          <video width="200" height="50" controls id="thevideo" style="display: none;">
             <source src="Test.mp4" type="video/mp4">
-      </video>
-      </div>
-        
+          </video>
+        </div>
+
         <style>
-        
+
         </style>
-        
-  </div>
-      </div><!-- ./row -->
-    </div><!-- ./container -->   
-  
-</script>
+
+      </div>
+    </div><!-- ./row -->
+  </div><!-- ./container -->
+
+  </script>
   <script>
     $(document).ready(function() {
       $('#myclock').thooClock({
@@ -143,11 +147,11 @@ include("header.php");
       });
     });
   </script>
-    <!-- Three columns of text below the carousel -->
-    <div class="row" id="load_nformation">
+  <!-- Three columns of text below the carousel -->
+  <div class="row" id="load_nformation">
 
-    </div><!-- /.row -->
+  </div><!-- /.row -->
 
-    <?php
-    include("footer.php");
-    ?>
+  <?php
+  include("footer.php");
+  ?>

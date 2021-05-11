@@ -46,6 +46,10 @@ include("header.php");
                 <input class="form-control" type="datetime-local" value="2021-00-00T00:00:00" id="my_data">
               </div>
             </div>
+            <div>
+            <label class="form-check-label" disabled>Выполненно/нет</label>
+            <td><input type="checkbox" id="inlineCheckbox1" value="option1" ><br>
+            </div>
           <label class="form-check-label" disabled>Категория</label>
           <div id="select_status_id">
               <select class="form-select" id="name_categ">
@@ -61,9 +65,8 @@ include("header.php");
       </div>
       <br>
       <div>
-       <input type="submit" class="btn btn-primary" value="Редактировать событие" id="submit_update_task" >
+       <input type="button" class="btn btn-primary" value="Редактировать событие" id="submit_update_task" >
        <br>
-       <a type="button" class="nav-link" id="returnn" href="diary.php">Вернуться!</a>
       </div>
     </div>
   </form>

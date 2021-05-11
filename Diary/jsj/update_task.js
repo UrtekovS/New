@@ -54,6 +54,14 @@ $.ajax({
         my_data.value = inputDate;
         let name_categ = document.getElementById("kat");
         name_categ.value = d["id_categ"];
+        var ch=document.getElementById("inlineCheckbox1");
+        if (d["itogi"]==1){
+            ch.checked =true;
+        }
+        else{
+            ch.checked =false;
+        }
+        //ch.checked=d["itogi"];
 
     }
 
@@ -67,11 +75,17 @@ function update_tas_bd() {
     var task = document.getElementById("task").value;
     var my_data = document.getElementById("my_data").value;
     var name_categ = document.getElementById("kat").value;
+    var ch=document.getElementById("inlineCheckbox1");
+    let itogi=0;
+    if (ch.checked ==true){
+        itogi=1;
+    }
+       
     $.ajax({
         url: 'update_tas_bd.php',
         method: 'post',
         dataType: 'html',
-        data: {task:task, my_data: my_data, name_categ: name_categ, id:id},
+        data: {task:task, my_data: my_data, name_categ: name_categ, id:id, itogi:itogi},
         success: function (data) {
             //alert(data);
             
@@ -85,6 +99,7 @@ let submit_update_task = document.getElementById("submit_update_task");
 submit_update_task.onclick = function () {
    
     update_tas_bd();
+    document.location.href = "diary.php";
     // if(data==true){
         
     //     returnn.onclick =true;

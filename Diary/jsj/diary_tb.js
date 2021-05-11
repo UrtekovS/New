@@ -164,6 +164,7 @@ function add_task() {
   var message_add_taskc = document.getElementById("message_add_taskc");
   var task = document.getElementById("task").value;
   var my_data = document.getElementById("my_data").value;
+  var itogi = document.getElementById("itogi").value;
   var name_categ = document.getElementById("kat").value;
   if (task == 0 || my_data== 0) {
     message_add_taskc.style.display = "none";
@@ -177,7 +178,7 @@ function add_task() {
       url: 'add_task.php',
       method: 'post',
       dataType: 'html',
-      data: { task: task, my_data: my_data, name_categ: name_categ },
+      data: { task: task, my_data: my_data,itogi:itogi, name_categ: name_categ },
       success: function (data) {
         //alert(data);
         load_table();
@@ -185,6 +186,7 @@ function add_task() {
   });
     document.getElementById("task").value = "";
     document.getElementById("my_data").value = "";
+    document.getElementById("itogi").value = "";
     document.getElementById("kat").value ="";
 
      
