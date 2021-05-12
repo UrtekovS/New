@@ -68,3 +68,30 @@
     font-size: 24px;
     display: none;
 }
+#peri{
+    color: rgb(2, 27, 2);
+    background-color: rgb(27, 250, 7);
+    padding-left: 35%;
+    font-size: 16px;
+    display: block;
+}
+.form-check-labele{
+    color: black;
+    font-size: 18px;
+    padding-left: 20%;
+}
+.form-check-labelz{
+    color: black;
+    font-size: 18px;
+    padding-left: 5%;
+}
+.row gy-2 gx-3 align-items-center{
+    color: rgb(2, 27, 2);
+    font-size: 16px;
+    padding-left: 35%
+
+}
+.form-check-label{
+    color: black;
+    font-size: 18px;
+}

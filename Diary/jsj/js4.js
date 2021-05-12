@@ -12,7 +12,7 @@ function load_user_date(){
     dataType: 'html',
     data: '' ,
     success: function(data){
-        alert(data);
+        //alert(data);
         let user_data=JSON.parse(data);
         let last_name_update=document.getElementById("last_name_update");
         last_name_update.value=user_data["last_name"];
@@ -95,7 +95,7 @@ update_status.onclick=function(){
                 email:email_update.value,
                 phone:phone_update.value} ,
             success: function(data){
-                alert(data);
+                //alert(data);
                 let mas=JSON.parse(data);
                 if (mas['status']==1){
                     update_status.onclick();

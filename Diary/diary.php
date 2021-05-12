@@ -17,15 +17,27 @@ include("header.php");
   </div>
 
   <!--Календарь-->
+  <link href="Css/style(t).css">
+  <div id="peri"><b>Вывод событий, за периуд времени</b></div>
 
-  <div tt="Отображение задач и событий, запланированных на текущий день" id="t_DayDiary1" onclick="sw_tab('DayDiary',1);" class="active" style="font-size:12px" original-title=""><b>Расписание</b></div>
+  <form class="row gy-2 gx-3 align-items-center">
+    <tr>
+      <div class="col-auto">
+        <label class="form-check-labelz">Начало периуда</label><br>
+        <input class="form-control" type="datetime-local" value="2021-00-00T00:00:00" id="start_data">
+      </div>
+      <div class="col-auto">
+        <label class="form-check-labele">Окончание периуда</label>
+        <div class="input-group">
 
-  <div unselectable="on" class="last right" id="the_calendar">
-    <img tt="На предыдущий день" unselectable="on" onclick="dayLeftRight(-1)" alt="" class="arrow" src="" style="margin-right: 1px; display: inline;" original-title="">
-    <input disabled="disabled" type="text" id="todayDate" class="hasDatepicker"><img class="ui-datepicker-trigger" src="img/cart_img/calendar.gif" alt="Выбор даты в календаре" title="Выбор даты в календаре">
-    <img tt="На следующий день" unselectable="on" onclick="dayLeftRight(1)" alt="" class="arrow" src="" original-title="" style="display: inline;">
-  </div>
+          <input class="form-control" type="datetime-local" value="2021-00-00T00:00:00" id="finish_data">
+        </div>
+      </div>
+      <div class="col-auto">
 
+        <button type="button" class="btn btn-primary" id="Output" onclick="add_time();">Вывод</button>
+      </div>
+  </form>
   <!--Таблица задачь-->
   <link href="Css/style(t).css" rel="stylesheet">
 
@@ -67,14 +79,13 @@ include("header.php");
             <label class="form-check-label">задача</label>
             <input type="text" id="task" class="form-control">
             <label class="form-check-label">дата и время</label>
-            <!--<input type="date" id="my_data" class="form-control"> -->
             <!-- календарь со временем -->
             <div class="form-group row">
               <div class="col-xs-10">
                 <input class="form-control" type="datetime-local" value="2021-00-00T00:00:00" id="my_data">
               </div>
             </div>
-           <label class="form-check-label" disabled>Категория</label>
+            <label class="form-check-label" disabled>Категория</label>
             <div id="select_status_id">
               <select class="form-select" id="name_categ">
                 <option value="1">mbmnn</option>
@@ -97,6 +108,7 @@ include("header.php");
     </div>
   </div>
   <script src="jsj/diary_tb.js"></script>
+  <script src="jsj/period of time.js"></script>
 </body>
 
 
