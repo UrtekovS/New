@@ -108,7 +108,7 @@ include("header.php");
     </div>
   </div>
   <script src="jsj/diary_tb.js"></script>
-  <script src="jsj/period of time.js"></script>
+  <script src="jsj/period_of_time.js"></script>
 </body>
 
 
