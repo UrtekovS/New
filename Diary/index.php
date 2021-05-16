@@ -94,64 +94,77 @@ include("header.php");
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </a>
-
     </div>
+
     <!-- Часы -->
+    <link href="Css/clock_index.css" rel="stylesheet">
+    <style>
 
-    <link href="Css/style.css" rel="stylesheet">
-    <div class="container" id="clok">
-      <div class="row">
+    </style>
+    <script>
 
-        <div class="col-md-6 col-md-offset-3">
-          <div id="myclock">
-            <!-- прогноз погоды -->
-            <div id="f69aeff3922466291723630c67b54dad" class="ww-informers-box-854753">
-              <p class="ww-informers-box-854754">
-                <a href="https://world-weather.ru/pogoda/russia/novokuznetsk/">Погода в Новокузнецке</a>
-                <br>
-                <a href="https://world-weather.ru/pogoda/russia/novosibirsk/">https://world-weather.ru/pogoda/russia/novosibirsk/</a>
-              </p>
-            </div>
-            <script async type="text/javascript" charset="utf-8" src="https://world-weather.ru/wwinformer.php?userid=f69aeff3922466291723630c67b54dad"></script>
-            <!-- логотип видео -->
-            <div onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">
-              <img style="cursor: pointer;" alt="" id="bege" src="img/к.jpg" />
+    </script>
+    </head>
+
+    <body>
+      <div class="col-md-4 col-md-offset-4" id="clock_ind">
+        <div class="clock-grids">
+          <div class="clock-heading">
+            <h3>Цените своё время</h3>
+          </div>
+          <div class="clock-left">
+            <div id="myclock"></div>
+          </div>
+          <div class="clock-bottom">
+            <div class="clock">
+              <div id="Date"></div>
+              <ul>
+                <li id="hours"> </li>
+                <li id="point">:</li>
+                <li id="min"> </li>
+                <li id="point">:</li>
+                <li id="sec"> </li>
+              </ul>
             </div>
           </div>
-          <video width="200" height="50" controls id="thevideo" style="display: none;">
-            <source src="Test.mp4" type="video/mp4">
-          </video>
         </div>
-
-        <style>
-
-        </style>
-
       </div>
-    </div><!-- ./row -->
-  </div><!-- ./container -->
 
-  </script>
-  <script>
-    $(document).ready(function() {
-      $('#myclock').thooClock({
-        size: $(document).width() / 1.4,
-        dialColor: '#fff',
-        dialBackgroundColor: 'transparent',
-        secondHandColor: '#F3A829',
-        minuteHandColor: '#e74c3c',
-        hourHandColor: '#8bad4e',
-        showNumerals: true,
-        brandText: 'BootstrapTema',
-        brandText2: 'Russia',
-      });
-    });
-  </script>
-  <!-- Three columns of text below the carousel -->
-  <div class="row" id="load_nformation">
+    </body>
 
-  </div><!-- /.row -->
+    </html>
+</main>
+    <!-- погода -->
+<form class="row gy-2 gx-3 align-items-center">
+    <tr>
+  <div class="col-auto">
+    <div id="f69aeff3922466291723630c67b54dad" class="ww-informers-box-854753">
+      <p class="ww-informers-box-854754">
+        <a href="https://world-weather.ru/pogoda/russia/novokuznetsk/">Погода в Новокузнецке</a>
+        <br>
+        <a href="https://world-weather.ru/pogoda/russia/novosibirsk/">https://world-weather.ru/pogoda/russia/novosibirsk/</a>
+      </p>
+    </div>
+    <script async type="text/javascript" charset="utf-8" src="https://world-weather.ru/wwinformer.php?userid=f69aeff3922466291723630c67b54dad"></script><br>
+  </div>
+    <!-- video -->
+    <div  class="col-auto" id="vid">
+      <div onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">
+        <img style="cursor: pointer;" alt="" id="bege" src="img/video1.jpg" /> 
+      </div>
 
-  <?php
-  include("footer.php");
-  ?>
+      <video width="300" height="150" controls id="thevideo" style="display: none;">
+        <source src="Test.mp4" type="video/mp4">
+      </video>
+    </div>
+</form><br>
+    <!-- Three columns of text below the carousel -->
+    <div class="row" id="load_nformation">
+
+    </div><!-- /.row -->
+
+    <script src="jsj/clok_index.js"></script>
+
+    <?php
+    include("footer.php");
+    ?>

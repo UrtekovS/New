@@ -204,9 +204,29 @@ main.container-fluid {
 @keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}
 #f69aeff3922466291723630c67b54dad{
   display: block;
+  margin-left: 35%;
+  /* width:350px;
+  height: 150px; */
 }
+/* видео */
 #bege{
-  width:50 px;
-  height: 50px;
+  
+  width:300px;
+  height: 170px;
   padding-left: 5px;
+ 
+}
+#vid{
+  background: #FC354C;
+  background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);
+  background: linear-gradient(to right, #0ABFBC, #FC354C);
+  margin-left: 55%;
+}
+#load_nformation{
+  margin-left: 3%;
+}
+/* Кабинет пользователя */
+
+#otzev{
+  margin-left: 1%;
 }

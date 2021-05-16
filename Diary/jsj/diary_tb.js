@@ -13,7 +13,7 @@ function Load_categiry_form_add() {
     success: function (data) {
       //alert(data);
       let d = JSON.parse(data);
-      let select = "<select class='form-select' id='kat'>";
+     select = "<select class='form-select' id='kat'>";
       /*<select>
       <option value="1">mbmnn</option>
       <option value="2">mbmnn</option>
@@ -78,7 +78,7 @@ function load_table() {
     success: function (data) {
       //alert(data);
       let d = JSON.parse(data);
-      let s = "<table class='table'>" +
+      let s = "<table class='table'id='task_history'>" +
         "<thead>" +
         "<tr>" +
         "<th scope='col'>№</th>" +
@@ -195,6 +195,14 @@ function add_task() {
 
   }
 
+}
+
+function to_excel(){
+  $(document).ready(function () {
+      $("#task_history").table2excel({
+      filename: "new.xls"
+      });
+      });
 }
 
 

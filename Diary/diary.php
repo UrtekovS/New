@@ -16,9 +16,9 @@ include("header.php");
     </main>
   </div>
 
-  <!--Календарь-->
+  <!--За промижуток времени-->
   <link href="Css/style(t).css">
-  <div id="peri"><b>Вывод событий, за периуд времени</b></div>
+  <div class="peri"><b>Вывод событий, за периуд времени</b></div>
 
   <form class="row gy-2 gx-3 align-items-center">
     <tr>
@@ -29,20 +29,25 @@ include("header.php");
       <div class="col-auto">
         <label class="form-check-labele">Окончание периуда</label>
         <div class="input-group">
-
-          <input class="form-control" type="datetime-local" value="2021-00-00T00:00:00" id="finish_data">
+          <input class="form-control" type="datetime-local" value="2021-00-00T00:00:00" id="finish_data"><br>
+          <a class="navbar-brand" ></a><img class="my_brend" src="img/brend.jpg"></a>
         </div>
       </div>
       <div class="col-auto">
-
-        <button type="button" class="btn btn-primary" id="Output" onclick="add_time();">Вывод</button>
+      
+      <!-- <input type="button" class="btn btn-primary" value="Вывод, за промежуток времени " id="Output"> -->
+       <button type="button" class="btn btn-primary" id="Output" onclick="add_time();">Вывод</button> 
+      </div>
+      <div class="col-auto">
+       <button type="button" class="btn btn-primary" id="return" onclick="tab_time();">Назад</button> 
       </div>
   </form>
+  <div class="peri"><b>- - - - - - - - - - - - - - - - - -  </b></div>
   <!--Таблица задачь-->
   <link href="Css/style(t).css" rel="stylesheet">
 
-  <div id="task_history">
-    <table class="table">
+  <div >
+    <table class="table" id="task_history">
       <thead>
         <tr>
           <th scope="col">№</th>
@@ -67,8 +72,12 @@ include("header.php");
         </tr>
       </tbody>
     </table>
+    <button class="btn btn-primary" onclick="to_excel();" id="go_excel">Выгрузить exel</button>
   </div>
+  <br>
+  
   <!-- Форма -->
+  <h3 id="labe">Добавляем цели, задачи, события!!!</h3>
   <div>
     <div class="container">
       <div class="modal-body">

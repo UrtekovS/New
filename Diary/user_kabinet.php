@@ -1,7 +1,7 @@
 <?php
 include("header.php");
 ?>
-
+<link href="Css/style.css" rel="stylesheet">
  <!-- Modal -->
  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -30,10 +30,10 @@ include("header.php");
 </div>
 
 <div class="container">
-<div class="modal-body">
+  <div class="modal-body">
         <form onsubmit="return update_user_date();">
           <p class="my_message" id="message_update_user_date"></p>
-          </div>
+  
           <div id ="form_update_user_date"> 
           <label class="form-check-label">Фамилия</label>
           <input type="text" id="last_name_update" class="form-control" required disabled>
@@ -52,20 +52,23 @@ include("header.php");
             <option value="1" selected>М</option> 
             <option value="0">Ж</option>            
           </select>
-          <br>
+       </form>
+        <br>
+          <input type="button" class="btn btn-primary" value="Сохранить изменения" id="submit_update_user_date" disabled onclick="update_user_date();">     
           <input type="button" class="btn btn-primary" value="Редактировать личные данные " id="update_status">
-          <input type="submit" class="btn btn-primary" value="Сохранить изменения" id="submit_update_user_date" disabled>     
-          </div>
           <a id ="show_modal_registration" class=" btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3">Сменить пароль</a>
-        </form>
+  </div>
+          
        
        <div id="history_orders">
         
 
        
        </div>
-       <button onclick="to_excel();">Выгрузить exel</button>
+</div> 
+  <p><a class="btn btn-primary" href="reviews.php"id="otzev" role="button" >Оставить отзыв, или рекомендации для улучшения сайта</a></p> 
 </div>
+<script src="jsj/jquery-3.6.0.min.js"></script>
 <script src="jsj/js4.js"></script>
 <?php
 include("footer.php");

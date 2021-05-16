@@ -1,4 +1,4 @@
-load_user_date();
+  load_user_date();
 let message_new_pass=document.getElementById("message_new_pass");
   message_new_pass.style.display="none";
 
@@ -10,7 +10,7 @@ function load_user_date(){
     url: 'load_user_date.php',
     method: 'post',
     dataType: 'html',
-    data: '' ,
+    data: "" ,
     success: function(data){
         //alert(data);
         let user_data=JSON.parse(data);
@@ -30,7 +30,16 @@ function load_user_date(){
         email_update.value=user_data["email"];
 
         let date_of_brith_update=document.getElementById("date_of_brith_update");
-        date_of_brith_update.value = user_data["date_of_brith_update"];
+        var d=user_data["date_of_birth"];
+        var dateVal = new Date(user_data["date_of_birth"]);
+        // my_data.value=d["my_data"];
+        var day = dateVal.getDate().toString().padStart(2, "0");
+        var month = (1 + dateVal.getMonth()).toString().padStart(2, "0");
+       
+        var inputDate = dateVal.getFullYear() + "-" + (month) + "-" + (day) ;
+        date_of_brith_update.value = inputDate;
+
+        //date_of_brith_update.value = user_data["date_of_brith_update"];
         let sex_update=document.getElementById("sex_update");
         sex_update.value=user_data["sex"];
 
@@ -62,6 +71,7 @@ update_status.onclick=function(){
     }
     else{
         update_status.value="Отменить редактирование";
+
     }
 }
 
@@ -83,6 +93,16 @@ update_status.onclick=function(){
      
     }
     else{
+        last_name_update.disabled=!(last_name_update.disabled);
+    first_name_update.disabled=!(first_name_update.disabled);
+    patronymic_update.disabled=!(patronymic_update.disabled);
+    phone_update.disabled=!(phone_update.disabled);
+    email_update.disabled=!(email_update.disabled);
+    date_of_brith_update.disabled=!(date_of_brith_update.disabled);
+    sex_update.disabled=!(sex_update.disabled);
+    let submit_update_user_date=document.getElementById('submit_update_user_date');
+    submit_update_user_date.disabled=!(submit_update_user_date.disabled);
+
         $.ajax({
             url: 'update_user_data.php',
             method: 'post',
@@ -103,11 +123,12 @@ update_status.onclick=function(){
                     message_update_user_date.innerHTML=mas['mess'];
                     let login_user=document.getElementById("login_user");
                     login_user.innerHTML=mas['login'];
+
+                    
                 }
                 else{
                     message_update_user_date.style.display="block";
                     message_update_user_date.innerHTML=mas['mess'];
-                    
                 }
                
                 return false;
@@ -161,10 +182,3 @@ function new_password(){
 
 
 
-function to_excel(){
-    $(document).ready(function () {
-        $("#tableId").table2excel({
-        filename: "new.xls"
-        });
-        });
-}

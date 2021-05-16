@@ -55,8 +55,9 @@ session_start();
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
   <link href="Css/dashboard.css" rel="stylesheet">
   <!-- часы -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://bootstraptema.ru/plugins/2017/thooclock/jquery.thooClock.js"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" /> -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <script src="https://bootstraptema.ru/plugins/2017/thooclock/jquery.thooClock.js"></script>
  
  
 </head>

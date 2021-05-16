@@ -1,3 +1,5 @@
+ add_time();
+load_table();
 function  add_time(){
     let start_data= document.getElementById("start_data").value;
     let finish_data=document.getElementById("finish_data").value;
@@ -9,7 +11,7 @@ function  add_time(){
         data: { start_data: start_data ,finish_data:finish_data },
         success: function (data) {
         //   load_table();
-                alert(data);
+                //alert(data);
                 let d1 = JSON.parse(data);
                 let s = "<table class='table'>" +
                   "<thead>" +
@@ -63,3 +65,25 @@ function  add_time(){
     
 
 }
+
+function tab_time(){
+  if(start_data!="" && finish_data!==""){
+    load_table();
+    start_data.value="";
+    finish_data.value="";
+  }
+};
+
+//  let Output=document.getElementById("Output");
+//  Output.onclose=function(){
+//    let start_data= document.getElementById("start_data").value;
+//      let finish_data=document.getElementById("finish_data").value;
+//    if(start_data!=0 && finish_data!=0){
+//      Output.value="Вывод, за промежуток времени";
+//      add_time();
+//    }
+//    else{
+//      Output.value="Возврат"
+//      load_table();
+//    }
+//  }

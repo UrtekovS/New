@@ -19,22 +19,24 @@ else if ($email==""){
 else{
     $s="SELECT * FROM users WHERE email='$email' and id_user<>$id ";
 }
+echo $s;
 $r=mysqli_query($link,$s);
 $n=mysqli_num_rows($r);
+echo $n;
 $mas=array('status'=>'','mess'=>'', 'login'=>'');
 if ($n!=0){
     //header("Location:index.php?mess=Данный email или телефон уже зарегистрирован");
     //echo "Данный email или телефон уже зарегистрирован";
     $mas['status']=0;
     $mas['mess']="Данный email или телефон уже зарегистрирован";
-   echo $s;
+   //echo $s;
 }
 else{
     $s1="UPDATE `users` SET 
     `last_name`='$last_name',`first_name`='$first_name',
     `patronymic`='$patronymic',`email`='$email',`phone`='$phone',
     `date_of_birth`='$date_of_brith',
-    `sex`='$sex' WHERE id_user=$id";
+    `sex`=$sex WHERE id_user=$id";
     $r1=mysqli_query($link,$s1);
     //header("Location:index.php?mess=Пользователь успешно зарегистрирован");
     $mas['status']=1;
@@ -46,6 +48,7 @@ else{
         $mas['login']=$phone;
     }
     $_SESSION['login']= $mas['login'];
+    echo $s1;
    // echo "Пользователь успешно зарегистрирован";
 }
 

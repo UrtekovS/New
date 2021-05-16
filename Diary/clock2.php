@@ -1,9 +1,3 @@
-<?php
-include("header.php");
-
-?>
-
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://bootstraptema.ru/plugins/2017/thooclock/jquery.thooClock.js"></script>
@@ -52,7 +46,3 @@ margin-left: 80%;
 
  });
 </script>
-
-<?php
-  include("footer.php");
-  ?>
