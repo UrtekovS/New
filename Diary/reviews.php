@@ -19,7 +19,7 @@ include("header.php");
           </div>
           <div class="form-group" div="form_reviews">
             <label for="ваше имя">Ваше имя</label>
-            <input type="foto" id="name_inf" class="form-control"  placeholder="ваше имя">
+            <input type="foto" id="name_inf" class="form-control"  placeholder="name">
           </div>
           <!-- <div class="form-group">
             <label for="name">Ваше имя:</label>

@@ -13,7 +13,7 @@ function Load_categiry_form_add() {
     success: function (data) {
       //alert(data);
       let d = JSON.parse(data);
-     select = "<select class='form-select' id='kat'>";
+      select = "<select class='form-select' id='kat'>";
       /*<select>
       <option value="1">mbmnn</option>
       <option value="2">mbmnn</option>
@@ -118,14 +118,21 @@ function load_table() {
 
       }
       s += "</tbody> </table>"
-      let task_history = document.getElementById("task_history");
-      task_history.innerHTML = s;
+      let history_table = document.getElementById("history_table");
+      history_table.innerHTML = s;
 
 
     }
   });
 
 
+}
+function to_excel() {
+  $(document).ready(function () {
+    $("#task_history").table2excel({
+      filename: "new.xls",
+    });
+  });
 }
 
 function delet_task(id_task) {
@@ -166,14 +173,14 @@ function add_task() {
   var my_data = document.getElementById("my_data").value;
   // var itogi = document.getElementById("itogi").value;
   var name_categ = document.getElementById("kat").value;
-  if (task == 0 || my_data== 0) {
+  if (task == 0 || my_data == 0) {
     message_add_taskc.style.display = "none";
     message_add_notask.style.display = "block";
     message_add_notask.innerHTML = "Добавте задачу и дату, время!";
   }
-  else{
-     message_add_notask.style.display = "none";
-  
+  else {
+    message_add_notask.style.display = "none";
+
     $.ajax({
       url: 'add_task.php',
       method: 'post',
@@ -183,27 +190,27 @@ function add_task() {
         //alert(data);
         load_table();
       }
-  });
+    });
     document.getElementById("task").value = "";
     document.getElementById("my_data").value = "";
     // document.getElementById("itogi").value = "";
-    document.getElementById("kat").value ="";
+    document.getElementById("kat").value = "";
 
-     
-     message_add_taskc.style.display = "block";
-     message_add_taskc.innerHTML = "Задача успешно добавлена!";
+
+    message_add_taskc.style.display = "block";
+    message_add_taskc.innerHTML = "Задача успешно добавлена!";
 
   }
 
 }
 
-function to_excel(){
-  $(document).ready(function () {
-      $("#task_history").table2excel({
-      filename: "new.xls"
-      });
-      });
-}
+// function to_excel() {
+//   $(document).ready(function () {
+//     $("#task_history").table2excel({
+//       filename: "new.xls"
+//     });
+//   });
+// }
 
 
 

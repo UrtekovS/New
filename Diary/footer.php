@@ -1,6 +1,15 @@
 
 <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
+`       <link href="Css/style.css" rel="stylesheet">
+
+        <p class="float-right" ><img  class="so"  src="img/so/vk.jpg"><a href="https://vk.com/club176723865" >В контакт</a></p>
+        
+        <p class="float-right" ><img  class="so"  src="img/so/f.jpg"><a href="https://www.facebook.com" >В фейсбук</a></p>
+
+        <p class="float-right" ><img  class="so"  src="img/so/загружено1.jpg"><a href="https://twitter.com/?lang=ru" >В твиттер</a></p>
+        </div>
+</form>    
+        
         <p>&copy; 2021-2023 Company, Inc. &middot; <a href="index.php">Органайзер - Главная</a> &middot; <a href="#">Terms of Use</a></p>
 </footer>
 <script src="jsj/jquery-3.6.0.min.js"></script> 

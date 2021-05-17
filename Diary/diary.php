@@ -46,35 +46,12 @@ include("header.php");
   <!--Таблица задачь-->
   <link href="Css/style(t).css" rel="stylesheet">
 
-  <div >
-    <table class="table" id="task_history">
-      <thead>
-        <tr>
-          <th scope="col">№</th>
-          <th scope="col">задача</th>
-          <th scope="col">дата и время</th>
-          <th scope="col">выполнено/нет</th>
-          <th scope="col">категория</th>
-          <th scope="col">кнопки действия</th>
-        </tr>
-      </thead>
-      <tbody id="tableE">
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td><input type="checkbox" id="inlineCheckbox1" value="option1"></td>
-          <td>Выпадающий список</td>
-          <td>
-            <button class="btn btn-primary" type="button" id="cnopDl" onclick="delet_task();">Удалить событие</button>
-            <button class="nav-link" href="update_task_data.php" aria-current="page" type="button" id="update">Редактировать</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <button class="btn btn-primary" onclick="to_excel();" id="go_excel">Выгрузить exel</button>
+  <div id="history_table">
+    
+    
   </div>
   <br>
+  <button class="btn btn-primary" onclick="to_excel();" id="go_excel">Выгрузить exel</button>
   
   <!-- Форма -->
   <h3 id="labe">Добавляем цели, задачи, события!!!</h3>
