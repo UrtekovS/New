@@ -12,7 +12,7 @@ include("header.php");
         <h4>Форма отзывов</h4>
         <form action="./mail.php" method="post">
         <p class="my_message" id="message_reviews"></p>
-        <p class="my_message" id="message_no_reviews"></p>
+        <p class="my_message1" id="message_no_reviews"></p>
         <div class="form-group" div="form_reviews">
             <label for="foto">Фото</label>
             <input type="foto" id="foto" class="form-control"  placeholder="Foto">
@@ -45,12 +45,16 @@ include("header.php");
   </div>
 
 <!-- карточки -->
-<div class="row" id="nformation">
+<p class="my_message2" id="message_del_reviews"></p>
+<!-- <div class="card mb-3"  style="max-width: 330px;"> -->
+<div class="row g-0" id="teviews"style="max-width: 330px;">
   
+</div><!-- /.row g-0 -->
+<!-- </div> -->
+<!-- <button class="btn btn-primary" type="button" id="del_revi" onclick="delet();">Удалить отзыв</button> -->
 
-</div><!-- /.row -->
-
-
+<script src="jsj/jquery-3.6.0.min.js"></script>
+<script src="jsj/js2.js"></script>
 <?php
 include("footer.php");
 ?>

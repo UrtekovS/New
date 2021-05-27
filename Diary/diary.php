@@ -18,7 +18,7 @@ include("header.php");
 
   <!--За промижуток времени-->
   <link href="Css/style(t).css">
-  <div class="peri"><b>Вывод событий, за периуд времени</b></div>
+  <div class="peri"><h3>Вывод событий, за периуд времени</h3></div>
 
   <form class="row gy-2 gx-3 align-items-center">
     <tr>
@@ -41,8 +41,8 @@ include("header.php");
       <div class="col-auto">
        <button type="button" class="btn btn-primary" id="return" onclick="tab_time();">Назад</button> 
       </div>
-  </form>
-  <div class="peri"><b>- - - - - - - - - - - - - - - - - -  </b></div>
+  </form><br>
+  <div class="pe" id="per_time"><h3>Ваша таблица целей, задачь, событий. Не чего не упусти!!!  </h3></div>
   <!--Таблица задачь-->
   <link href="Css/style(t).css" rel="stylesheet">
 
@@ -51,7 +51,7 @@ include("header.php");
     
   </div>
   <br>
-  <button class="btn btn-primary" onclick="to_excel();" id="go_excel">Выгрузить exel</button>
+  <!-- <button class="btn btn-primary" onclick="to_excel();" id="go_excel">Выгрузить exel</button> -->
   
   <!-- Форма -->
   <h3 id="labe">Добавляем цели, задачи, события!!!</h3>
@@ -95,6 +95,8 @@ include("header.php");
   </div>
   <script src="jsj/diary_tb.js"></script>
   <script src="jsj/period_of_time.js"></script>
+  <script src = "jsj/jquery.table2excel.min.js"> </script>
+
 </body>
 
 

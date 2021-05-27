@@ -30,7 +30,4 @@ else{
 }
 
 echo json_encode($mass);
-
-
-
 ?>

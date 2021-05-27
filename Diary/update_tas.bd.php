@@ -12,7 +12,7 @@ $task=$_POST['task'];
  $s="INSERT INTO `Everybay`( `id_user`, `id_categ`, `task`, `my_data`, `itogi`) 
  VALUES ($id_user, $name_categ, '$task', '$my_data', 0)";
   $rez=mysqli_query($link,$s);
-  echo "Редактирование задачи успешно завершено!";
+  //echo "Доавление задачи успешно завершено!";
   
 
 

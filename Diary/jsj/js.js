@@ -121,8 +121,11 @@ sub_autorization.onclick=function(){
                 login_user.innerHTML=mass_data['login'];
                 $(".modal").modal("hide");
             }
+            return false;
 		}
+        
 	});
+    return false;
 };
 
 

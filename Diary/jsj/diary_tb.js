@@ -78,7 +78,7 @@ function load_table() {
     success: function (data) {
       //alert(data);
       let d = JSON.parse(data);
-      let s = "<table class='table'id='task_history'>" +
+      let s = "<table class='table' id='task_history'>" +
         "<thead>" +
         "<tr>" +
         "<th scope='col'>№</th>" +
@@ -127,13 +127,13 @@ function load_table() {
 
 
 }
-function to_excel() {
-  $(document).ready(function () {
-    $("#task_history").table2excel({
-      filename: "new.xls",
-    });
-  });
-}
+// function to_excel() {
+//   $(document).ready(function () {
+//     $("#task_history").table2excel({
+//       filename: "new.xls",
+//     });
+//   });
+// }
 
 function delet_task(id_task) {
   $.ajax({
@@ -148,22 +148,7 @@ function delet_task(id_task) {
     }
   });
 }
-// очистка формы и добавление задачь
-/*let insert_task=document.getElementById("insert_task");
- insert_task.onclick=function(){
- var submit_load_task=document.getElementById('submit_load_task');
- submit_load_task.disabled=!(submit_load_task.disabled);
- if(name_categ.disabled==true){
-   insert_task.value="Добавить событие!";
-   // add_task();
-   
- }
- else{
-   insert_task.value="Отменить добавление события";
-  
- }
- 
-}*/
+
 
 
 
@@ -204,13 +189,6 @@ function add_task() {
 
 }
 
-// function to_excel() {
-//   $(document).ready(function () {
-//     $("#task_history").table2excel({
-//       filename: "new.xls"
-//     });
-//   });
-// }
 
 
 

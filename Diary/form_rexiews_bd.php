@@ -11,7 +11,7 @@ $id_user=$_SESSION['id_user'];
  
  $s="INSERT INTO `information`(`id_user`, `name_inf`, `informat`, `foto`, `email`) VALUES ($id_user,'$name_inf','$informat','$foto','$email2')";
   $rez=mysqli_query($link,$s);
-  echo "Ваш отзыв добавлен!!";
+  //echo "Ваш отзыв добавлен!!";
    //echo $s;
   
   

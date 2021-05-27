@@ -12,9 +12,4 @@
   $rez=mysqli_query($link,$s);
   echo "Задача успешно добавлена!";
   //echo $s;
-  
-  
-  
-
- 
- ?>
+  ?>

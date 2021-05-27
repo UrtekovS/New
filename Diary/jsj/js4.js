@@ -1,6 +1,5 @@
   load_user_date();
-let message_new_pass=document.getElementById("message_new_pass");
-  message_new_pass.style.display="none";
+
 
 
 function load_user_date(){
@@ -142,6 +141,7 @@ update_status.onclick=function(){
 
 
 function new_password(){
+    let message_new_pass=document.getElementById("message_new_pass");
     message_new_pass.style.display="none";
     message_new_pass.innerHTML="";
     let oldpass=document.getElementById("old_pass").value;

@@ -78,6 +78,15 @@
     font-size: 16px;
     display: block;
 }
+#per_time{
+    background: #f31142;
+    background: -webkit-linear-gradient(to right, #61f83b, #dcaafd);
+    background: linear-gradient(to right, #aaffb3, #f59bf8);
+    padding-left: 25%;
+    font-size: 16px;
+    display: block;
+    
+}
 .form-check-labele{
     color: black;
     font-size: 18px;
@@ -128,7 +137,43 @@
 }
 #message_reviews{
     display: none;
+    padding-left: 32%;
+    font-size: 24px;
+    color: black;
+     background: #fdd9e1; 
+     background: -webkit-linear-gradient(to right, #eeb71e, #c2f82c);
+     background: linear-gradient(to right, #f2fb99, #46f77b);
 }
 #message_no_reviews{
-    display: none;
+    padding-left: 12%;
+    font-size: 24px;
+    color: black;
+     background: #ffd2dc; 
+     background: -webkit-linear-gradient(to right, #65f2fc, #f8c82c);
+     background: linear-gradient(to right, #c9f847, #befcd0);
+     display: none;
 }
+ #del_revi{
+     color: black;
+     background: #f31142; 
+     background: -webkit-linear-gradient(to right, #eeb71e, #FC354C);
+     background: linear-gradient(to right, #f2fb99, #f8aab4);
+ }
+ #message_del_reviews{
+    padding-left: 35%;
+    font-size: 24px;
+    color: black;
+     background: #ff829d; 
+     background: -webkit-linear-gradient(to right, #34e8f5, #f82298);
+     background: linear-gradient(to right, #c9f847, #9bffb7);
+     display: none;
+}
+ #teviews{
+    color: black;
+    background: #ff829d; 
+    background: -webkit-linear-gradient(to right, #34e8f5, #f82298);
+    background: linear-gradient(to right, #c9f847, #9bffb7);
+ }
+ /* .card mb-3{
+     display: inline-block;
+ } */

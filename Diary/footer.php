@@ -1,12 +1,15 @@
 
 <footer class="container">
 `       <link href="Css/style.css" rel="stylesheet">
-
-        <p class="float-right" ><img  class="so"  src="img/so/vk.jpg"><a href="https://vk.com/club176723865" >В контакт</a></p>
-        
-        <p class="float-right" ><img  class="so"  src="img/so/f.jpg"><a href="https://www.facebook.com" >В фейсбук</a></p>
-
-        <p class="float-right" ><img  class="so"  src="img/so/загружено1.jpg"><a href="https://twitter.com/?lang=ru" >В твиттер</a></p>
+<form class="row gy-2 gx-3 align-items-center">
+        <div class="col-auto">
+        <p class="float-right" ><a href="https://vk.com/club176723865" ><img  class="so"  src="img/so/загружено1.jpg"></a></p>
+        </div>
+        <div class="col-auto">
+        <p class="float-right" ><a href="https://www.facebook.com"><img  class="so"  src="img/so/fb.jpg"></a></p>
+        </div>
+        <div class="col-auto">
+        <p class="float-right" ><a href="https://twitter.com/?lang=ru"><img  class="so"  src="img/so/tv.jpg"></a></p>
         </div>
 </form>    
         
