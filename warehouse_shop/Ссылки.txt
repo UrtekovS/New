@@ -1,0 +1,31 @@
+ SELECT sum(`summa`) as 'Toatal'FROM `general_order` INNER JOIN users ON users.id=general_order.id_user WHERE (`data`>='2021-06-16T00:00' AND `data`<='2021-06-18T00:00'
+SELECT * FROM `Everybay`INNER JOIN Category ON Category.id_categ=Everybay.id_categ  
+WHERE (everybay.task LIKE '%$poisk%' OR category.name_categ LIKE '%$poisk%') AND `id_user`=$id_user ORDER BY `my_data`ASC";
+"select sum(tech) as Toatal from sales where day='$day';"
+ last_name  phone  email
+  SELECT * FROM `general_order` WHERE (`data`>='2021-06-16T00:00' AND `data`<='2021-19-00T00:00') AND`id_user`=14
+	D:\open_server\видео	
+	HTTPS://GITHUB.COM/GRISMANSS/SHOPREP - GITHUB GRISMANSS/
+	anisija1990@mail.ru - почта Светланы Сергеевны
+
+	https://github.com/UrtekovS/Web-shop/tree/master/shop 
+2021-06-19 00:37:34
+
+GitHub – Скачать полностью репозиторий - git clone 
+Добавить - git add --all
+git commit -m коментарий(подписать)
+
+git push – отправить на сайт
+
+<form onsubmit="return new_password();">
+<div class="alert alert-danger" role="alert" id="message_new_pass">
+</div>
+<label class="form-check-label">Старый пароль</label>
+<input type="password" id="old_pass" class="form-control" required >
+<label class="form-check-label">Новый пароль</label>
+<input type="password" id="newpass" class="form-control" required >
+<label class="form-check-label">Подтверждение пароля</label>
+<input type="password" id="newpass2" class="form-control" required >
+<br>
+<input type="submit" class="btn btn-primary" value="Сохранить изменения" >
+</form>

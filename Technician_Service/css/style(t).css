@@ -1,0 +1,273 @@
+#submit_load_task{
+    background-color: rgb(3, 78, 68);
+    color: rgb(250, 253, 250);
+}
+#cnopR{
+    background-color:rgb(5, 119, 128);
+    color: white;
+}
+#cnopU{
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+#cotegoriye{
+    background-color: rgb(158, 9, 66);
+}
+#clock2{
+    margin-top:0%;
+    background: #ec2233;
+    background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);
+    background: linear-gradient(to right, #0ABFBC, #FC354C);
+}
+#message_add_notask{
+    color: rgb(2, 27, 2);
+    background-color: rgba(243, 162, 148, 0.678);
+    padding-left: 35%;
+    font-size: 24px;
+    display: none;
+}
+
+#message_add_taskc{
+    color: rgb(2, 27, 2);
+    background-color: rgb(27, 250, 7);
+    padding-left: 35%;
+    font-size: 24px;
+    display: none;
+}
+#message_add_notask{
+    display: none;
+}
+#form_load_task{
+    display: dlock;
+    font-size: 14px;
+}
+#task_history{
+    font-size: 14px;
+    color: rgb(2, 27, 2);
+}
+
+#insert_task{
+    background-color: rgb(6, 192, 167);
+    color: rgb(243, 250, 243); 
+}
+#tableE{
+    font-size: 18px;
+}
+.table{
+    font-size: 24px;
+}
+#returnn{
+    font-size: 24px;
+    color: #d46fd4;
+}
+#submit_update_task{
+    color: #f5f7f8;
+    background-color: rgb(6, 192, 167);
+}
+#message_updata_task{
+    color: rgb(2, 27, 2);
+    background-color: rgb(27, 250, 7);
+    padding-left: 35%;
+    font-size: 24px;
+    display: none;
+}
+.peri{
+    color: rgb(2, 27, 2);
+    /* background-color: rgb(27, 250, 7); */
+    background: #f31142;
+    background: -webkit-linear-gradient(to right, #61f83b, #e8fc35);
+    background: linear-gradient(to right, #87ff91, #eaee05);
+    padding-left: 35%;
+    font-size: 16px;
+    display: block;
+}
+#pere_time{
+    background: #f31142;
+    background: -webkit-linear-gradient(to right, #61f83b, #dcaafd);
+    background: linear-gradient(to right, #aaffb3, #f59bf8);
+    padding-left: 20%;
+    font-size: 16px;
+    display: block;
+    padding-left: 40%;
+}
+#ptriud2{
+    background: #f31142;
+    background: -webkit-linear-gradient(to right, #5bfad7, #eedbfa);
+    background: linear-gradient(to right, #aafcff, #f2d8f3);
+    padding-left: 20%;
+    font-size: 16px;
+    display: none;
+    padding-left: 40%;
+}
+#pere_prais{
+    background: #f31142;
+    background: -webkit-linear-gradient(to right, #5bfad7, #eedbfa);
+    background: linear-gradient(to right, #aafcff, #f2d8f3);
+    padding-left: 25%;
+    font-size: 16px;
+    display: block;
+    padding-left: 40%;
+    /* display: none; */
+}
+.form-check-labele{
+    color: black;
+    font-size: 18px;
+    padding-left: 20%;
+}
+.form-check-labelz{
+    color: black;
+    font-size: 18px;
+    padding-left: 5%;
+}
+.row gy-2 gx-3 align-items-center{
+    color: rgb(2, 27, 2);
+    font-size: 16px;
+    padding-left: 35%
+
+}
+.form-check-label{
+    color: black;
+    font-size: 18px;
+}
+
+#go_excel{
+    background-color: rgb(4, 149, 151);
+    border-color: #0ABFBC;
+    margin-left: 72%;
+    color: floralwhite;
+}
+
+#labe{
+    color: rgb(2, 27, 2);
+    background: #f31142;
+    background: -webkit-linear-gradient(to right, #61f83b, #36d0ff);
+    background: linear-gradient(to right, #87ff91, #8de4ff);
+    padding-left: 35%;
+    font-size: 24px;
+}
+#nformation{
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#ret{
+    background-color: #098b89;
+}
+#insert_reviews{
+    background-color: #089795;
+    color: rgb(253, 253, 252);
+}
+#message_reviews{
+    display: none;
+    padding-left: 32%;
+    font-size: 24px;
+    color: black;
+     background: #fdd9e1; 
+     background: -webkit-linear-gradient(to right, #eeb71e, #c2f82c);
+     background: linear-gradient(to right, #f2fb99, #46f77b);
+}
+#message_no_reviews{
+    padding-left: 12%;
+    font-size: 24px;
+    color: black;
+     background: #ffd2dc; 
+     background: -webkit-linear-gradient(to right, #65f2fc, #f8c82c);
+     background: linear-gradient(to right, #c9f847, #befcd0);
+     display: none;
+}
+ #del_revi{
+     color: black;
+     background: #f31142; 
+     background: -webkit-linear-gradient(to right, #eeb71e, #FC354C);
+     background: linear-gradient(to right, #f2fb99, #f8aab4);
+ }
+ #message_del_reviews{
+    padding-left: 35%;
+    font-size: 24px;
+    color: black;
+     background: #ff829d; 
+     background: -webkit-linear-gradient(to right, #bbf4f8, #5cd1ff);
+     background: linear-gradient(to right, #e2f8a6, #cef8da,#FC354C);
+     display: none;
+     
+}
+#teviews{
+    color: black;
+    background: #ff829d; 
+    background: -webkit-linear-gradient(to right, #91f534, #f82298);
+    background: linear-gradient(to right, #edf88b, #9bffb7);
+    padding-left: 5%;
+    
+ } 
+  .card mb-3{
+     display: inline-block;
+ } 
+ 
+ #my_reviews2{
+    background-color: #089795;
+    color: rgb(253, 253, 252);
+ }
+ #chcbx1{
+     color: blue;
+ }
+#admin{
+       display: block; 
+       padding: 20 20%; 
+    /* pointer-events: none;
+    cursor: default; */
+ } 
+ 
+ #Exel{
+    background: #ff829d; 
+    background: -webkit-linear-gradient(to right, #91f534, #f82298);
+    background: linear-gradient(to right, #edf88b, #9bffb7);
+ }
+ .my_brend{
+     width: 24%;
+     margin-left: 37%;
+ } 
+ #lables{
+    color: black;
+     background: #ff829d; 
+     background: -webkit-linear-gradient(to right, #bbf4f8, #5cd1ff);
+     background: linear-gradient(to right, #e2f8a6, #cef8da,#FC354C);
+     padding-left: 37%;
+ }
+ #form_registration{
+    color: black;
+    background: #ff829d; 
+    background: -webkit-linear-gradient(to right, #fffd8d, #5cf4ff);
+    background: linear-gradient(to right, #e5fda4, #9afdb8,#35cdfc);
+    
+ }
+ #closee{
+     color: rgb(255, 0, 0);
+     font-size: 18px;
+ }
+ #submit_registration{
+    color: black;
+    background: #ff829d; 
+    background: -webkit-linear-gradient(to right, #bbf4f8, #5cd1ff);
+    background: linear-gradient(to right, #e2f8a6, #cef8da,#FC354C);
+ }
+ #show_modal_registration{
+    color: black;
+    background: #ff829d; 
+    background: -webkit-linear-gradient(to right, #bbf4f8, #5cd1ff);
+    background: linear-gradient(to right, #e2f8a6, #cef8da,#FC354C);
+ }
+ .modal-content{
+    color: black;
+    background: #f8d9e0; 
+    background: -webkit-linear-gradient(to right, #eefeff, #d9f1fa);
+    background: linear-gradient(to right, #f1f8dd, #eafdef,#f8dee1)  
+ }
+ #prais{
+     margin-top: 5%;
+    color: black;
+    background: #ff829d; 
+    background: -webkit-linear-gradient(to right, #bbf4f8, #5cd1ff);
+    background: linear-gradient(to right, #e2f8a6, #cef8da,#72fd3b);
+    padding-left: 47%;
+ }
+ 
