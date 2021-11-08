@@ -5,10 +5,11 @@ $names=$_POST['names'];
  $prices=$_POST['prices'];
  $photos=$_POST['photos'];
  //$id=$_SESSION['id'];
- $category_id=$_POST['category_id'];
+ $name_cat=$_POST['name_cat'];
 $id=$_POST["id"];
- 
- $s="UPDATE `products` SET `name`='$names',`price`='$prices',`photo`='$photos',`category_id`=$category_id WHERE `id`=$id";
+
+
+ $s="UPDATE `products` SET `name`='$names',`price`='$prices',`photo`='$photos',`category_id`=$name_cat WHERE `id`=$id";
  mysqli_query($link,$s);
  echo $s;
  // echo "Редактирование задачи успешно завершено!";

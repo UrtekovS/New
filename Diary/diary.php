@@ -7,7 +7,7 @@ include("header.php");
   <!--Часы-->
   <link href="Css/style(t).css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" /> -->
-
+  <script src = "http://cdn.rawgit.com/rainabba/jquery-table2excel/1.1.0/dist/jquery.table2excel.min.js"> </script>
   <div>
     <main class="container-fluid nightmode text-center" id="clock2">
       <time id="date" class="clocktext"> </time>
@@ -24,12 +24,12 @@ include("header.php");
     <tr>
       <div class="col-auto">
         <label class="form-check-labelz">Начало периуда</label><br>
-        <input class="form-control" type="datetime-local" value="2021-00-00T00:00:00" id="start_data">
+        <input class="form-control" type="datetime-local" value="2021-00-00T00:00" id="start_data">
       </div>
       <div class="col-auto">
         <label class="form-check-labele">Окончание периуда</label>
         <div class="input-group">
-          <input class="form-control" type="datetime-local" value="2021-00-00T00:00:00" id="finish_data"><br>
+          <input class="form-control" type="datetime-local" value="2021-00-00T00:00" id="finish_data"><br>
           <a class="navbar-brand" ></a><img class="my_brend" src="img/brend.jpg"></a>
         </div>
       </div>
@@ -44,14 +44,15 @@ include("header.php");
   </form><br>
   <div class="pe" id="per_time"><h3>Ваша таблица целей, задачь, событий. Не чего не упусти!!!  </h3></div>
   <!--Таблица задачь-->
+  <button class="btn btn-primary" onclick="to_excel();" id="go_excel">Выгрузить exel</button> 
   <link href="Css/style(t).css" rel="stylesheet">
 
   <div id="history_table">
     
-    
+  
   </div>
   <br>
-  <!-- <button class="btn btn-primary" onclick="to_excel();" id="go_excel">Выгрузить exel</button> -->
+   
   
   <!-- Форма -->
   <h3 id="labe">Добавляем цели, задачи, события!!!</h3>

@@ -49,17 +49,23 @@ body {
 }
 #message_autorization{
     display: none;
+    font-size: 20px;
+}
+#message_registration2{
+  display: none;
+  font-size: 20px;
 }
 #video{
     margin-left: 40%;
 }
 #authorized{
   display: none;
-
+  font-size: 20px;
 }
  
 #message_update_user_date2{
   display: none;
+  font-size: 20px;
 }
 #the_calendar{
   width:170px;

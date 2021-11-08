@@ -20,9 +20,11 @@ $.ajax({
     dataType: 'html',
     data: "" ,
     success: function(data){
-    //	alert(data);        
+    	// alert(data);        
         let mass_data=JSON.parse(data);
-        status_user_button=mass_data['status'];        
+        status_user_button=mass_data['status']; 
+       
+              
     }
 });
 
@@ -57,6 +59,7 @@ $.ajax({
             s="<div class='col-md-12'>"+
             "<div class='row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'>"+
               "<div class='col p-4 d-flex flex-column position-static'>"+
+              " <a class='mb-0'>"+d['id']+"</a>"+
               " <h4 class='mb-0'>"+d['id']+"</h4>"+
                " <h4 class='mb-0'>"+d['name']+"</h4>"+
                 "<div class='mb-1 text-muted'><h4>"+d['price']+"</h4></div>"+
@@ -84,6 +87,8 @@ function add_tovar_korzina(){
 
    let message_tovar=document.getElementById("message_tovar");
    message_tovar.style.display="none";
+   let show_modal_registration=document.getElementById("show_modal_registration");
+   show_modal_registration.style.display="nome";
     $.ajax({
         url: 'add_tovar_korzina.php',
         method: 'post',
@@ -94,6 +99,7 @@ function add_tovar_korzina(){
            if(data!="Доавление задачи успешно завершено!"){
            let zayvca=document.getElementById("zayvca");
            zayvca.style.display="none";
+           show_modal_registration.style.display="block";
            message_tovar.style.display="block";
            message_tovar.innerHTML="Заполните форму, с точным адресом!!"
 

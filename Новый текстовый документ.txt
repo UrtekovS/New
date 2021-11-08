@@ -1,7 +1,7 @@
 ushgithttps://git/tree/master/shop 
-GitHub – Скачать полностью репозиторий - git clone 
-Добавить - git add --all
-git commit -m коментарий(подписать)
+GitHub – Скачать полностью репозиторий -- git clone 
+Добавить - git add --gitall
+git commit -m коментарий(подписат ь)
 
 git push – отправить на сайт
 

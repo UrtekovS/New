@@ -16,8 +16,8 @@
         
         </div>
 </form> 
-
-<p class="float-right"><a href="#" ">Географическая карта навигации</a></p>
+<div id="futers">  
+<p class="float-right"><a href="#">Географическая карта навигации</a></p>
         <p class="float-right"><a href="#">О нас: ООО "ТЕХНИК-СЕРВИС"</a></p>
         <p>&copy; 2021-2022 Company, Inc. &middot; <a href="index.php">Веб-приложение</a> &middot; <a href="index.php"> ООО "ТЕХНИК-СЕРВИС"</a></p>
 </footer>
@@ -29,6 +29,7 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</div>
 <script src="js/js.js"></script>
 </body>
 </html>

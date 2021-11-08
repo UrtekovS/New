@@ -19,6 +19,8 @@
     background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);
     background: linear-gradient(to right, #0ABFBC, #FC354C);
 }
+
+
 #message_add_notask{
     color: rgb(2, 27, 2);
     background-color: rgba(243, 162, 148, 0.678);
@@ -137,14 +139,7 @@
     color: floralwhite;
 }
 
-#labe{
-    color: rgb(2, 27, 2);
-    background: #f31142;
-    background: -webkit-linear-gradient(to right, #61f83b, #36d0ff);
-    background: linear-gradient(to right, #87ff91, #8de4ff);
-    padding-left: 35%;
-    font-size: 24px;
-}
+
 #nformation{
     margin-top: 2%;
     margin-left: 2%;
@@ -224,7 +219,7 @@
  }
  .my_brend{
      width: 24%;
-     margin-left: 37%;
+     margin-left: 33%;
  } 
  #lables{
     color: black;
@@ -250,12 +245,7 @@
     background: -webkit-linear-gradient(to right, #bbf4f8, #5cd1ff);
     background: linear-gradient(to right, #e2f8a6, #cef8da,#FC354C);
  }
- #show_modal_registration{
-    color: black;
-    background: #ff829d; 
-    background: -webkit-linear-gradient(to right, #bbf4f8, #5cd1ff);
-    background: linear-gradient(to right, #e2f8a6, #cef8da,#FC354C);
- }
+ 
  .modal-content{
     color: black;
     background: #f8d9e0; 
@@ -270,4 +260,46 @@
     background: linear-gradient(to right, #e2f8a6, #cef8da,#72fd3b);
     padding-left: 47%;
  }
- 
+
+ #unauthorized{
+ margin-left: 25%;
+    /* width: 30%; */
+ }
+ #labe{
+     width: 43%;
+     height: 45%;
+    margin-left: 30%;
+    color: rgb(2, 27, 2);
+    background: #f31142;
+    background: -webkit-linear-gradient(to right, #61f83b, #36d0ff);
+    background: linear-gradient(to right, #87ff91, #8de4ff);
+     padding-left: 10%; 
+    font-size: 28px;
+}
+#show_modal_registration{
+    /* margin-left: 5%;  */
+    padding-left: 8%;
+    width: 34%;
+   display: none;
+   color: black;
+   background: #d6fc7f; 
+   background: -webkit-linear-gradient(to right, #bbf4f8, #5cd1ff);
+   background: linear-gradient(to right, #e2f8a6, #cef8da,#35d4fc);
+}
+#formTim{
+
+    height: 70%;
+    margin-left: 30%;
+}
+
+#revers1{
+     margin-left: 39%; 
+     padding-left: 24px;
+    width: 15%; 
+    /* padding-left: 12%; */
+    font-size: 20px;
+   color: black;
+   background: #d6fc7f; 
+   background: -webkit-linear-gradient(to right, #bbf4f8, #5cd1ff);
+   background: linear-gradient(to right, #e2f8a6, #cef8da,#35d4fc);
+}

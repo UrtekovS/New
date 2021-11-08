@@ -1,4 +1,4 @@
- add_time();
+add_time();
 load_table();
 function  add_time(){
     let start_data= document.getElementById("start_data").value;

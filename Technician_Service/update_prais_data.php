@@ -45,8 +45,8 @@ include("header.php");
             <label class="form-check-label">Фото</label>
             <input type="text" id="photos" class="form-control">          
             <label class="form-check-label" disabled>Категория</label>
-            <div id="select_status_id">
-              <select class="form-select" id="name_categ">
+          <div id="select_status_id">
+              <select class="form-select" id="name_cat">
                 <option value="1">mbmnn</option>
                 <option value="2">mbmnn</option>
                 <option value="3">mbmnn</option>
@@ -54,7 +54,7 @@ include("header.php");
                 <option value="5">mbmnn</option>
               </select>
               <!-- <button onclick='save_status()'>Сохранить</button> -->
-            </div>
+          </div>
           </div>
         </div>
       <br>

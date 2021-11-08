@@ -15,7 +15,7 @@
 }
 #clock2{
     margin-top:0%;
-    background: #FC354C;
+    background: #ec2233;
     background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);
     background: linear-gradient(to right, #0ABFBC, #FC354C);
 }
@@ -133,7 +133,7 @@
 }
 #insert_reviews{
     background-color: #089795;
-    color: floralwhite;
+    color: rgb(253, 253, 252);
 }
 #message_reviews{
     display: none;
@@ -164,16 +164,28 @@
     font-size: 24px;
     color: black;
      background: #ff829d; 
-     background: -webkit-linear-gradient(to right, #34e8f5, #f82298);
-     background: linear-gradient(to right, #c9f847, #9bffb7);
+     background: -webkit-linear-gradient(to right, #bbf4f8, #5cd1ff);
+     background: linear-gradient(to right, #e2f8a6, #cef8da,#FC354C);
      display: none;
+     
 }
- #teviews{
+#teviews{
     color: black;
     background: #ff829d; 
     background: -webkit-linear-gradient(to right, #34e8f5, #f82298);
     background: linear-gradient(to right, #c9f847, #9bffb7);
- }
- /* .card mb-3{
+    padding-left: 5%;
+    
+ } 
+  .card mb-3{
      display: inline-block;
- } */
+ } 
+ 
+ #my_reviews2{
+    background-color: #089795;
+    color: rgb(253, 253, 252);
+ }
+ #form_comment{
+     margin-left: 27%;
+ }
+ 

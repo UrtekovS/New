@@ -11,7 +11,7 @@ function Load_categiry_form_add() {
     success: function (data) {
       //alert(data);
       let d = JSON.parse(data);
-      select = "<select class='form-select' id='kat'>";
+      select = "<select class='form-select' id='name_cat'>";
       /*<select>
       <option value="1">mbmnn</option>
       <option value="2">mbmnn</option>
@@ -64,7 +64,7 @@ function load_table_prais() {
             "<td>" + d[i][2] + "</td>" +
             "<td>" + d[i][3] + "</td>" +
             "<td>" + d[i][6] + "</td>" +
-            "<td><button class='btn btn-primary' type='button' id='cnopDl' onclick='delete_prais(" + d[i][0] + ");'>Удалить событие</button>" +
+            "<td><button class='btn btn-primary' type='button' id='cnopDl' onclick='delete_prais(" + d[i][0] + ");'>Удалить сервис</button>" +
             "<a href='update_prais_data.php?id=" + d[i][0] + "' class='btn btn-primary' type='button' id='update' >Редактировать</button>" +
             "</td>" +
             "</tr>";
@@ -76,7 +76,7 @@ function load_table_prais() {
             "<td>" + d[i][2] + "</td>" +
             "<td>" + d[i][3] + "</td>" +
             "<td>" + d[i][6] + "</td>" +
-            "<td><button class='btn btn-primary' type='button' id='cnopDl' onclick='delete_prais(" + d[i][0] + ");'>Удалить событие</button>" +
+            "<td><button class='btn btn-primary' type='button' id='cnopDl' onclick='delete_prais(" + d[i][0] + ");'>Удалить сервис</button>" +
             "<a href='update_prais_data.php?id=" + d[i][0] + "' class='btn btn-primary' type='button' id='update' >Редактировать</button>" +
             "</td>" +
             "</tr>";

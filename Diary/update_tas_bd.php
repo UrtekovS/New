@@ -10,9 +10,9 @@ $id=$_POST["id"];
  
  $s="UPDATE `Everybay` SET `id_categ`=$name_categ,`task`='$task',`my_data`='$my_data',`itogi`=$itogi WHERE `id_ever`=$id";
  mysqli_query($link,$s);
- echo $s;
- // echo "Редактирование задачи успешно завершено!";
-  
+ //echo $s;
+ echo "Редактирование задачи успешно завершено!";
+ 
 
 
 

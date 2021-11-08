@@ -154,12 +154,12 @@ include("header.php");
       </div>
 
       <video width="300" height="150" controls id="thevideo" style="display: none;">
-        <source src="Test.mp4" type="video/mp4">
+        <source src="img/Test.mp4" type="video/mp4">
       </video>
     </div>
 </form><br>
     <!-- Three columns of text below the carousel -->
-    <div class="row" id="load_nformation">
+    <div class="row" id="load_nformation" class="card mb-3" >
 
     </div><!-- /.row -->
 

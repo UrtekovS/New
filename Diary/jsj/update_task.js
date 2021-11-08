@@ -11,6 +11,7 @@ var params = window
         },
         {}
     );
+    load_table();
 // заполнение формы данными из строки таблицы diary
 let id = params["id"];
 
@@ -88,7 +89,7 @@ function update_tas_bd() {
         data: {task:task, my_data: my_data, name_categ: name_categ, id:id, itogi:itogi},
         success: function (data) {
             //alert(data);
-            
+            load_table();
         }
      });
         
@@ -100,10 +101,7 @@ submit_update_task.onclick = function () {
    
     update_tas_bd();
     document.location.href = "diary.php";
-    // if(data==true){
-        
-    //     returnn.onclick =true;
-    // }
+    load_table();
 
   
 }

@@ -49,7 +49,7 @@ else{
     }
     $_SESSION['login']= $mas['login'];
     echo $s1;
-   // echo "Пользователь успешно зарегистрирован";
+   
 }
 
 

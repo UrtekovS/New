@@ -1,5 +1,3 @@
-
-//Category();
 load_table();
 Load_categiry_form_add();
 
@@ -69,7 +67,6 @@ function Category(id_categ, id_user) {
 
 function load_table() {
 
-
   $.ajax({
     url: 'load_table.php',
     method: 'post',
@@ -82,9 +79,9 @@ function load_table() {
         "<thead>" +
         "<tr>" +
         "<th scope='col'>№</th>" +
-        "<th scope='col'>задача</th>" +
-        "<th scope='col'>дата и время</th>" +
-        "<th scope='col'>выполнено/нет</th>" +
+        "<th scope='col'>Задача</th>" +
+        "<th scope='col'>Дата и время задачи</th>" +
+        "<th scope='col'>Выполненна/не выполненна</th>" +
         "<th scope='col'>категория</th>" +
         "<th scope='col'>кнопки действия</th>" +
         "</tr>" +
@@ -96,11 +93,12 @@ function load_table() {
             "<th scope='row'>" + d[i][0] + "</th>" +
             "<td>" + d[i][3] + "</td>" +
             "<td>" + d[i][4] + "</td>" +
-            "<td><input type='checkbox' id='inlineCheckbox1' value='option1' disabled><br></td>" +
+            "<td>" + d[i][4] + "</td>" +
             "<td>" + d[i][7] + "</td>" +
             "<td><button class='btn btn-primary' type='button' id='cnopDl' onclick='delet_task(" + d[i][0] + ");'>Удалить событие</button>" +
             "<a href='update_task_data.php?id=" + d[i][0] + "' class='btn btn-primary' type='button' id='update' >Редактировать</button>" +
             "</td>" +
+            //"<button class='btn btn-primary' onclick='to_excel();' id='go_excel'>Выгрузить exel</button> "+
             "</tr>";
         }
         else {
@@ -113,6 +111,7 @@ function load_table() {
             "<td><button class='btn btn-primary' type='button' id='cnopDl' onclick='delet_task(" + d[i][0] + ");'>Удалить событие</button>" +
             "<a href='update_task_data.php?id=" + d[i][0] + "' class='btn btn-primary' type='button' id='update' >Редактировать</button>" +
             "</td>" +
+            //"<button class='btn btn-primary' onclick='to_excel();' id='go_excel'>Выгрузить exel</button> "+
             "</tr>";
         }
 
@@ -125,15 +124,14 @@ function load_table() {
     }
   });
 
-
 }
-// function to_excel() {
-//   $(document).ready(function () {
-//     $("#task_history").table2excel({
-//       filename: "new.xls",
-//     });
-//   });
-// }
+function to_excel() {
+  $(document).ready(function () {
+    $("#task_history").table2excel({
+      filename: "new.xls",
+    });
+  });
+}
 
 function delet_task(id_task) {
   $.ajax({
@@ -161,7 +159,7 @@ function add_task() {
   if (task == 0 || my_data == 0) {
     message_add_taskc.style.display = "none";
     message_add_notask.style.display = "block";
-    message_add_notask.innerHTML = "Добавте задачу и дату, время!";
+    message_add_notask.innerHTML = "Добавте товар и стоимость, категорию!";
   }
   else {
     message_add_notask.style.display = "none";

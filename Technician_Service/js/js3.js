@@ -36,7 +36,7 @@ $.ajax({
        for (let i=0; i<mas.length; i++){
         s+="<li class='nav-item'>"+
         "<a class='nav-link ' aria-current='page' href='#' "+
-        "onclick='load_catgory_id("+mas[i]['id']+")'>"+
+        "onclick='load_catgory_id("+mas[i]['id_categ']+")'>"+
         "<span data-feather='home'></span>"+mas[i]['name_categ']+"</a></li>";
        }
 
