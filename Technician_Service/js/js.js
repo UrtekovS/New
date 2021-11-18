@@ -14,116 +14,13 @@ var params = window
     );
 
 let id_product_order= params['id'];
-autorizationStatus();
+// autorizationStatus();
 load_products_top();
 
-// let id_tovar= params['id_tovar'];
-// let status_user_button=0;
-// $.ajax({
-//     url: 'autorizationStatus.php',
-//     method: 'post',
-//     dataType: 'html',
-//     data: "" ,
-//     success: function(data){
-//     //	alert(data);        
-//         let mass_data=JSON.parse(data);
-//         status_user_button=mass_data['status'];        
-//     }
-// });
 
 
 
     
-
-// /*
-
-// */
-
-
-//    return false;
-   
-// }
-
-
-// let sub_autorization=document.getElementById("sub_autorization");
-// sub_autorization.onclick=function(){
-//     let login=document.getElementById("login").value;
-//     let pass=document.getElementById("pass").value;
-//     var admin=document.getElementById("admin");
-//     admin.style.display="block";
-//     //class="btn-close"
-//     $.ajax({
-// 		url: 'autorization_bd.php',
-// 		method: 'post',
-// 		dataType: 'html',
-// 		data: {login: login, pass:pass} ,
-// 		success: function(data){
-// 			//alert(data);
-//             let mass_data=JSON.parse(data);
-//             let message_autorization=document.getElementById("message_autorization");
-//             message_autorization.style.display="block";
-//             message_autorization.innerHTML=mass_data['mess'];
-
-//             if (mass_data['status']==0 || mass_data['status']==1){
-//                 let authorized=document.getElementById("authorized");
-//                 let unauthorized=document.getElementById("unauthorized");
-//                 authorized.style.display="block";
-//                 unauthorized.style.display="blok";
-//                 let login_user=document.getElementById("login_user");
-//                 login_user.innerHTML=mass_data['login'];
-//                 $(".modal").modal("hide");
-//             }
-//             if(mass_data['login']==0 || mass_data['login']==0){
-//                 admin.style.display="block";
-//             }else{
-//                 form_registration.style.display="none";
-//             }
-// 		}
-// 	});
-// };
-
-
-function autorizationStatus(){
-    $.ajax({
-		url: 'autorizationStatus.php',
-		method: 'post',
-		dataType: 'html',
-		data: "" ,
-		success: function(data){
-		//	alert(data);
-            
-            let mass_data=JSON.parse(data);
-            if (mass_data['status']==0 || mass_data['status']==1){
-                let authorized=document.getElementById("authorized");
-                let unauthorized=document.getElementById("unauthorized");
-                authorized.style.display="block";
-                unauthorized.style.display="blok";
-                let login_user=document.getElementById("login_user");
-                login_user.innerHTML=mass_data['login'];
-            }
-		}
-	});
-}
-
-
-let exit_button=document.getElementById("exit_button");
-exit_button.onclick=function(){
-    $.ajax({
-		url: 'exit.php',
-		method: 'post',
-		dataType: 'html',
-		data: "" ,
-		success: function(data){
-		//	alert(data);           
-        let authorized=document.getElementById("authorized");
-        let unauthorized=document.getElementById("unauthorized");
-        authorized.style.display="blok";
-        unauthorized.style.display="block";
-		}
-	});
-
-};
-
 
 function load_products_top(){
     $.ajax({
@@ -146,7 +43,7 @@ function load_products_top(){
             }
             let load_products=document.getElementById("load_products");
             load_products.innerHTML=s;
-
+            
 
            
         }        

@@ -35,7 +35,7 @@ function load_table_zacaz() {
           "<td>"+d[i][3]+"</td>"+
           "<td>"+d[i][4]+"</td>"+
            "<td>"+d[i][5]+"</td>"+
-          "<td><button class='btn btn-primary' type='button' id='true' onclick='delet_task(" + d[i][0] + ");'>Удалить заявку</button>" +
+          "<td><button class='imary' type='button' id='true' onclick='delet_task(" + d[i][0] + ");'>Удалить заявку</button>" +
         "</tr>";
         }
         else{
@@ -47,7 +47,7 @@ function load_table_zacaz() {
           "<td>"+d[i][3]+"</td>"+
           "<td>"+d[i][4]+"</td>"+
           "<td>"+d[i][5]+"</td>"+
-          "<td><button class='btn btn-primary' type='button' id='cnopDl' onclick='delet_task(" + d[i][0] + ");'>Удалить заявку</button>" +
+          "<td><button class='imary' type='button' id='cnopDl' onclick='delet_task(" + d[i][0] + ");'>Удалить заявку</button>" +
         "</tr>";
         }
       }

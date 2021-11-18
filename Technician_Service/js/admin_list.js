@@ -64,8 +64,8 @@ function load_table_prais() {
             "<td>" + d[i][2] + "</td>" +
             "<td>" + d[i][3] + "</td>" +
             "<td>" + d[i][6] + "</td>" +
-            "<td><button class='btn btn-primary' type='button' id='cnopDl' onclick='delete_prais(" + d[i][0] + ");'>Удалить сервис</button>" +
-            "<a href='update_prais_data.php?id=" + d[i][0] + "' class='btn btn-primary' type='button' id='update' >Редактировать</button>" +
+            "<td><button class='imary' type='button' id='cnopDl' onclick='delete_prais(" + d[i][0] + ");'>Удалить сервис</button>" +
+            "<a href='update_prais_data.php?id=" + d[i][0] + "' class='mary' type='button' id='update' >Редактировать</button>" +
             "</td>" +
             "</tr>";
         }
@@ -76,8 +76,8 @@ function load_table_prais() {
             "<td>" + d[i][2] + "</td>" +
             "<td>" + d[i][3] + "</td>" +
             "<td>" + d[i][6] + "</td>" +
-            "<td><button class='btn btn-primary' type='button' id='cnopDl' onclick='delete_prais(" + d[i][0] + ");'>Удалить сервис</button>" +
-            "<a href='update_prais_data.php?id=" + d[i][0] + "' class='btn btn-primary' type='button' id='update' >Редактировать</button>" +
+            "<td><button class='imary' type='button' id='cnopDl' onclick='delete_prais(" + d[i][0] + ");'>Удалить сервис</button>" +
+            "<a href='update_prais_data.php?id=" + d[i][0] + "' class='mary' type='button' id='update' >Редактировать</button>" +
             "</td>" +
             "</tr>";
         }
@@ -149,7 +149,7 @@ function add_task() {
 
 
     message_add_taskc.style.display = "block";
-    message_add_taskc.innerHTML = "успешно добавлена!";
+    message_add_taskc.innerHTML = "успешно добавлен!";
 
   }
 

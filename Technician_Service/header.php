@@ -1,7 +1,6 @@
 <!-- <?php
       session_start();
-
-      ?> -->
+?> -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +18,12 @@
   <!-- для карты навигации -->
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <!-- clock admin_list-->
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- /clock admin_list-->
 
   <style>
     .bd-placeholder-img {
@@ -65,7 +69,7 @@
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark " id="testes">
       <div class="container-fluid ">
-        <a class="navbar-brand" id="admin" href="#"><img class="my_logo" >ООО "ТЕХНИК-СЕРВИС</a>
+        <a class="navbar-brand" id="admin" href="#"><img class="my_logo">ООО "ТЕХНИК-СЕРВИС</a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
           <form class="d-flex" onsubmit="return false;">
             <input class="form-control me-2" type="search" placeholder="Поиск по катологу" aria-label="Search" id="poisk">
@@ -91,7 +95,7 @@
             <!-- <a class="navbar-brand" href="user_kabinet.php"><span id="login_user"></span></a> -->
             <a class="navbar-brand" href="kseniy_admin.php" id="zayv">Заявка</a>
 
-            <a class="navbar-brand" href="index.php" id="exit_button">Выход</a>
+            <!-- <a class="navbar-brand" href="index.php" id="exit_button">Выход</a> -->
           </div>
 
           <!-- <div id="unauthorized">
@@ -128,7 +132,7 @@
     </div>
 
 
-    
+
 
   </header>
   <!-- <?php

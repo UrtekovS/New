@@ -59,7 +59,7 @@ include("header.php");
         </div>
       <br>
       <div>
-       <input type="button" class="btn btn-primary" value="Редактировать событие" id="submit_update_prais" >
+       <input type="button" class="mary" value="Редактировать событие" id="submit_update_prais" >
        <br>
       </div>
   </div>

@@ -1,7 +1,6 @@
 
 <?php
 include("header.php");
-
 ?>
 <p class="my_message" id="message_tovar"></p>
 <div id="tovar">
@@ -25,9 +24,9 @@ include("header.php");
             <label class="form-check-label">Имя</label>
             <input type="text" id="last_name" class="form-control" required>
             <label class="form-check-label">Телефон</label>
-            <input type="text" id="phone" class="form-control" value="+7 ... ... .. .."  >
+            <input type="text" id="phone" class="form-control" value="+7 ">
             <label class="form-check-label">Адрес</label>
-            <input type="text" id="first_name" class="form-control" value="Город ...,ул...,дм...,кв...">
+            <input type="text" id="first_name" class="form-control" value="Город     ,ул    ,дм  ,кв   ">
 
             <label class="form-check-label">Укажите дату и врея удобное вам<!DOCTYPE html>
             <html lang="en">

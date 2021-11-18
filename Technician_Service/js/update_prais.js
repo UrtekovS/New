@@ -75,7 +75,7 @@ function update_prais_bd() {
     var names = document.getElementById("names").value;
     var prices = document.getElementById("prices").value;
     var photos = document.getElementById("photos").value;
-    var name_cat = document.getElementById("kat").value;
+    var name_cat = document.getElementById("name_cat").value;
 
     $.ajax({
         url: 'update_prais_bd.php',
@@ -83,7 +83,7 @@ function update_prais_bd() {
         dataType: 'json',
         data: { id: id, names: names, prices: prices, photos: photos, name_cat: name_cat },
         success: function (data) {
-            alert(data);
+            //alert(data);
             //load_table_prais();
         }
     });
@@ -92,9 +92,8 @@ function update_prais_bd() {
 let submit_update_prais = document.getElementById("submit_update_prais");
 submit_update_prais.onclick = function () {
     update_prais_bd();
-    //load_table_prais();
     document.location.href = "admbn_list.php";
-    //load_table_prais();
+    
 
 
 }

@@ -1,9 +1,3 @@
-/* body{
-    margin-top: 2%;
-    background: #35e5fc;
-    background: -webkit-linear-gradient(to right, #5eff74, #c8fbfd);
-    background: linear-gradient(to right, #1affba, #c0fff1);
-} */
 
 .my_logo{
     width: 15%;
@@ -23,9 +17,9 @@
     display: none;
  }
  
- #authorized{
+ /* #authorized{
     display: block;
- }
+ } */
 
  header{
      margin-top: 20px;
@@ -38,6 +32,8 @@
     background: linear-gradient(to right, #0abf89, #d16df8);
 }
 #zayvca{
+    font-size: 36px;
+    display:block;
     background: #5dfc35;
     background: -webkit-linear-gradient(to right, #dcfce0, #b3f898);
     background: linear-gradient(to right, #c9f5e8, #057718);
@@ -52,9 +48,7 @@
     background: -webkit-linear-gradient(to right, #eef7bf, #e7f898);
     background: linear-gradient(to right, #def0ea, #f7df57);
 }
-#zayvca{
-    display:block;
-}
+
 #message_tovar{
     color: rgb(2, 27, 2);
     background-color: rgb(167, 245, 160);
@@ -164,15 +158,17 @@
      display: block;
  }
  #pere_time{
-     display: block;
+     display: none;
  }
  #exit_button{
+     /* display: none; */
     background: #fc6335;
     background: -webkit-linear-gradient(to right, #dffa56, #d6fd29);
     background: linear-gradient(to right, #71f1c9, #fafc90);
     color: rgb(2, 27, 2);
  }
  #zayv{
+     /* display: none; */
     background: #fc6335;
     background: -webkit-linear-gradient(to right, #c5e718, #e9f80f);
     background: linear-gradient(to right, #53fdc7, #fafc90);
@@ -202,3 +198,21 @@
  #futers{
      margin-left: 55%;
  }
+ #clock_bodi{
+    
+    margin-top:0%; 
+    background: #35e5fc;
+    background: -webkit-linear-gradient(to right, #0abf22, #de35fc);
+    background: linear-gradient(to right, #0abf89, #d16df8);
+}
+
+#myclock canvas{
+width:40%;
+max-width:40%;
+}
+#index_colok{
+  margin-left:45%;
+}
+#ooter_brend{
+    margin-left: 45;
+}

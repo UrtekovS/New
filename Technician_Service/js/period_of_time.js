@@ -1,6 +1,7 @@
 //add_time();
 load_table_zacaz();
 function  add_time(){
+  
     let start_data= document.getElementById("start_data").value;
     let finish_data=document.getElementById("finish_data").value;
     let ptriud2=document.getElementById('ptriud2');

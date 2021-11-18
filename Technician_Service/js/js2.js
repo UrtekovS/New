@@ -13,20 +13,20 @@ var params = window
     );
 
 let id_tovar= params['id_tovar'];
-let status_user_button=0;
-$.ajax({
-    url: 'autorizationStatus.php',
-    method: 'post',
-    dataType: 'html',
-    data: "" ,
-    success: function(data){
-    	// alert(data);        
-        let mass_data=JSON.parse(data);
-        status_user_button=mass_data['status']; 
+// let status_user_button=0;
+// $.ajax({
+//     url: 'autorizationStatus.php',
+//     method: 'post',
+//     dataType: 'html',
+//     data: "" ,
+//     success: function(data){
+//     	// alert(data);        
+//         let mass_data=JSON.parse(data);
+//         status_user_button=mass_data['status']; 
        
               
-    }
-});
+//     }
+// });
 
 $.ajax({
     url: 'load_product_details.php',
@@ -45,7 +45,7 @@ $.ajax({
            " <h4 class='mb-0'>"+d['name']+"</h4>"+
             "<div class='mb-1 text-muted'><h4 >Стоимость - "+d['price']+"</h4 > </div>"+
             //"<p class='card-text mb-auto'>"+d['description']+"</p>"+
-            "<button class='btn btn-secondary' id='zayvca' onclick='add_tovar_korzina("+d['id']+")'>В заявку</button>"+
+            "<button class='btn btn-secondary' id='zayvca' onclick='add_tovar_korzina("+d['id']+")'>Отправить заявку</button>"+
             
           "</div>"+
           "<div class='col-auto d-none d-lg-block'>"+
@@ -64,7 +64,7 @@ $.ajax({
                " <h4 class='mb-0'>"+d['name']+"</h4>"+
                 "<div class='mb-1 text-muted'><h4>"+d['price']+"</h4></div>"+
                 //"<p class='card-text mb-auto'>"+d['description']+"</p>"+
-                "<button class='btn btn-secondary'id='zayvca' onclick='add_tovar_korzina("+d['id']+")'>В заявку</button>"+
+                "<button class='btn btn-secondary'id='zayvca' onclick='add_tovar_korzina("+d['id']+")'>Отправить заявку</button>"+
               "</div>"+
               "<div class='col-auto d-none d-lg-block'>"+
               "<img class='bd-placeholder-img' width='170' height='100 src='imge/products/"+d['photo']+"' alt='Generic placeholder image' >"+
@@ -127,7 +127,7 @@ $.ajax({
            " <h4 class='mb-0'>"+d['name']+"</h4>"+
             "<div class='mb-1 text-muted'><h4 >"+d['price']+"</h4 > </div>"+
             //"<p class='card-text mb-auto'>"+d['description']+"</p>"+
-            "<button class='btn btn-secondary' id='zayvca' onclick='add_tovar_korzina("+d['id']+")'>В заявку</button>"+
+            "<button class='btn btn-secondary' id='zayvca' onclick='add_tovar_korzina("+d['id']+")'>Отправить заявку</button>"+
             
           "</div>"+
           "<div class='col-auto d-none d-lg-block'>"+
@@ -145,7 +145,7 @@ $.ajax({
                " <h4 class='mb-0'>"+d['name']+"</h4>"+
                 "<div class='mb-1 text-muted'><h4>"+d['price']+"</h4></div>"+
                 //"<p class='card-text mb-auto'>"+d['description']+"</p>"+
-                "<button class='btn btn-secondary'id='zayvca' onclick='add_tovar_korzina("+d['id']+")'>В заявку</button>"+
+                "<button class='btn btn-secondary'id='zayvca' onclick='add_tovar_korzina("+d['id']+")'>Отправить заявку</button>"+
               "</div>"+
               "<div class='col-auto d-none d-lg-block'>"+
               "<img class='bd-placeholder-img' width='170' height='100 src='imge/products/"+d['photo']+"' alt='Generic placeholder image' >"+
@@ -179,9 +179,9 @@ $.ajax({
                         z+= "<label class='form-check-label'>Имя</label>"+
                      "<input type='text' id='last_name' class='form-control' required>"+
                      "<label class='form-check-label'>Телефон</label>"+
-                     "<input type='text' id='phone' class='form-control' required>"+
+                     "<input type='text' id='phone' class='form-control' required value='+7  '>"+
                      "<label class='form-check-label'>Адрес</label>"+
-                     "<input type='text' id='first_name' class='form-control' value='Город ...,ул...,дм...,кв...'>"+                
+                     "<input type='text' id='first_name' class='form-control' value='Город     ,ул     ,дм    ,кв    '>"+                
                      "<label class='form-check-label'>Укажите дату и врея удобное вам</label>"+
                      "<input id='date_of_brith' class='form-control' type='datetime-local' value='2021-00-00T00:00:00' required>"+
                      "<label class='form-check-label'>№ Тех.- сервис</label>"+

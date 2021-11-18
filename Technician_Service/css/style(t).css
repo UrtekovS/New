@@ -1,3 +1,4 @@
+
 #submit_load_task{
     background-color: rgb(3, 78, 68);
     color: rgb(250, 253, 250);
@@ -213,6 +214,8 @@
  } 
  
  #Exel{
+     color: black;
+     font-size: 20px;
     background: #ff829d; 
     background: -webkit-linear-gradient(to right, #91f534, #f82298);
     background: linear-gradient(to right, #edf88b, #9bffb7);
@@ -302,4 +305,62 @@
    background: #d6fc7f; 
    background: -webkit-linear-gradient(to right, #bbf4f8, #5cd1ff);
    background: linear-gradient(to right, #e2f8a6, #cef8da,#35d4fc);
+}
+#exit_button{
+    /* display: none; */
+    margin-left: 90%;
+    padding-left: 10%;
+    width: 200px;
+   background: #fc6335;
+   background: -webkit-linear-gradient(to right, #dffa56, #d6fd29);
+   background: linear-gradient(to right, #71f1c9, #fafc90);
+   color: rgb(2, 27, 2);
+   
+}
+#service{
+    color: black;
+    font-size: 20px;
+   background: #ff829d; 
+   background: -webkit-linear-gradient(to right, #91f534, #f82298);
+   background: linear-gradient(to right, #edf88b, #9bffb7);
+}
+.btn-primary1{
+    color: black;
+     font-size: 20px;
+    background: #ff829d; 
+    background: -webkit-linear-gradient(to right, #94fd32, #f82298);
+    background: linear-gradient(to right, #effc7a, #89fdaa);
+}
+.imary{
+    color: black;
+     font-size: 20px;
+    background: #ff829d; 
+    background: -webkit-linear-gradient(to right, #f8997c, #76fcdf);
+    background: linear-gradient(to right, #e0f892, #fd7799);
+}
+ .mary{
+    color: black;
+     font-size: 20px;
+    background: #ff829d; 
+    background: -webkit-linear-gradient(to right, #e1fcb6, #a8ebf7);
+    background: linear-gradient(to right, #e0f892, #6feaee);
+} 
+#adm_clock{
+    margin-left: 45%;
+    font-size: 28px;
+    color: black;
+  }
+  #labls{
+      /* margin-left: 43%; */
+      color: black;
+      font-size: 28px;
+  }
+  #hsu{
+      color: black;
+  }
+  #mine{
+    color: black;
+}
+#sece{
+    color: black;
 }
