@@ -1,4 +1,4 @@
-load_table_prais();
+load_table_prais()
 Load_categiry_form_add();
 
 function Load_categiry_form_add() {
@@ -24,7 +24,8 @@ function Load_categiry_form_add() {
 
 
       select += "</select>";
-
+      // let name_cat=document.getElementById("name_cat");
+      // name_cat=asc["category_id"];
       let select_status_id = document.getElementById("select_status_id");
       select_status_id.innerHTML = select;
     }
@@ -119,11 +120,14 @@ function delete_prais(id) {
 
 
 function add_task() {
+  
   var message_add_taskc = document.getElementById("message_add_taskc");
+  var message_add_notask=document.getElementById("message_add_notask");
   var task = document.getElementById("task").value;
   var pricew= document.getElementById("pricew").value;
-   var foto = document.getElementById("foto").value;
-  var name_categ = document.getElementById("kat").value;
+  var foto = document.getElementById("foto").value;
+  var name_cat = document.getElementById("name_cat").value;
+  // name_cat=asc["category_id"];
   if (task == 0 || pricew == 0) {
     message_add_taskc.style.display = "none";
     message_add_notask.style.display = "block";
@@ -131,21 +135,21 @@ function add_task() {
   }
   else {
     message_add_notask.style.display = "none";
-
+    
     $.ajax({
       url: 'add_prais.php',
       method: 'post',
       dataType: 'html',
-      data: { task: task, pricew: pricew,foto:foto, name_categ: name_categ },
+      data: { task: task, pricew: pricew,foto:foto, name_cat: name_cat},
       success: function (data) {
-        //alert(data);
+        alert(data);
         load_table_prais();
       }
     });
     document.getElementById("task").value = "";
     document.getElementById("pricew").value = "";
      document.getElementById("foto").value = "";
-    document.getElementById("kat").value = "";
+    document.getElementById("name_cat").value = "";
 
 
     message_add_taskc.style.display = "block";

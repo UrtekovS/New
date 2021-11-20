@@ -1,12 +1,11 @@
 <?php
 include("header.php");
 ?>
-
-<!-- clock1 -->
-
+<!-- clock_index -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://bootstraptema.ru/plugins/2017/thooclock/jquery.thooClock.js"></script> 
 <link href="css/style.css" rel="stylesheet">
+<!-- /clock index-->
 
 <div class="container" id="clock_bodi">
 <div class="row" id="index_colok">
@@ -137,8 +136,8 @@ for ($i=0; $i<5; $i++){
     </a>
   </div>
 </div>  
-  <div class="col-auto">
-      <a><img class="my_brend" src="imge/JPEG.jpg"></a>
+  <div class="col-auto" >
+      <a><img class="my_brend" id="my_brend"  src="imge/JPEG.jpg"></a>
   </div><br>
   
 

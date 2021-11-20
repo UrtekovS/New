@@ -18,8 +18,8 @@
   <!-- для карты навигации -->
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-  <!-- clock admin_list-->
-
+  
+<!-- clock admin_list-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

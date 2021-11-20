@@ -56,8 +56,7 @@ include("header.php");
   </div>
 </div>
 <br>
-<div id="unauthorized">
-<h4><label class="form-check-label" id="labe">Форма для адреса</label></h4><br></div>
+<h4><label class="form-check-label cintr" id="labe">Форма для адреса</label></h4><br>
   <!-- <a class="navbar-brand" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Авторизация</a> -->
   <div id="formTim"><h4><a id="show_modal_registration" class="navbar-brand" href="katalog.php" data-bs-toggle="modal" data-bs-target="#exampleModal2">Открыть форму<!DOCTYPE html></div>
   <html lang="en">

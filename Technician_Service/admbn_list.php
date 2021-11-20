@@ -2,11 +2,12 @@
 include("header.php");
 ?>
 <!--Часы-->
-<div id="bodi1">
+
+<div class="container" id="bodi1">
   <p class="lead text-center" id="labls">Цените время! </p>
   <div class="row">
     <h3 class="card-title text-center" id="adm_clock">
-      <div class="d-flex">
+      <div class="d-flex" >
         <a><span class="badge hours" id="hsu"></span></a> :
         <a><span class="badge min" id="mine"></span></a> :
         <a><span class="badge sec" id="sece"></span></a>
@@ -39,45 +40,51 @@ include("header.php");
   </div>
   <br>
 
-</div>
 
-<!-- Форма -->
-<h3 id="labe">Добавить сервис</h3>
-<div>
-  <div class="container">
-    <div class="modal-body">
-      <div>
-        <p class="my_message" id="message_add_notask"></p>
-        <p class="my_message" id="message_add_taskc"></p>
-        <div id="form_load_task">
-          <label class="form-check-label">Название</label>
-          <input type="text" id="task" class="form-control">
-          <label class="form-check-label">Стоимость</label>
-          <input type="text" id="pricew" class="form-control">
-          <label class="form-check-label">Фото</label>
-          <input type="text" id="foto" class="form-control">
-          <label class="form-check-label" disabled>Категория</label>
-          <div id="select_status_id">
-            <select class="form-select" id="name_categ">
-              <option value="1">mbmnn</option>
-              <option value="2">mbmnn</option>
-              <option value="3">mbmnn</option>
-              <option value="4">mbmnn</option>
-              <option value="5">mbmnn</option>
-            </select>
+
+  <!-- Форма -->
+  <div >
+  <h3 id="lab">Добавить сервис</h3>
+  </div>
+  
+  <div>
+    <div class="container">
+      <div class="modal-body">
+        <div>
+          <p class="my_message" id="message_add_notask"></p>
+          <p class="my_message" id="message_add_taskc"></p>
+          <div id="form_load_task">
+            <label class="form-check-label">Название</label>
+            <input type="text" id="task" class="form-control">
+            <label class="form-check-label">Стоимость</label>
+            <input type="text" id="pricew" class="form-control">
+            <label class="form-check-label">Фото</label>
+            <input type="text" id="foto" class="form-control">
+            <label class="form-check-label" disabled>Категория</label>
+            <div id="select_status_id">
+              <select class="form-select" id="name_cat">
+                <option value="1">mbmnn</option>
+                <option value="2">mbmnn</option>
+                <option value="3">mbmnn</option>
+                <option value="4">mbmnn</option>
+                <option value="5">mbmnn</option>
+              </select>
+            </div>
           </div>
         </div>
-      </div>
-      <br>
-      <div>
-        <input type="button" class="btn btn-primary" value="Добавить сервис" id="insert_task" onclick="add_task();">
+        <br>
+        <div>
+          <input type="button" class="btn btn-primary" value="Добавить сервис" id="insert_task" onclick="add_task();">
+        </div>
       </div>
     </div>
   </div>
 </div>
 <script src="js/admin_list.js"></script>
 
-</html>
+<script src="js/jquery-3.6.0.min.js"></script>
+<!-- <script src="js/diary_tb.js"></script> -->
+
 <?php
 include("footer.php");
 ?>

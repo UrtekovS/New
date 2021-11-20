@@ -200,7 +200,7 @@
  }
  #clock_bodi{
     
-    margin-top:0%; 
+    margin-top:-1%; 
     background: #35e5fc;
     background: -webkit-linear-gradient(to right, #0abf22, #de35fc);
     background: linear-gradient(to right, #0abf89, #d16df8);
@@ -211,8 +211,11 @@ width:40%;
 max-width:40%;
 }
 #index_colok{
+    padding-top: 2%;
+  margin-top: 0%;
   margin-left:45%;
 }
-#ooter_brend{
-    margin-left: 45;
+
+#my_brend{
+    margin-left: 40%;
 }
