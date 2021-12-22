@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<header>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,7 +66,7 @@
 </head>
 
 <body>
-  <header>
+  <!-- <header> -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark " id="testes">
       <div class="container-fluid ">
         <a class="navbar-brand" id="admin" href="#"><img class="my_logo">ООО "ТЕХНИК-СЕРВИС</a>
@@ -130,11 +130,5 @@
         </div>
       </div>
     </div>
-
-
-
-
-  </header>
-  <!-- <?php
-        //print_r($_SESSION);
-        ?> -->
+ <!-- </header> -->
+  

@@ -213,9 +213,15 @@ max-width:40%;
 #index_colok{
     padding-top: 2%;
   margin-top: 0%;
-  margin-left:45%;
+  margin-left:30%;
+  /* padding-right: 25%; */
 }
 
-#my_brend{
-    margin-left: 40%;
+#my_bren{
+    margin-right: 18%;
+}
+#footer_brend{
+    /* margin-top: 30%; */
+    margin-left: 30%;
+    margin-right: 25%;
 }

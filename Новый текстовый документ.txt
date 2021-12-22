@@ -1,4 +1,4 @@
-ushgithttps://git/tree/master/shop 
+eushgithttps://git/tree/master/shop 
 GitHub – Скачать полностью репозиторий -- git clone 
 Добавить - git add --gitall
 git commit -m коментарий(подписат ь)
@@ -7,6 +7,7 @@ git push – отправить на сайт
 
 
 HTTPS://GITHUB.COM/GRISMANSS/SHOPREP - GITHUB GRISMANSS/  
+   Дорога на мой gin -   https://github.com/UrtekovS/New.git
 
 
 Шаблоны - https://teroni.ru/bootstrap-shablony/landing/3812-bootstrap-shablon-landing-page-banking.html

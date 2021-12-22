@@ -1,7 +1,7 @@
 <footer class="container">
         <link href="css/style.css" rel="stylesheet">
-        <div class="col-auto">
-                <a></a><img class="my_brend" id="footer_brend" src="imge/JPEG.jpg"></a>
+        <div class="col-auto" id="footer_brend">
+                <a><img class="my_brend"  src="imge/JPEG.jpg"></a>
         </div><br>
         <form class="row gy-2 gx-3 align-items-center">
                 <div class="col-auto">

@@ -142,7 +142,7 @@ function add_task() {
       dataType: 'html',
       data: { task: task, pricew: pricew,foto:foto, name_cat: name_cat},
       success: function (data) {
-        alert(data);
+        //alert(data);
         load_table_prais();
       }
     });
