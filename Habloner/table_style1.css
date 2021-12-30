@@ -1,0 +1,31 @@
+﻿.table_style-1
+{
+    background-color:bisque;
+}
+.table_style-2 {
+    background-color: cyan;
+}
+.table_style-3 {
+    background-color: teal;
+}
+.table_style-4 {
+    background-color: palegreen;
+}
+.table_style-5 {
+    background-color: aqua;
+}
+.table_style-6 {
+    background-color: lightcyan;
+}
+.table_style-7 {
+    background-color: palegoldenrod;
+}
+.table_style-8 {
+    background-color: lightskyblue;
+}
+.table_style-1--heit{
+    height: 50px;
+}
+.table_style-4--heit {
+    height: 25px;
+}
