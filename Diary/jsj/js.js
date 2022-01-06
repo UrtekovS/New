@@ -164,7 +164,7 @@ function load_nformation_top(){
             let s="";
             for(let i=0; i<d.length; i++){
             s+="<div class='col-lg-4'>"+
-            "<img class='rounded-circle' src='img/info_img/"+d[i]["foto"]+"' alt='Generic placeholder image' width='140' height='140'>"+
+            "<img class='rounded-circle' src='img/info_img/"+d[i]["img"]+"' alt='Generic placeholder image' width='140' height='140'>"+
             "<h2>"+d[i]['name_inf']+"</h2>"+
             "<p>"+d[i]['informat']+"</p>"+
             // "<p><a class='btn btn-secondary' href='write_feedback.php?id="+d[i]['id']+"' role='button' >Оставить отзыв, или рекомендации для улучшения сайта &raquo;</a></p>"+

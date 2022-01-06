@@ -15,10 +15,10 @@ include("header.php");
         <p class="my_message" id="message_reviews"></p>
         <p class="my_message1" id="message_no_reviews"></p>
         <div class="form-group" div="form_reviews">
-        <label for="foto">Фото</label>
+        <!-- <label for="foto">Фото</label>
         <form action="urtec_bd.php" method="post" enctype="multipart/form-data"> 
          <input type="file"  name="img" id="urtec_img">
-         <input type="submit">Загрузить</input> 
+         <input type="submit">Загрузить</input>  -->
             <!-- </form><br> -->
            
             <label for="foto">Фото</label>

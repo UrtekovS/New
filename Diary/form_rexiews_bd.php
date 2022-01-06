@@ -18,7 +18,7 @@ $id_user=$_SESSION['id_user'];
  $informat=$_POST['informat'];
  $email2=$_POST['email2'];
  
-$s="INSERT INTO `information`(`id_user`, `name_inf`, `informat`, `img`, `email`) VALUES ($id_user,'$name_inf','$informat','$foto','$email2')";
+  $s="INSERT INTO `information`(`id_user`, `name_inf`, `informat`, `img`, `email`) VALUES ($id_user,'$name_inf','$informat','$foto','$email2')";
    $rez=mysqli_query($link,$s);
    
  

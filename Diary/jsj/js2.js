@@ -13,7 +13,7 @@ function reviews_bd() {
       var s = "";
       for (var i = 0; i < z.length; i++) {        
           s+="<div class='col'>"+
-            "<svg class='bd-placeholder-img card-img-top' width='2%' height='2%' xmlns='http://www.w3.org/2000/svg' aria-label=' preserveAspectRatio='xMidYMid slice role='img'><img src='img/info_img/" + z[i]['img'] + "'></title><rect width='1%' height='1%' fill='#55595c'></rect><text x='1%' y='1%' fill='#eceeef' dy='.3em'>Ваш коментарий (отзыв)</text></svg>"+
+            "<svg class='bd-placeholder-img card-img-top' width='1%' height='1%' xmlns='http://www.w3.org/2000/svg' aria-label=' preserveAspectRatio='xMidYMid slice role='img'><img src='img/info_img/" + z[i]['img'] + "'></title><rect width='1%' height='1%' fill='#55595c'></rect><text x='1%' y='1%' fill='#eceeef' dy='.3em'>Ваш коментарий (отзыв)</text></svg>"+
 
               "<div class='card-body'>"+
               "<h3 class='card-text'>" + z[i]['name_inf'] + "</h3>"+
@@ -66,18 +66,11 @@ function add_reviews() {
       url: 'form_rexiews_bd.php',
       method: 'post',
       dataType: 'html',
-      contentType: false,
-      processData: false,
-      data: { 
-        name_inf: name_inf,
-        informat: informat,
-        foto: urtec_img,
-        email2: email2 
-      },
-
-      success: function (data) {
-        //alert(data);
-        //console.log("ASDASDASD");
+      // contentType: false,
+      // processData: false,
+      data: { foto: foto, name_inf: name_inf, informat: informat, email2: email2 },
+       success: function (data) {
+        alert(data);
       }
     });
     document.getElementById("foto").value = "";

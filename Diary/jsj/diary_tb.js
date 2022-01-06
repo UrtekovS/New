@@ -93,7 +93,7 @@ function load_table() {
             "<th scope='row'>" + d[i][0] + "</th>" +
             "<td>" + d[i][3] + "</td>" +
             "<td>" + d[i][4] + "</td>" +
-            "<td>" + d[i][4] + "</td>" +
+            "<td><input type='checkbox' id='inlineCheckbox1' value='option1' checked disabled><br></td>" +
             "<td>" + d[i][7] + "</td>" +
             "<td><button class='btn btn-primary' type='button' id='cnopDl' onclick='delet_task(" + d[i][0] + ");'>Удалить событие</button>" +
             "<a href='update_task_data.php?id=" + d[i][0] + "' class='btn btn-primary' type='button' id='update' >Редактировать</button>" +
@@ -127,7 +127,7 @@ function load_table() {
 }
 function to_excel() {
   $(document).ready(function () {
-    $("#task_history").table2excel({
+    $("#history_table").table2excel({
       filename: "new.xls",
     });
   });

@@ -162,7 +162,7 @@ include("header.php");
     <div class="row" id="load_nformation" class="card mb-3" >
 
     </div><!-- /.row -->
-
+    <script src="jsj/js.js"></script>
     <script src="jsj/clok_index.js"></script>
 
     <?php

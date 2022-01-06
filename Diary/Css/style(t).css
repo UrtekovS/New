@@ -108,7 +108,7 @@
     font-size: 18px;
 }
 
-#go_excel{
+#go_excele{
     background-color: rgb(4, 149, 151);
     border-color: #0ABFBC;
     margin-left: 72%;
@@ -186,6 +186,8 @@
     color: rgb(253, 253, 252);
  }
  #form_comment{
+     margin-top: 5%;
      margin-left: 27%;
+     
  }
  

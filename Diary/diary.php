@@ -44,7 +44,7 @@ include("header.php");
   </form><br>
   <div class="pe" id="per_time"><h3>Ваша таблица целей, задачь, событий. Не чего не упусти!!!  </h3></div>
   <!--Таблица задачь-->
-  <button class="btn btn-primary" onclick="to_excel();" id="go_excel">Выгрузить exel</button> 
+  <button class="btn btn-primary" id="go_excele" onclick="to_excel();" >Выгрузить exel</button> 
   <link href="Css/style(t).css" rel="stylesheet">
 
   <div id="history_table">
