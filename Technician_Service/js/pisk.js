@@ -1,5 +1,5 @@
 function poisck(){
-//    var category_id=document.getElementById("category_id")
+   var category_id=document.getElementById("category_id")
     var poisk=document.getElementById("poisk").value;
     $.ajax({
         url: 'poisk_bd.php',

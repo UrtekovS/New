@@ -41,11 +41,11 @@ $.ajax({
             s="<div class='col-md-12'>"+
         "<div class='row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'>"+
           "<div class='col p-4 d-flex flex-column position-static'>"+
-          " <a class='mb-0'>"+d['id']+"</a>"+
+          " <a class='mb-0' id='products_id'>"+d['id']+"</a>"+
            " <h4 class='mb-0'>"+d['name']+"</h4>"+
-            "<div class='mb-1 text-muted'><h4 >Стоимость - "+d['price']+"</h4 > </div>"+
+            "<div class='mb-1 text-muted'><p class='fs-5'>Стоимость -> "+d['price']+"</p></div>"+
             //"<p class='card-text mb-auto'>"+d['description']+"</p>"+
-            "<button class='btn btn-secondary' id='zayvca' onclick='add_tovar_korzina("+d['id']+")'>Отправить заявку</button>"+
+            "<button class='btn btn-secondary' class='fs-4' id='zayvca' onclick='add_tovar_korzina("+d['id']+")'>Отправить заявку</button>"+
             
           "</div>"+
           "<div class='col-auto d-none d-lg-block'>"+
@@ -59,12 +59,11 @@ $.ajax({
             s="<div class='col-md-12'>"+
             "<div class='row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'>"+
               "<div class='col p-4 d-flex flex-column position-static'>"+
-              " <a class='mb-0'>"+d['id']+"</a>"+
-              " <h4 class='mb-0'>"+d['id']+"</h4>"+
+              " <a class='mb-0' id='products_id'>"+d['id']+"</a>"+
                " <h4 class='mb-0'>"+d['name']+"</h4>"+
-                "<div class='mb-1 text-muted'><h4>"+d['price']+"</h4></div>"+
+                "<div class='mb-1 text-muted'><p class='fs-5'>Стоимость ->"+d['price']+"</p></div>"+
                 //"<p class='card-text mb-auto'>"+d['description']+"</p>"+
-                "<button class='btn btn-secondary'id='zayvca' onclick='add_tovar_korzina("+d['id']+")'>Отправить заявку</button>"+
+                "<button class='btn btn-secondary'class='fs-4' id='zayvca' onclick='add_tovar_korzina("+d['id']+")'>Отправить заявку</button>"+
               "</div>"+
               "<div class='col-auto d-none d-lg-block'>"+
               "<img class='bd-placeholder-img' width='170' height='100 src='imge/products/"+d['photo']+"' alt='Generic placeholder image' >"+
@@ -84,8 +83,7 @@ $.ajax({
 // первая таблица
 function add_tovar_korzina(){
     let price=document.getElementById('price');
-    let labe=document.getElementById("labe");
-    labe.style.display="nome";
+    // let labe=document.getElementById('labe');
    let message_tovar=document.getElementById("message_tovar");
    message_tovar.style.display="none";
    let show_modal_registration=document.getElementById("show_modal_registration");
@@ -101,10 +99,11 @@ function add_tovar_korzina(){
            let zayvca=document.getElementById("zayvca");
            zayvca.style.display="none";
            show_modal_registration.style.display="block";
-           labe.style.display="biock";
            message_tovar.style.display="block";
            message_tovar.innerHTML="Заполните форму, с точным адресом!!"
-
+        //   labe.style.display="block";
+        //   labe.innerHTML="Форма для адреса";
+        
     
 
     
@@ -125,11 +124,11 @@ $.ajax({
             s="<div class='col-md-12'>"+
         "<div class='row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'>"+
           "<div class='col p-4 d-flex flex-column position-static'>"+
-          " <h4 class='mb-0'>"+d['id']+"</h4>"+
+          " <a class='mb-0' id='products_id'>"+d['id']+"</a>"+
            " <h4 class='mb-0'>"+d['name']+"</h4>"+
-            "<div class='mb-1 text-muted'><h4 >"+d['price']+"</h4 > </div>"+
+            "<div class='mb-1 text-muted'><p class='fs-5'> Стоимость ->"+d['price']+"</p> </div>"+
             //"<p class='card-text mb-auto'>"+d['description']+"</p>"+
-            "<button class='btn btn-secondary' id='zayvca' onclick='add_tovar_korzina("+d['id']+")'>Отправить заявку</button>"+
+            "<button class='btn btn-secondary' class='fs-4' id='zayvca' onclick='add_tovar_korzina("+d['id']+")'>Отправить заявку</button>"+
             
           "</div>"+
           "<div class='col-auto d-none d-lg-block'>"+
@@ -143,11 +142,11 @@ $.ajax({
             s="<div class='col-md-12'>"+
             "<div class='row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'>"+
               "<div class='col p-4 d-flex flex-column position-static'>"+
-              " <h4 class='mb-0'>"+d['id']+"</h4>"+
+              " <a class='mb-0' id='products_id'>"+d['id']+"</a>"+
                " <h4 class='mb-0'>"+d['name']+"</h4>"+
-                "<div class='mb-1 text-muted'><h4>"+d['price']+"</h4></div>"+
+                "<div class='mb-1 text-muted'><p class='s-5'> Стоимость->"+d['price']+"</p></div>"+
                 //"<p class='card-text mb-auto'>"+d['description']+"</p>"+
-                "<button class='btn btn-secondary'id='zayvca' onclick='add_tovar_korzina("+d['id']+")'>Отправить заявку</button>"+
+                "<button class='btn btn-secondary' class='fs-4' id='zayvca' onclick='add_tovar_korzina("+d['id']+")'>Отправить заявку</button>"+
               "</div>"+
               "<div class='col-auto d-none d-lg-block'>"+
               "<img class='bd-placeholder-img' width='170' height='100 src='imge/products/"+d['photo']+"' alt='Generic placeholder image' >"+
@@ -244,35 +243,35 @@ $.ajax({
 });
 }
 
-// function registration(){     
+function registration(){     
     
-//     last_name=document.getElementById("last_name").value;
-//      phone=document.getElementById("phone").value;
-//     first_name=document.getElementById("first_name").value;
-//     date_of_brith=document.getElementById("date_of_brith").value; 
-//      id_product_order=document.getElementById('id_product_order').value;
+    last_name=document.getElementById("last_name").value;
+     phone=document.getElementById("phone").value;
+    first_name=document.getElementById("first_name").value;
+    date_of_brith=document.getElementById("date_of_brith").value; 
+     id_product_order=document.getElementById('id_product_order').value;
      
-//     message_registration2=document.getElementById("message_registration2");   
+    message_registration2=document.getElementById("message_registration2");   
    
 
-//     $.ajax({
-//         url: 'registration_bd.php',
-//         method: 'post',
-//         dataType: 'html',
-//         data: {last_name: last_name, phone:phone, first_name:first_name,
-//         date_of_brith:date_of_brith, id_product_order:id_product_order} ,
-//         success: function(data){
-//             //alert(data);
+    $.ajax({
+        url: 'registration_bd.php',
+        method: 'post',
+        dataType: 'html',
+        data: {last_name: last_name, phone:phone, first_name:first_name,
+        date_of_brith:date_of_brith, id_product_order:id_product_order} ,
+        success: function(data){
+            //alert(data);
         
             
             
-//             if (data=="Пользователь успешно зарегистрирован"){
-//                 message_tovar.style.display="block";
-//                 message_tovar.innerHTML="Ваша заявка принята!!"
-//             }
-//             return false;
+            if (data=="Пользователь успешно зарегистрирован"){
+                message_tovar.style.display="block";
+                message_tovar.innerHTML="Ваша заявка принята!!"
+            }
+            return false;
             
-//         }
-//     });
+        }
+    });
     
-// }
+}

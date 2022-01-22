@@ -11,8 +11,8 @@
 <body style="color:green; font-size:14px;" class="table_style-12">
     <form id="form1" runat="server">
         <div>
-            <div  style="margin-top:0%; margin-left:40%; width: 403px;  color:cadetblue" >
-                 <asp:Label ID="Label1"  runat="server" Text="Label"><h1>Регистрация пользователя</h1></asp:Label>
+            <div  style="margin-top:0%; margin-left:45%; width: 503px;  color:cadetblue" >
+                 <asp:Label ID="Label1"  runat="server"  HorText="Label" HorizontalAlign="Center" ><h1>Регистрация пользователя</h1></asp:Label>
             </div>           
             <asp:Table ID="Table1" runat="server" Width="45%" HorizontalAlign="Center">
                 <asp:TableFooterRow>

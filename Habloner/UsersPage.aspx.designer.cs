@@ -42,15 +42,6 @@ namespace Habloner
         protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolder1;
 
         /// <summary>
-        /// Image2 элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image2;
-
-        /// <summary>
         /// Table1 элемент управления.
         /// </summary>
         /// <remarks>
@@ -78,6 +69,15 @@ namespace Habloner
         protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
+        /// HyperLink2 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
+
+        /// <summary>
         /// Image1 элемент управления.
         /// </summary>
         /// <remarks>
@@ -87,12 +87,12 @@ namespace Habloner
         protected global::System.Web.UI.WebControls.Image Image1;
 
         /// <summary>
-        /// HyperLink2 элемент управления.
+        /// Image2 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
+        protected global::System.Web.UI.WebControls.Image Image2;
     }
 }

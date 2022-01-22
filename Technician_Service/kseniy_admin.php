@@ -4,26 +4,28 @@ include("header.php");
 
 ?>
 
+
 <body>
   
+<div class="container"  class="text-centr"  id="kseniy">
 
-  <!--Часы-->
   <link href="Css/style(t).css" rel="stylesheet">
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" /> 
+ <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />  -->
  <script src = "http://cdn.rawgit.com/rainabba/jquery-table2excel/1.1.0/dist/jquery.table2excel.min.js"> </script>
  
 
+
   <!--За промижуток времени-->
-  <link href="Css/style(t).css">
-  <link href="Css/style.css">
+  <link href="Css/style(t).css" rel="stylesheet">
+  <link href="Css/style.css" rel="stylesheet">
   <div class="peri">
     
   </div>
   <div class="col-auto">
-      <a ></a><img class="my_brend" src="imge/JPEG.jpg"></a>
+      <p class="text-center"><img class="my_brend"  src="imge/JPEG.jpg"></p>
   </div><br>
   <form class="row gy-2 gx-3 align-items-center">
-    <h3 id="lables">Вывод заявок, за период времени</h3>
+    <h3 id="lables" class="text-center">Вывод заявок, за период времени</h3>
     <tr>
       <div class="col-auto">
         <label class="form-check-labelz">Начало периода</label><br>
@@ -51,32 +53,31 @@ include("header.php");
       </div>
   </form><br>
   
-  <div class="col-auto" id="ptriud2">  
-  <h5 id="summa1" class="libale">Итоговая сумма заявок за период</h5>
-  <input disabled type="text" readonly class="form-control-plaintext" id="all_summa_periyd" value="0">
+  <div class="col-auto" class="text-center" id="ptriud2">  
+  <h5 id="summa1" class="text-center">Итоговая сумма заявок за период</h5>
+  <p class="text-center"><input disabled class="text-center" type="text" readonly class="form-control-plaintext" id="all_summa_periyd" value="0"></p>
   
   </div><br>
   
   <div class="pe" id="pere_time">
     <h3>Таблица заявок:</h3>
-    <h5 id="summa" class="libale">Итоговая сумма всех заявок</h5>
-  <input disabled type="text" readonly class="form-control-plaintext" id="all_summa_zayvoc" value="0">
+    <h5 id="summa" class="text-centr">Итоговая сумма всех заявок</h5>
+  <input disabled type="text" class="text-center" readonly class="form-control-plaintext" id="all_summa_zayvoc" value="0">
   </div>
-  <link href="Css/style(t).css" rel="stylesheet">
+  
   <div class="tabel" id="zacaz_history">
- <td><input type="checkbox" id="inlineCheckbox1" value="true" disabled><br></td>
+ <td class="text-centr"><input type="checkbox" id="inlineCheckbox1" value="true" disabled><br></td>
   </div>
   <br>
-  
-            
+  </div> 
+</body >        
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/diary_tb.js"></script>
   <script src="js/period_of_time.js"></script>
   <script src = "js/jquery.table2excel.min.js"> </script>
-</body>
 
 
-</html>
+
 <?php
 include("footer.php");
 ?>

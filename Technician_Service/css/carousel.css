@@ -5,7 +5,7 @@
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: #5a5a5a;
+  color: #635d5d;
 }
 
 
@@ -90,4 +90,20 @@ body {
   .featurette-heading {
     margin-top: 7rem;
   }
+}
+#labes{
+  padding-left: 15%;
+}
+#message_add_taskc{
+  padding-left: 43%;
+}
+#prais{
+  padding-left: 48%;
+}
+/* #labls{
+  padding-right: 3%;
+} */
+#adm_clock{
+  padding-right: 25%;
+  
 }

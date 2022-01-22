@@ -1,4 +1,6 @@
-
+body{
+    margin-top: 1%;
+}
 .my_logo{
     width: 15%;
 }
@@ -75,7 +77,7 @@
 #summ{
     color: rgb(2, 27, 2);
     font-size: 20px;
-    margin-left: 5%; 
+    /* margin-left: 5%;  */
 }
 #message_zacaz{
     
@@ -91,15 +93,15 @@
 .so{
     width: 17%;
   }
-#summa{
+#summa1{
     color: rgb(2, 27, 2);
     font-size: 20px;
-    margin-left: 5%; 
+    /* margin-left: 5%;  */
 }
 #all_summa_zayvoc{
     color: rgb(2, 27, 2);
     font-size: 25px;
-    margin-left: 5%;
+    /* margin-left: 5%; */
     
 }
 #Search{
@@ -181,17 +183,8 @@
     margin-left: 7%;
      color: rgb(2, 27, 2);
  }
- #show_modal_registration{
-     margin-left: 7%;
-     color: rgb(2, 27, 2);
-     font-size: 24px; 
- }
- /* #unauthorized{
-    margin-left: 2%; 
- } */
- #exampleModalLabel{
-     margin-top: auto;
- }
+ 
+ 
  #ul_menu{
      font-size: 20px;
  }
@@ -200,7 +193,7 @@
  }
  #clock_bodi{
     
-    margin-top:-1%; 
+    margin-top:2%; 
     background: #35e5fc;
     background: -webkit-linear-gradient(to right, #0abf22, #de35fc);
     background: linear-gradient(to right, #0abf89, #d16df8);
@@ -211,17 +204,12 @@ width:40%;
 max-width:40%;
 }
 #index_colok{
-    padding-top: 2%;
-  margin-top: 0%;
-  margin-left:30%;
-  /* padding-right: 25%; */
+    margin-top: 3%;
+  margin-left:45%;
 }
-
-#my_bren{
-    margin-right: 18%;
+#ooter_brend{
+    margin-left: 45;
 }
 #footer_brend{
-    /* margin-top: 30%; */
-    margin-left: 30%;
-    margin-right: 25%;
+    margin-left: 40%;
 }

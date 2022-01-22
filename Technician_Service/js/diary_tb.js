@@ -1,8 +1,9 @@
+
 load_table_zacaz();
 
 function load_table_zacaz() {
-  // let pere_time=document.getElementById('pere_time');
-  // pere_time.style.display="block";
+  let pere_time=document.getElementById('pere_time');
+  pere_time.style.display="block";
   $.ajax({
     url: 'load_table_zacaz.php',
     method: 'post',
@@ -63,14 +64,17 @@ function load_table_zacaz() {
         success: function (data) {
            let summ= JSON.parse(data);
            //alert(data);
+          
           let order_summa_zayvoc=document.getElementById("all_summa_zayvoc");
           order_summa_zayvoc.value=summ;
         }
         
       });
+      
     }
+    
   });
-
+  
 }
 
 

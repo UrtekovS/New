@@ -1,11 +1,16 @@
 <?php
 include("header.php");
 ?>
+
+<body>
+<link href="css/catalog.css"  rel="stylesheet"> 
+
 <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
   <div class="row" id="detalils_products">
-    
+
   </div>
 </div>
+
 <main>
   <div class="container-fluid" id="bodi2">
     <div class="row">
@@ -16,14 +21,16 @@ include("header.php");
         </div>
       </nav>
       <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-        <div class="row" id="load_products">
+        <div class="row" id="load_products" class="card mb-6">
         </div><!-- /.row -->
       </div>
     </div>
   </div>
 </main>
+</body>
 <script src="js/js3.js"></script>
 <script src="js/pisk.js"></script>
+
 <?php
 include("footer.php");
 ?>

@@ -1,4 +1,5 @@
-load_table_prais()
+
+load_table_prais();
 Load_categiry_form_add();
 
 function Load_categiry_form_add() {
@@ -10,6 +11,7 @@ function Load_categiry_form_add() {
     data: "",
     success: function (data) {
       //alert(data);
+      
       let d = JSON.parse(data);
       select = "<select class='form-select' id='name_cat'>";
       /*<select>
@@ -24,8 +26,8 @@ function Load_categiry_form_add() {
 
 
       select += "</select>";
-      // let name_cat=document.getElementById("name_cat");
-      // name_cat=asc["category_id"];
+      
+
       let select_status_id = document.getElementById("select_status_id");
       select_status_id.innerHTML = select;
     }
@@ -120,14 +122,12 @@ function delete_prais(id) {
 
 
 function add_task() {
-  
-  var message_add_taskc = document.getElementById("message_add_taskc");
   var message_add_notask=document.getElementById("message_add_notask");
+  var message_add_taskc = document.getElementById("message_add_taskc");
   var task = document.getElementById("task").value;
   var pricew= document.getElementById("pricew").value;
   var foto = document.getElementById("foto").value;
-  var name_cat = document.getElementById("name_cat").value;
-  // name_cat=asc["category_id"];
+  var name_categ = document.getElementById("name_cat").value;
   if (task == 0 || pricew == 0) {
     message_add_taskc.style.display = "none";
     message_add_notask.style.display = "block";
@@ -135,25 +135,26 @@ function add_task() {
   }
   else {
     message_add_notask.style.display = "none";
-    
+
     $.ajax({
       url: 'add_prais.php',
       method: 'post',
-      dataType: 'html',
-      data: { task: task, pricew: pricew,foto:foto, name_cat: name_cat},
+      dataType: 'json',
+      data: { task: task, pricew: pricew,foto:foto, name_categ: name_categ },
       success: function (data) {
         //alert(data);
-        load_table_prais();
+        Load_categiry_form_add();
       }
     });
     document.getElementById("task").value = "";
     document.getElementById("pricew").value = "";
      document.getElementById("foto").value = "";
     document.getElementById("name_cat").value = "";
-
-
     message_add_taskc.style.display = "block";
     message_add_taskc.innerHTML = "успешно добавлен!";
+        load_table_prais();
+
+    
 
   }
 

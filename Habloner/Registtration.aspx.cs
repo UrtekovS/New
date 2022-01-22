@@ -17,16 +17,11 @@ namespace Habloner
         protected async void Page_Load(object sender, EventArgs e)
         {
             //Заголовок
-            TextBox textBox = new TextBox()
-            {
-                Text = "Зарегистрироваться!",
-                ForeColor = System.Drawing.Color.Brown,
-            };
-            textBox.Font.Size = 12;
-            textBox.Font.Bold = true;
-           
-
-            PlaceHolder1.Controls.Add(textBox);
+            Label label = new Label();
+            label.Text = "Заполните форму!";
+            label.Font.Size = 14;
+            
+            PlaceHolder1.Controls.Add(label);
 
             string connectionString = ConfigurationManager.ConnectionStrings["DBConnection"].ConnectionString;
             sqlConnection = new SqlConnection(connectionString);

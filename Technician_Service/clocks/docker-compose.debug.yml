@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  clocks:
+    image: clocks
+    build:
+      context: .
+      dockerfile: ./Dockerfile

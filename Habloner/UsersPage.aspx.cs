@@ -16,15 +16,11 @@ namespace Habloner
             HttpCookie sign = Request.Cookies["sign"];
             if (login != null && sign != null)
             {
-                TextBox textBox = new TextBox()
-                {
-                    Text = "Страница пользователя",
-                    ForeColor = System.Drawing.Color.Aqua,
-                };
-                textBox.Font.Size = 24;
-                textBox.Font.Bold = true;
-               
-                PlaceHolder1.Controls.Add(textBox);
+                Label label = new Label();
+                label.Text = "Страница пользователя!";
+                label.Font.Size = 34;              
+        
+                 PlaceHolder1.Controls.Add(label);
 
 
                 Label1.Text = login.Value;
@@ -36,6 +32,12 @@ namespace Habloner
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            Button button1 = new Button();
+            button1.Width = new Unit("24%");
+            button1.Height = new Unit ("10%");
+            button1.CssClass = "table_style-1";
+            
+
             Response.Redirect("Logoumt.aspx");
         }
 

@@ -17,7 +17,7 @@ $date_of_brith=$_POST['date_of_brith'];
 $id_product_order=$_POST['id_product_order'];
 $s="";
 
-    $s1="INSERT INTO `users`(`last_name`, `first_name`, `phone`,`date_of_birth`, `registration_date`,`id_product_order`) VALUES ('$last_name','$first_name','$phone','$date_of_brith',CURRENT_DATE(),'$id_product_order')";
+    $s1="INSERT INTO `users`(`last_name`, `first_name`, `phone`, `date_of_birth`, `registration_date`, `id_product_order`) VALUES ('$last_name','$first_name','$phone','$date_of_brith',CURRENT_DATE,'$id_product_order');";
     $r1=mysqli_query($link,$s1);
     //header("Location:index.php?mess=Пользователь успешно зарегистрирован");
     echo "Пользователь успешно зарегистрирован";

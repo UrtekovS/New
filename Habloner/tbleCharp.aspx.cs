@@ -12,10 +12,11 @@ namespace Habloner
         protected void Page_Load(object sender, EventArgs e)
         {
             Table table = new Table();
+            table.CssClass = "table_style-1";
             table.HorizontalAlign = HorizontalAlign.Center;
             table.Width = new Unit("80%");
             table.Height = new Unit("50%");
-            table.CssClass = "table_style-1";
+           
             //-- шапка
             //-- создаём переменные, строки и ечейки
             TableHeaderRow hrow = new TableHeaderRow();
