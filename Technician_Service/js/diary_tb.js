@@ -3,7 +3,7 @@ load_table_zacaz();
 
 function load_table_zacaz() {
   let pere_time=document.getElementById('pere_time');
-  pere_time.style.display="block";
+   pere_time.style.display="block";
   $.ajax({
     url: 'load_table_zacaz.php',
     method: 'post',
@@ -12,7 +12,7 @@ function load_table_zacaz() {
     success: function (data) {
       //alert(data);
       let d = JSON.parse(data);
-      let s="<table class='table' id='task_history'>"+
+      let s="<table class='table table-bordered border-primary' id='task_history'>"+
       "<thead>"+
         "<tr>"+
           "<th scope='col'>Имя заказчика</th>"+
@@ -36,7 +36,7 @@ function load_table_zacaz() {
           "<td>"+d[i][3]+"</td>"+
           "<td>"+d[i][4]+"</td>"+
            "<td>"+d[i][5]+"</td>"+
-          "<td><button class='imary' type='button' id='true' onclick='delet_task(" + d[i][0] + ");'>Удалить заявку</button>" +
+          "<td><button class='btn btn-danger' type='button' id='true' onclick='delet_task(" + d[i][0] + ");'>Удалить заявку</button>" +
         "</tr>";
         }
         else{
@@ -48,7 +48,7 @@ function load_table_zacaz() {
           "<td>"+d[i][3]+"</td>"+
           "<td>"+d[i][4]+"</td>"+
           "<td>"+d[i][5]+"</td>"+
-          "<td><button class='imary' type='button' id='cnopDl' onclick='delet_task(" + d[i][0] + ");'>Удалить заявку</button>" +
+          "<td><button class='btn btn-danger' type='button' id='cnopDl' onclick='delet_task(" + d[i][0] + ");'>Удалить заявку</button>" +
         "</tr>";
         }
       }
@@ -76,7 +76,13 @@ function load_table_zacaz() {
   });
   
 }
-
+function to_excel() {
+  $(document).ready(function () {
+    $("#task_history").table2excel({
+      filename: "new.xls",
+    });
+  });
+}
 
 function delet_task(id) {
   $.ajax({
@@ -93,13 +99,7 @@ function delet_task(id) {
   });
 }
 
-function to_excel() {
-    $(document).ready(function () {
-      $("#task_history").table2excel({
-        filename: "new.xls",
-      });
-    });
-  }
+
 
 
 

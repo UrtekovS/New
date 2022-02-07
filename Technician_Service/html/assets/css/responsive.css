@@ -71,7 +71,7 @@ nav > div > ul > li > a {
 
 @media (max-width: 1030px) {
 .container {padding: 0 30px;max-width: 100%;}
-header {display: none;}
+/* header {display: none;} */
 .rspn-hdr {display: block;}
 main {padding-top: 0 !important;}
 .pst-mta > li + li::before {margin: 0 10px;}

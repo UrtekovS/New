@@ -1,4 +1,3 @@
-
 var params = window
     .location
     .search
@@ -15,12 +14,7 @@ var params = window
 
 let id_product_order= params['id'];
 // autorizationStatus();
-load_products_top();
-
-
-
-
-    
+load_products_top();   
 
 function load_products_top(){
     $.ajax({
@@ -34,16 +28,25 @@ function load_products_top(){
 
             let s="";
             for (let i=0; i<d.length;i++){
-                s+="<div class='col-lg-4'>"+
-                "<img class='text-center' src='imge/products/"+d[i]['photo']+"' alt='Generic placeholder image' width='180' height='140'>"+
-                "<h4 class='text-start'>"+d[i]['name']+"</h4>"+
-               // "<p>Стоимость:"+d[i]['price']+"</p>"+
-                "<p class='btn btn-success'><a class='btn btn-info' href='product_details.php?id_tovar="+d[i]['id']+"' role='button' >Подробнее &raquo;</a></p>"+
-            "</div><!-- /.col-lg-4 -->";
+                s+="<div class='col-md-4 col-sm-6 col-lg-4'>"+
+                "<div class='camp-bx'>"+
+                  "<div class='camp-thmb'>"+
+                    "<a href='#' title='' itemprop='url'><img src='imge/products/"+d[i]['photo']+"' alt='camp-img1.jpg' itemprop='image'></a>"+
+                    "<div class='camp-inf'>"+ 
+                    "<h5 itemprop='headline'><a class='text-start'>"+d[i]['name']+"</a></h5>"+   
+                    "</div>"+            
+                  "</div>"+
+                  "<div class='prg-wrp'>"+            
+                      
+                      "<span><i class='fas fa-map-marker-alt theme-clr'></i><p>Стоимость:"+d[i]['price']+"</p></span>"+
+                    "<a class='theme-btn brd-rd5' href='product_details.php?id_tovar="+d[i]['id']+"' title='' itemprop='url'>Подробние</a>"+
+                  "</div>"+
+                "</div>"+
+                "</div><!-- /.col-lg-4 -->";
+                           
             }
             let load_products=document.getElementById("load_products");
-            load_products.innerHTML=s;
-            
+            load_products.innerHTML=s;     
 
            
         }        
@@ -52,11 +55,8 @@ function load_products_top(){
 
 }
 
-
-
 let poisk_form=document.getElementById("poisk_form");
 poisk_form.onclick=function(){
     let poisk_data =document.getElementById("poisk_data").value;
     document.location.href = "poisk.php?dat="+poisk_data;
-    //document.location.replace("poisk.php?dat="+poisk_data);
 };

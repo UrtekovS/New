@@ -13,7 +13,7 @@ function Load_categiry_form_add() {
       //alert(data);
       
       let d = JSON.parse(data);
-      select = "<select class='form-select' id='name_cat'>";
+      select = "<select class='form-select' id='name_cat' name='name_categ'>";
       /*<select>
       <option value="1">mbmnn</option>
       <option value="2">mbmnn</option>
@@ -30,6 +30,7 @@ function Load_categiry_form_add() {
 
       let select_status_id = document.getElementById("select_status_id");
       select_status_id.innerHTML = select;
+      
     }
   });
 
@@ -67,8 +68,9 @@ function load_table_prais() {
             "<td>" + d[i][2] + "</td>" +
             "<td>" + d[i][3] + "</td>" +
             "<td>" + d[i][6] + "</td>" +
-            "<td><button class='imary' type='button' id='cnopDl' onclick='delete_prais(" + d[i][0] + ");'>Удалить сервис</button>" +
-            "<a href='update_prais_data.php?id=" + d[i][0] + "' class='mary' type='button' id='update' >Редактировать</button>" +
+            "<td><button class='btn btn-danger' type='button' id='cnopDl' onclick='delete_prais(" + d[i][0] + ");'>Удалить сервис</button>" +
+            "<br/>"+
+            "<a href='update_prais_data.php?id=" + d[i][0] + "' class='btn btn-success' type='button' id='update' >Редактировать</button>" +
             "</td>" +
             "</tr>";
         }
@@ -79,8 +81,9 @@ function load_table_prais() {
             "<td>" + d[i][2] + "</td>" +
             "<td>" + d[i][3] + "</td>" +
             "<td>" + d[i][6] + "</td>" +
-            "<td><button class='imary' type='button' id='cnopDl' onclick='delete_prais(" + d[i][0] + ");'>Удалить сервис</button>" +
-            "<a href='update_prais_data.php?id=" + d[i][0] + "' class='mary' type='button' id='update' >Редактировать</button>" +
+            "<td><button class='btn btn-danger' type='button' id='cnopDl' onclick='delete_prais(" + d[i][0] + ");'>Удалить сервис</button>" +
+            "<br/>"+
+            "<a href='update_prais_data.php?id=" + d[i][0] + "' class='ben btn-success' type='button' id='update' >Редактировать</button>" +
             "</td>" +
             "</tr>";
         }
@@ -89,7 +92,6 @@ function load_table_prais() {
       s += "</tbody> </table>"
       let history_table = document.getElementById("history_table");
       history_table.innerHTML = s;
-
 
     }
   });
@@ -143,16 +145,17 @@ function add_task() {
       data: { task: task, pricew: pricew,foto:foto, name_categ: name_categ },
       success: function (data) {
         //alert(data);
+        load_table_prais();
         Load_categiry_form_add();
       }
     });
+    load_table_prais(); saj
     document.getElementById("task").value = "";
     document.getElementById("pricew").value = "";
-     document.getElementById("foto").value = "";
+    document.getElementById("foto").value = "";
     document.getElementById("name_cat").value = "";
     message_add_taskc.style.display = "block";
-    message_add_taskc.innerHTML = "успешно добавлен!";
-        load_table_prais();
+    message_add_taskc.innerHTML = "успешно добавлен!";   
 
     
 

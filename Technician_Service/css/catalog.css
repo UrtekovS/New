@@ -1,12 +1,29 @@
 
-body{
-    margin-top: 2%;
+/* head{margin-top: 1%;} */
+
+#bodi2{
+    
+    background: #9cf1fd;
+    background: -webkit-linear-gradient(to right, #0ABFBC, #dc8ffa);
+    background: linear-gradient(to right, #98faff, #fbd2fb);
+}
+#admin_lists{
+margin-top: 12%;
+background: #C9D6FF;
+background: -webkit-linear-gradient(to right, #f0fdbf, #C9D6FF);
+background: linear-gradient(to right, #E2E2E2, #b4c5ff);
+}
+
+#message_regi2{
+    
+    display: block;
 }
 
 #prod_detalis{
-    margin-top: 3%;
+    margin-top: 12%;
 }
 
+/* .nav-item{margin-top: 35%;} */
 
 .col-lg-4{
     margin-top: 3%;
@@ -48,9 +65,7 @@ body{
     width: 50%;
     margin-left: 35%;
 }
-/* #show_modal_registration{
-    width: 45%;
-} */
+
 #zayvca{
     margin-left: 35%;
     width: 55%;
@@ -68,16 +83,9 @@ body{
         padding-right: 0;
         font-size: 24px;
 }
-/* .btn btn-warning{
-    width: 30%;
-        height: 30%;
-        border-radius: 19px;
-        text-align: center;
-        padding-left: 0;
-        padding-right: 0;
-        font-size: 24px;
-} */
-#show_modal_registration{
+ 
+  
+/* #show_modal_registration{
     width: 55%;
     height: 45%;
     border-radius: 24px;
@@ -86,4 +94,4 @@ body{
     padding-right: 0;
     font-size: 24px;
     color: rgb(2, 27, 2);
-}
+} */

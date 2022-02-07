@@ -2,63 +2,32 @@
 include("header.php");
 ?>
 
-<!-- clock1 -->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://bootstraptema.ru/plugins/2017/thooclock/jquery.thooClock.js"></script>
 <link href="css/style.css" rel="stylesheet">
-<body>
-<continue>
-<div class="container" id="clock_bodi">
-  <div class="row" id="index_colok">
 
-    <div class="col-md-6 col-md-offset-3">
+<!-- <body> -->
 
-      <div id="myclock"></div>
 
-    </div>
+<!-- <main id="mains"> -->
+<span id="message_box"></span>
 
-  </div><!-- ./row -->
-  >
-  <!-- ./container -->
+<?php
+include("connect.php");
+$s = "select * from stock ORDER by `data1` DESC";
+$q = mysqli_query($link, $s);
+$mas = [
+  "imge" => [],
+  "title" => [],
+  "description" => []
+];
+for ($i = 0; $i < 5; $i++) {
+  $row = mysqli_fetch_array($q);
+  $mas['imge'][$i] = $row[5];
+  $mas['title'][$i] = $row[1];
+  $mas['description'][$i] = $row[2];
+}
 
-  <script>
-    $(document).ready(function() {
-      $('#myclock').thooClock({
-        size: $(document).width() / 1.4,
-        dialColor: '#fff',
-        dialBackgroundColor: 'transparent',
-        secondHandColor: '#F3A829',
-        minuteHandColor: '#e74c3c',
-        hourHandColor: '#8bad4e',
-        showNumerals: true,
-        brandText: 'BootstrapTema',
-        brandText2: 'Russia',
-      });
-
-    });
-  </script>
-  <!-- /clock -->
-  <!-- <main id="mains"> -->
-  <span id="message_box"></span>
-
-  <?php
-  include("connect.php");
-  $s = "select * from stock ORDER by `data1` DESC";
-  $q = mysqli_query($link, $s);
-  $mas = [
-    "imge" => [],
-    "title" => [],
-    "description" => []
-  ];
-  for ($i = 0; $i < 5; $i++) {
-    $row = mysqli_fetch_array($q);
-    $mas['imge'][$i] = $row[5];
-    $mas['title'][$i] = $row[1];
-    $mas['description'][$i] = $row[2];
-  }
-
-  ?>
+?>
+<div class="container" id="contin">
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <ol class="carousel-indicators">
       <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
@@ -114,7 +83,7 @@ include("header.php");
       <div class="carousel-item">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
           <rect width="100%" height="100%" fill="#777" />
-          <img src="imge/stock/<?=$mas['imge'][3]; ?>">
+          <img src="imge/stock/<?= $mas['imge'][3]; ?>">
         </svg>
 
         <div class="container">
@@ -150,25 +119,72 @@ include("header.php");
       <span class="visually-hidden">Next</span>
     </a>
   </div>
+  <!-- часы -->
+  <link href="css/clock.css" rel="stylesheet">
+  <!-- /clock -->
+  <div class="sec-tl text-center">
+    <span class="theme-clr">Цените своё время!!!</span>
+    <h2 itemprop="headline">Делаем быстро и <span class="theme-clr">Качественно</span></h2>
+  </div><!-- Sec Title -->
+  <div class="srv-wrp remove-ext7">
+
+
+    <div class="camp-wrp remove-ext5">
+      <div class="row" id="load_products">
+
+      </div>
+    </div><!-- Services Wrap -->
+    <!-- конец карточек -->
+  </div>
+  <br />
+  <!-- clock1-s -->
+
+  <!-- CLOCK1-finish -->
+  <div>
+    <section>
+      <div class="gap black-layer opc8">
+        <div class="fixed-bg" style="background-image: url(assets/images/para-new.png);"></div>
+        <div class="container">
+          <div class="shrt-fcts-wrp">
+            <div class="row">
+
+              <div class="col-md-5 col-sm-12 col-lg-5">
+                <img class="facts-mockup animated bounce" src="assets/images/Эл-removebg-preview.png" alt="mockup-image">
+              </div>
+              <div class="col-md-6 col-sm-12 col-lg-6">
+                <div class="fcts-wrp">
+                  <div class="sec-tl">
+                    <span>Youth Fire Stop Prevention & Intervention Program.</span>
+                    <h2 itemprop="headline">Few Facts About Naar</h2>
+                  </div><!-- Sec Title -->
+                  <p itemprop="description">Every live, every property we save does matter, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                  <ul class="fcts-lst">
+                    <li><span class="counter">369</span>
+                      <h6 itemprop="headline">Emergencies</h6>
+                    </li>
+                    <li><span class="counter">421</span>
+                      <h6 itemprop="headline">Traffic Crashes</h6>
+                    </li>
+                    <li><span class="counter">275</span>
+                      <h6 itemprop="headline">Fire Emergencies</h6>
+                    </li>
+                    <li><span class="counter">50</span>
+                      <h6 itemprop="headline">Year of Experience</h6>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-1 col-sm-12 col-lg-1"></div>
+            </div>
+          </div><!-- Short Facts Wrap -->
+        </div>
+      </div>
+    </section>
+  </div>
 </div>
-<!-- <div class="col-auto" class="col-5 text-center">
-  <a class="text-center"><img class="my_brend" class="text-center" src="imge/JPEG.jpg"></a>
-</div><br> -->
 
-
-
-
-<div class="container marketing">
-
-
-
-  <!-- Three columns of text below the carousel -->
-  <div class="row" id="load_products" class="card mb-6">
-
-  </div><!-- /.row -->
-</continue>
-</body>
 <script src="js/js.js"></script>
-  <?php
-  include("footer.php");
-  ?>
+
+<?php
+include("footer.php");
+?>

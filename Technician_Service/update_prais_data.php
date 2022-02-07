@@ -31,8 +31,8 @@ include("header.php");
   </div> -->
   <!-- Форма -->
 <!-- Форма Редактирование задачь -->
-<form>
-  <div class="container">
+<div class="container" id="up_prais">
+<form>  
     <div class="modal-body">
     <div>
           <!-- <p class="my_message" id="message_add_notask"></p>
@@ -59,12 +59,12 @@ include("header.php");
         </div>
       <br>
       <div>
-       <input type="button" class="mary" value="Редактировать событие" id="submit_update_prais" >
+       <input type="button" class="btn btn-success" value="Редактировать событие" id="submit_update_prais" >
        <br>
       </div>
   </div>
-</div>
 </form>
+</div>
     
     <script src="js/update_prais.js"></script>
     <script src="js/admin_list.js"></script>

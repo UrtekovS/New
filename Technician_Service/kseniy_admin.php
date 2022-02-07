@@ -21,9 +21,9 @@ include("header.php");
   <div class="peri">
     
   </div>
-  <div class="col-auto">
+  <!-- <div class="col-auto">
       <p class="text-center"><img class="my_brend"  src="imge/JPEG.jpg"></p>
-  </div><br>
+  </div><br> -->
   <form class="row gy-2 gx-3 align-items-center">
     <h3 id="lables" class="text-center">Вывод заявок, за период времени</h3>
     <tr>
@@ -40,16 +40,16 @@ include("header.php");
       <div class="col-auto">
       
         <!-- <input type="button" class="btn btn-primary" value="Вывод, за промежуток времени " id="Output"> -->
-        <button type="button" class="btn-primary1" id="Output" onclick="add_time();">Вывод</button>
+        <button type="button" class="btn btn-success" id="Output" onclick="add_time();">Вывод</button>
       </div>
       <div class="col-auto">
-        <button type="button" class="btn-primary1" id="return" onclick="tab_time();">Назад</button>
+        <button type="button" class="btn btn-success" id="return" onclick="tab_time();">Назад</button>
       </div>
       <div class="col-auto">
-      <button class="btn btn-primary" id="Exel" onclick="to_excel();">Выгрузить excel</button>
+      <button class="btn btn-success" id="Exel" onclick="to_excel();">Выгрузить excel</button>
       </div>
       <div class="col-auto">
-      <a class='btn btn-secondary' href='admbn_list.php' id="service" role='button' >Добавить сервис</a>
+      <a class='btn btn-success' href='admbn_list.php' id="service" role='button' >Добавить сервис</a>
       </div>
   </form><br>
   
@@ -59,7 +59,7 @@ include("header.php");
   
   </div><br>
   
-  <div class="pe" id="pere_time">
+  <div class="table-responsive" id="pere_time">
     <h3>Таблица заявок:</h3>
     <h5 id="summa" class="text-centr">Итоговая сумма всех заявок</h5>
   <input disabled type="text" class="text-center" readonly class="form-control-plaintext" id="all_summa_zayvoc" value="0">
@@ -74,7 +74,7 @@ include("header.php");
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/diary_tb.js"></script>
   <script src="js/period_of_time.js"></script>
-  <script src = "js/jquery.table2excel.min.js"> </script>
+  <script src="js/jquery.table2excel.min.js"> </script>
 
 
 

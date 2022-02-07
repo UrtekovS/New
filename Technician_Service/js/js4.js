@@ -197,7 +197,7 @@ function history_orders_load(){
                 "<td>"+mas[i][1]+"</td>"+
                 "<td>"+mas[i][2]+"</td>"+
                 "<td>"+mas[i][6]+"</td>"+
-                "<td><a class='btn btn-primary' href='order_composition.php?id_order="+mas[i][0]+"'>Подробнее</a></td> </tr>";
+                "<td><a class='btn btn-success' href='order_composition.php?id_order="+mas[i][0]+"'>Подробнее</a></td> </tr>";
             }
             s+=" </tbody>    </table>";
             let history_orders=document.getElementById("history_orders");
@@ -209,10 +209,3 @@ function history_orders_load(){
 }
 
 
-function to_excel(){
-    $(document).ready(function () {
-        $("#tableId").table2excel({
-        filename: "new.xls"
-        });
-        });
-}

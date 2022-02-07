@@ -1,9 +1,11 @@
 /* ksrniy_admin */
-/* body{
-    margin-top: 2%; */
-/* } */
+ /* body{
+    margin-top: 1%; 
+} */
+#up_prais{margin-top: 12%;}
+
 #kseniy{
-    margin-top: 2%;
+    margin-top: 13%;
 }
 #submit_load_task{
     
@@ -239,13 +241,7 @@
      background: linear-gradient(to right, #e2f8a6, #cef8da,#FC354C);
      /* padding-left: 37%; */
  }
- #form_registration{
-    color: black;
-    background: #ff829d; 
-    background: -webkit-linear-gradient(to right, #fffd8d, #5cf4ff);
-    background: linear-gradient(to right, #e5fda4, #9afdb8,#35cdfc);
-    
- }
+ 
  #closee{
      color: rgb(255, 0, 0);
      font-size: 18px;
@@ -288,16 +284,7 @@
      padding-left: 10%; 
     font-size: 28px;
 }
-#show_modal_registration{
-    /* margin-left: 5%;  */
-    padding-left: 8%;
-    width: 34%;
-   display: none;
-   color: black;
-   background: #d6fc7f; 
-   background: -webkit-linear-gradient(to right, #bbf4f8, #5cd1ff);
-   background: linear-gradient(to right, #e2f8a6, #cef8da,#35d4fc);
-}
+
 #formTim{
 
     height: 70%;

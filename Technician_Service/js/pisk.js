@@ -11,12 +11,21 @@ function poisck(){
             let d = JSON.parse(data);
             let s="";
             for (let i=0; i<d.length;i++){
-                s+="<div class='col-lg-4'>"+
-                "<img class='rounded-circle' src='imge/products/"+d[i]['photo']+"' alt='Generic placeholder image' width='140' height='140'>"+
-                "<h2>"+d[i]['name']+"</h2>"+
-                "<h4>Стоимость:"+d[i]['price']+"</h4>"+
-                "<p><a class='btn btn-secondary' href='product_details.php?id_tovar="+d[i]['id']+"' role='button' >Подробнее &raquo;</a></p>"+
-            "</div><!-- /.col-lg-4 -->";
+                s+="<div class='col-md-4 col-sm-6 col-lg-4'>"+
+                "<div class='camp-bx'>"+
+                  "<div class='camp-thmb'>"+
+                    "<a href='#' title='' itemprop='url'><img src='imge/products/"+d[i]['photo']+"' alt='camp-img1.jpg' itemprop='image'></a>"+
+                    "<div class='camp-inf'>"+ 
+                    "<h5 itemprop='headline'><a class='text-start'>"+d[i]['name']+"</a></h5>"+   
+                    "</div>"+            
+                  "</div>"+
+                  "<div class='prg-wrp'>"+            
+                      
+                      "<span><i class='fas fa-map-marker-alt theme-clr'></i><p>Стоимость:"+d[i]['price']+"</p></span>"+
+                    "<a class='btn  btn-success' href='product_details.php?id_tovar="+d[i]['id']+"' title='' itemprop='url'>Подробние</a>"+
+                  "</div>"+
+                "</div>"+
+                "</div><!-- /.col-lg-4 -->";
             }
             let load_products=document.getElementById("load_products");
             load_products.innerHTML=s;
