@@ -25,9 +25,14 @@ function load_products_top(){
         success: function(data){
             //alert(data);
             let d=JSON.parse(data);
+            
 
+            
             let s="";
             for (let i=0; i<d.length;i++){
+                if ((i+1)%3==1){
+                    s+="<div class='row' >"
+                }
                 s+="<div class='col-md-4 col-sm-6 col-lg-4'>"+
                 "<div class='camp-bx'>"+
                   "<div class='camp-thmb'>"+
@@ -43,8 +48,12 @@ function load_products_top(){
                   "</div>"+
                 "</div>"+
                 "</div><!-- /.col-lg-4 -->";
+                if ((i+1)%3==0){
+                    s+="</div>";
+                }
                            
             }
+            
             let load_products=document.getElementById("load_products");
             load_products.innerHTML=s;     
 
@@ -55,8 +64,4 @@ function load_products_top(){
 
 }
 
-let poisk_form=document.getElementById("poisk_form");
-poisk_form.onclick=function(){
-    let poisk_data =document.getElementById("poisk_data").value;
-    document.location.href = "poisk.php?dat="+poisk_data;
-};
+

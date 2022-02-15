@@ -94,11 +94,13 @@
           </a></div><!-- Logo -->
         <nav>
           <div id="topbar">
+            
             <ul>
               <li><a href="index.php" title="" itemprop="url">Главная</a></li>
               <li><a href="katalog.php" title="" itemprop="url">Каталог</a></li>          
-              <li><a title="" href="kseniy_admin.php" itemprop="url">Админ</a></li>
+              <li><a title="" href="kseniy_admin.php"  itemprop="url">Админ</a></li>
             </ul>
+
             <form class="d-flex" class="col-md-9" onsubmit="return false;">
             <input class="form-control me-2" type="search" placeholder="Поиск по катологу" aria-label="Search" id="poisk">
             <a  href="#" id="Search" title="" itemprop="url" onclick="poisck();" ><i class="fas fa-search"></i></a>                   

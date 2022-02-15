@@ -6,7 +6,6 @@ include("header.php");
 
 <!-- <body> -->
 
-
 <!-- <main id="mains"> -->
 <span id="message_box"></span>
 
@@ -46,9 +45,12 @@ for ($i = 0; $i < 5; $i++) {
 
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1><?= $mas['title'][0]; ?></h1>
-            <p><?= $mas['description'][0]; ?></p>
-
+          <div class="camp-inf">
+          <div class="sec-tl text-center">
+            <h1 class="waie"><?= $mas['title'][0]; ?></h1>
+            </div>
+            <p class="text-center"><?= $mas['description'][0]; ?></p>          
+          </div>
           </div>
         </div>
       </div>
@@ -60,10 +62,13 @@ for ($i = 0; $i < 5; $i++) {
 
         <div class="container">
           <div class="carousel-caption">
-            <h1><?= $mas['title'][1]; ?></h1>
-            <p><?= $mas['description'][1]; ?></p>
-
+          <div class="camp-inf">
+          <div class="sec-tl text-center">
+            <h1 class="waie"><?= $mas['title'][1]; ?></h1>
+            </div>
+            <p class="text-center"><?= $mas['description'][1]; ?></p>
           </div>
+        </div>
         </div>
       </div>
       <div class="carousel-item">
@@ -74,10 +79,13 @@ for ($i = 0; $i < 5; $i++) {
 
         <div class="container">
           <div class="carousel-caption text-end">
-            <h1><?= $mas['title'][2]; ?></h1>
-            <p><?= $mas['description'][2]; ?></p>
-
+          <div class="camp-inf">
+          <div class="sec-tl text-center">
+            <h1 class="waie"><?= $mas['title'][2]; ?></h1>
+            </div>
+            <p class="text-center"><?= $mas['description'][2]; ?></p>
           </div>
+        </div>
         </div>
       </div>
       <div class="carousel-item">
@@ -86,11 +94,14 @@ for ($i = 0; $i < 5; $i++) {
           <img src="imge/stock/<?= $mas['imge'][3]; ?>">
         </svg>
 
-        <div class="container">
+        <div class="container">        
           <div class="carousel-caption">
-            <h1><?= $mas['title'][3]; ?></h1>
-            <p><?= $mas['description'][3]; ?></p>
-
+          <div class="camp-inf">
+          <div class="sec-tl text-center">
+            <h1 class="waie"><?= $mas['title'][3]; ?></h1>
+            </div>
+            <p class="text-center"><?= $mas['description'][3]; ?></p>
+          </div>
           </div>
         </div>
       </div>
@@ -100,11 +111,13 @@ for ($i = 0; $i < 5; $i++) {
           <img src="imge/stock/<?= $mas['imge'][4]; ?>">
         </svg>
 
-        <div class="container">
+        <div class="container">       
           <div class="carousel-caption text-end">
-            <h1><?= $mas['title'][4]; ?></h1>
-            <p><?= $mas['description'][4]; ?></p>
-
+          <div class="camp-inf">
+          <div class="sec-tl text-center">
+            <h1 class="waie"><?= $mas['title'][4]; ?></h1>
+            </div>
+            <p class="text-center"><?= $mas['description'][4]; ?></p></div>
           </div>
         </div>
       </div>
@@ -129,18 +142,24 @@ for ($i = 0; $i < 5; $i++) {
   <div class="srv-wrp remove-ext7">
 
 
-    <div class="camp-wrp remove-ext5">
-      <div class="row" id="load_products">
+    <div class="camp-wrp remove-ext5" id="load_products">
+      <div class="row">
 
       </div>
     </div><!-- Services Wrap -->
+    <div class="row">
+      <span class="theme-clr">&nbsp</span>
+      <span class="theme-clr">&nbsp</span>
+      <span class="theme-clr">&nbsp</span>
+    </div>
     <!-- конец карточек -->
   </div>
   <br />
   <!-- clock1-s -->
 
   <!-- CLOCK1-finish -->
-  <div>
+  <div class="row">
+
     <section>
       <div class="gap black-layer opc8">
         <div class="fixed-bg" style="background-image: url(assets/images/para-new.png);"></div>
@@ -156,7 +175,7 @@ for ($i = 0; $i < 5; $i++) {
                   <div class="sec-tl">
                     <span>Youth Fire Stop Prevention & Intervention Program.</span>
                     <h2 itemprop="headline">Few Facts About Naar</h2>
-                  </div><!-- Sec Title -->
+                  </div>
                   <p itemprop="description">Every live, every property we save does matter, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                   <ul class="fcts-lst">
                     <li><span class="counter">369</span>
@@ -176,9 +195,10 @@ for ($i = 0; $i < 5; $i++) {
               </div>
               <div class="col-md-1 col-sm-12 col-lg-1"></div>
             </div>
-          </div><!-- Short Facts Wrap -->
+          </div>
         </div>
       </div>
+
     </section>
   </div>
 </div>

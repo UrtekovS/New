@@ -14,24 +14,6 @@ var params = window
 
 let id = params["id"];
 
-//update_prais_bd();
-
-
-//  let status_user_button = 0;
-// $.ajax({
-//     url: 'autorizationStatus.php',
-//     method: 'post',
-//     dataType: 'html',
-//     data: "",
-//     success: function (data) {
-//         //alert(data);
-//         let mass_data = JSON.parse(data);
-//         status_user_button = mass_data["status"];
-//         let task = document.getElementById("task");
-//         task.value = mass_data["task"];
-//     }
-// }); 
-
 
 $.ajax({
     url: 'load_udate_prais_bd.php',

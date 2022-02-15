@@ -80,7 +80,7 @@
 										<li><a href="team-2.html" title="" itemprop="url">Fire Fighters 2</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html" title="" itemprop="url">Contact</a></li>
+                                <li><a href="contact.php" title="" itemprop="url">Contact</a></li>
                             </ul>
                             <a class="srch-btn theme-bg brd-rd3" href="#" title="" itemprop="url"><i class="fas fa-search"></i></a>
                         </div>
@@ -358,7 +358,7 @@
                                 <div class="camp-bx">
                                     <div class="camp-thmb">
                                         <a href="campaign-detail.html" title="" itemprop="url"><img src="assets/images/resources/camp-img3.jpg" alt="camp-img3.jpg" itemprop="image"></a>
-                                        <div class="camp-inf">
+                                        <div class="">
                                             <h5 itemprop="headline"><a href="campaign-detail.html" title="" itemprop="url">Support after an Incident</a></h5>
                                             <span><i class="fas fa-map-marker-alt theme-clr"></i>Glasgow, DO4 89GR 8901 Marmora Road</span>
                                         </div>
@@ -381,7 +381,7 @@
         </section>
         <section>
             <div class="gap theme-bg-layer opc9 hlf-parallax">
-                <div class="fixed-bg" style="background-image: url(assets/images/parallax1.jpg);"></div>
+                <div class="fixed-bg "style="background-image: url(assets/images/parallax1.jpg);"></div>
                 <div class="sec-tl text-center">
                     <span>We provide you with practical actions, advice and resources.</span>
                     <h2 itemprop="headline">Operational Videos</h2>

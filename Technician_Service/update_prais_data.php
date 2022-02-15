@@ -2,35 +2,7 @@
 include("header.php");
 ?>
 <link href="Css/style(t).css" rel="stylesheet">
-<!-- <div id="task_historye1">
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">№</th>
-          <th scope="col">задача</th>
-          <th scope="col">дата и время</th>
-          <th scope="col">выполнено/нет</th>
-          <th scope="col">категория</th>
-          
-        </tr>
-      </thead>
-      <tbody id="tableE">
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td><input type="checkbox" id="inlineCheckbox1" value="option1"></td>
-          <td>Выпадающий список</td>
-          <td>
-          <td><button class="btn btn-primary" type="button" id="cnopDe" onclick="update_task();">Редактировать событие</button>
-            <a href="diary.php" class="btn btn-primary" type="button" id="updater1" >Вернуться!</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div> -->
-  <!-- Форма -->
-<!-- Форма Редактирование задачь -->
+
 <div class="container" id="up_prais">
 <form>  
     <div class="modal-body">
