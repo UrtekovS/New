@@ -44,14 +44,14 @@ include("header.php");
    
     <label class="text-center"> № Тех.- сервис</label>
     <input type="text" id="id_product_order" class="form-control" value="num" disabled>
-    <input type="submit" class="btn btn-success" value="Отправить ииформацию" id="submit_registration">
+    <input type="submit" class='theme-btn brd-rd5' value="Отправить ииформацию" id="submit_registration">
     </div>
 </form>
 <!-- конец формы для заявки -->
 
   <br/>
 <div class="text-center" class="container">
-  <h3><a class="btn btn-success" aria-current="page" href="katalog.php" id="revers1">Вернуться в каталог</a></h3>
+  <h3><a class='theme-btn brd-rd5' aria-current="page" href="katalog.php" id="revers1">Вернуться в каталог</a></h3>
   <div class="sec-tl text-center">
     <span class="theme-clr">Цените своё время!!!</span>
     <h2 itemprop="headline">Делаем быстро и <span class="theme-clr">Качественно</span></h2>
@@ -98,7 +98,7 @@ include("header.php");
   </section>
 </div>
 <script src="js/js2.js"></script>
-<script src="js/js.js"></script>
+<!-- <script src="js/js.js"></script> -->
 <?php
 include("footer.php");
 ?>

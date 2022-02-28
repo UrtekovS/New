@@ -7,12 +7,7 @@
     background: -webkit-linear-gradient(to right, #0ABFBC, #dc8ffa);
     background: linear-gradient(to right, #98faff, #fbd2fb);
 }
-#admin_lists{
-margin-top: 12%;
-background: #C9D6FF;
-background: -webkit-linear-gradient(to right, #f0fdbf, #C9D6FF);
-background: linear-gradient(to right, #E2E2E2, #b4c5ff);
-}
+
 
 #message_regi2{
     
@@ -74,13 +69,16 @@ background: linear-gradient(to right, #E2E2E2, #b4c5ff);
     display: none;
 }
 #revers1{
- 
+    background: #9cf1fd;
+    background: -webkit-linear-gradient(to right, #0ABFBC, #dc8ffa);
+    background: linear-gradient(to right, #98faff, #fbd2fb);
         width: 35%;
         height: 35%;
+        /* Закругление
         border-radius: 24px;
         text-align: center;
         padding-left: 0;
-        padding-right: 0;
+        padding-right: 0; */
         font-size: 24px;
 }
  

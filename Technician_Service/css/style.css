@@ -16,6 +16,9 @@
 }
 #sidebarMenu{
     margin-top: 2%;
+    background: #9cf1fd;
+    background: -webkit-linear-gradient(to right, #bf0abf, #4bd1f3);
+    background: linear-gradient(to right, #f8e2fd, #c3ecf8);
 }
 #message_registration {
     display: none;
@@ -128,11 +131,7 @@
  #categ1{
     font-size: 24px;
  }
- #sidebarMenu{
-    background: #fc6335;
-    background: -webkit-linear-gradient(to right, #eef7bf, #e7f898);
-    background: linear-gradient(to right, #def0ea, #f7df57);
- }
+ 
  
  #summa{
      color: peru;
@@ -162,13 +161,7 @@
  #pere_time{
      display: none;
  }
- #exit_button{
-     /* display: none; */
-    background: #fc6335;
-    background: -webkit-linear-gradient(to right, #dffa56, #d6fd29);
-    background: linear-gradient(to right, #71f1c9, #fafc90);
-    color: rgb(2, 27, 2);
- }
+
  #zayv{
      /* display: none; */
     background: #fc6335;

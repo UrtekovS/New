@@ -32,7 +32,7 @@ $.ajax({
                 " <h4 class='mb-0'>" + d['name'] + "</h4>" +
                 "<div class='mb-1 text-muted'><p class='fs-5'>Стоимость -> " + d['price'] + "</p></div>" +
                 
-                "<button class='btn btn-secondary' class='fs-4' data-bs-toggle='modal' data-bs-target='#exampleModal2' id='zayvca' onclick='add_tovar_korzina(" + d['id'] + ")'>Отправить заявку</button>"+
+                "<button class='theme-btn brd-rd5' class='fs-4' data-bs-toggle='modal' data-bs-target='#exampleModal2' id='zayvca' onclick='add_tovar_korzina(" + d['id'] + ")'>Отправить заявку</button>"+
                 "</div>" +
                 "<div class='col-auto d-none d-lg-block'>" +
                 "<img class='bd-placeholder-img' width='170' height='100' src='imge/products/" + d['photo'] + "' alt='Generic placeholder image' >" +
@@ -48,7 +48,7 @@ $.ajax({
                 " <h4 class='mb-0'>" + d['name'] + "</h4>" +
                 "<div class='mb-1 text-muted'><p class='fs-5'>Стоимость ->" + d['price'] + "</p></div>" +
                 
-                "<button class='btn btn-secondary' class='fs-4' data-bs-toggle='modal' data-bs-target='#exampleModal2' id='zayvca' onclick='add_tovar_korzina(" + d['id'] + ")'>Отправить заявку</button>"+
+                "<button class='theme-btn brd-rd5' class='fs-4' data-bs-toggle='modal' data-bs-target='#exampleModal2' id='zayvca' onclick='add_tovar_korzina(" + d['id'] + ")'>Отправить заявку</button>"+
                 "</div>" +
                 "<div class='col-auto d-none d-lg-block'>" +
                 "<img class='bd-placeholder-img' width='170' height='100 src='imge/products/" + d['photo'] + "' alt='Generic placeholder image' >" +
@@ -106,7 +106,7 @@ function add_tovar_korzina() {
                                 " <h4 class='mb-0'>" + d['name'] + "</h4>" +
                                 "<div class='mb-1 text-muted'><p class='fs-5'> Стоимость ->" + d['price'] + "</p> </div>" +
                                 //"<p class='card-text mb-auto'>"+d['description']+"</p>"+
-                                "<button class='btn btn-secondary' class='fs-4' data-bs-toggle='modal' data-bs-target='#exampleModal2' id='zayvca' onclick='add_tovar_korzina(" + d['id'] + ")'>Отправить заявку</button>"+
+                                "<button class='theme-btn brd-rd5' class='fs-4' data-bs-toggle='modal' data-bs-target='#exampleModal2' id='zayvca' onclick='add_tovar_korzina(" + d['id'] + ")'>Отправить заявку</button>"+
 
                                 "</div>" +
                                 "<div class='col-auto d-none d-lg-block'>" +
@@ -123,7 +123,7 @@ function add_tovar_korzina() {
                                 " <h4 class='mb-0'>" + d['name'] + "</h4>" +
                                 "<div class='mb-1 text-muted'><p class='s-5'> Стоимость->" + d['price'] + "</p></div>" +
                                
-                                "<button class='btn btn-secondary' class='fs-4' data-bs-toggle='modal' data-bs-target='#exampleModal2' id='zayvca' onclick='add_tovar_korzina(" + d['id'] + ")'>Отправить заявку</button>"+
+                                "<button class='theme-btn brd-rd5' class='fs-4' data-bs-toggle='modal' data-bs-target='#exampleModal2' id='zayvca' onclick='add_tovar_korzina(" + d['id'] + ")'>Отправить заявку</button>"+
                                 "</div>" +
                                 "<div class='col-auto d-none d-lg-block'>" +
                                 "<img class='bd-placeholder-img' width='170' height='100 src='imge/products/" + d['photo'] + "' alt='Generic placeholder image' >" +
@@ -151,19 +151,19 @@ function add_tovar_korzina() {
                                 let z = "";
                                 if (data !== 0) {
 
-                                    z += "<label class='form-check-label'>Имя</label>" +
+                                    z += "<p class='text-lift'>Имя</p>" +
                                         "<input type='text' id='last_name' class='form-control' required>" +
-                                        "<label class='form-check-label'>Телефон</label>" +
+                                        "<p class='text-lift'>Телефон</p>" +
                                         "<input type='text' id='phone' class='form-control' required value='+7  '>" +
-                                        "<label class='form-check-label'>Адрес</label>" +
+                                        "<p class='text-lift'>Адрес</p>" +
                                         "<input type='text' id='first_name' class='form-control' value='Город     ,ул     ,дм    ,кв    '>" +
-                                        "<label class='form-check-label'>Укажите дату и врея удобное вам</label>" +
+                                        "<p class='text-lift'>Укажите дату и время удобную вам!</p>" +
                                         "<input id='date_of_brith' class='form-control' type='datetime-local' value='2021-00-00T00:00:00' required>" +
-                                        "<label class='form-check-label'>№ Тех.- сервис</label>" +
+                                        "<p class='text-lift'>№Тех.сервис</p>" +
                                         "<input type='text' id='id_product_order' class='form-control' value=" + id_product_order['0'] + " disabled>" +
                                         "</select>" +
                                         "<br>" +
-                                        "<input type='submit' class='btn btn-primary' value='Отправить ииформацию' id='submit_registration'></input>" +
+                                        "<input type='submit' class='theme-btn brd-rd5' value='Отправить ииформацию' id='submit_registration'></input>" +
                                         "</div></form></div>";
                                 }
                                 form_registration = document.getElementById('form_registration');

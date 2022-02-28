@@ -1,22 +1,25 @@
 <?php
 include("header.php");
+
 ?>
 <link href="Css/style(t).css" rel="stylesheet">
+<div class="sec-tl text-center">
+ <h4 itemprop="headline"><span class="theme-clr">Редактор сервиса</span></h4>
+</div>
+
 
 <div class="container" id="up_prais">
 <form>  
     <div class="modal-body">
     <div>
-          <!-- <p class="my_message" id="message_add_notask"></p>
-          <p class="my_message" id="message_add_taskc"></p> -->
           <div id="form_load_prais">
-            <label class="form-check-label">Название</label>
+            <p class="text-lift">Название</p>
             <input type="text" id="names" class="form-control">
-            <label class="form-check-label">Стоимость</label>
+            <p class="text-lift">Стоимость</pp>
             <input type="text" id="prices" class="form-control">   
-            <label class="form-check-label">Фото</label>
-            <input type="text" id="photos" class="form-control">          
-            <label class="form-check-label" disabled>Категория</label>
+            <p class="text-lift">Фото</p>
+            <input type="text" name="file"  id="photos" class="form-control" disabled>          
+            <p class="text-lift" disabled>Категория</p>
           <div id="select_status_id">
               <select class="form-select" id="name_cat">
                 <option value="1">mbmnn</option>
@@ -31,7 +34,7 @@ include("header.php");
         </div>
       <br>
       <div>
-       <input type="button" class="btn btn-success" value="Редактировать событие" id="submit_update_prais" >
+       <input class='theme-btn brd-rd5' type="button" name="update" value="Редактировать" id="submit_update_prais" >
        <br>
       </div>
   </div>

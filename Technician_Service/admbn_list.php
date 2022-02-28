@@ -3,18 +3,23 @@ include("header.php");
 ?>
 
 
+      
+      
 <!--Часы-->
 <div class="container breakpoints" id="bodi1">
-  <p class="lead text-center" id="labls">Цените время! </p>
+<div class="sec-tl text-center">
+        <h6 itemprop="headline"><span class="theme-clr">Цените время</span></h6>
   <div class="row">
-    <h3 class="card-title text-center" id="adm_clock">
-      <div class="d-flex">
+    <h3 class="card-title text-center">
+      <div class="text-center"id="adm_clock">
         <a><span class="badge hours" id="hsu"></span></a> :
         <a><span class="badge min" id="mine"></span></a> :
         <a><span class="badge sec" id="sece"></span></a>
       </div>
     </h3>
+    </div>
   </div><!-- /.flexbox clock row -->
+  
   <script>
     $(document).ready(function() {
       setInterval(function() {
@@ -34,9 +39,9 @@ include("header.php");
   <link href="css/carousel.css" rel="stylesheet">
   <div class="container" id="admin_lists">
     <!-- Table praise -->
-    <h3>
-      <div id="prais">Прайс</div>
-    </h3>
+    <div class="sec-tl text-center">
+        <h4 itemprop="headline"><span class="theme-clr">Прайс</span></h4>
+    </div>
     <div id="history_table">
 
 
@@ -66,7 +71,10 @@ if(isset($_POST['submit']) and $_FILES){
 ?>
 <!-- Форма дабавления сервеса -->
 <form  method="post" enctype="multipart/form-data">
-  <h3 class="col-md-6" id="labes">Добавить сервис</h3>
+  <h3 class="col-md-6" id="labes"></h3>
+  <div class="sec-tl text-center">
+        <h4 itemprop="headline"><span class="theme-clr">Добавить сервис</span></h4>
+  </div>
   <div>
     <div class="container">
       <div class="modal-body">
@@ -74,14 +82,14 @@ if(isset($_POST['submit']) and $_FILES){
           <p class="my_message" id="message_add_notask"></p>
           <p class="my_message" id="message_add_taskc"></p>
           <div id="form_load_task">
-            <label class="form-check-label">Название</label>
+          <p class="text-lift">Название</p>
             <input type="text" id="task" name="task" class="form-control">
-            <label class="form-check-label">Стоимость</label>
+            <p class="text-lift">Стоимость</p>
             <input type="text" id="pricew" name="pricew" class="form-control">
             <br/>
             <p><input type="file" name="file" multiple accept="image/*,image/jpeg,image/png,image/jpg,image/jfif">
 
-            <label class="form-check-label" disabled>Категория</label>
+            <p class="text-lift">Категория</p>
             <div id="select_status_id">
               <select class="form_select" id="name_categ" name="name_categ">
                 <option value="1">mbmnn</option>

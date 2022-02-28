@@ -97,13 +97,12 @@
     display: block;
 }
 #pere_time{
-    background: #f31142;
+    /* background: #f31142;
     background: -webkit-linear-gradient(to right, #61f83b, #dcaafd);
-    background: linear-gradient(to right, #aaffb3, #f59bf8);
-    padding-left: 20%;
+    background: linear-gradient(to right, #aaffb3, #f59bf8); */
     font-size: 16px;
     display: block;
-    padding-left: 40%;
+    
 }
 #ptriud2{
     background: #f31142;
@@ -262,31 +261,20 @@
     background: -webkit-linear-gradient(to right, #eefeff, #d9f1fa);
     background: linear-gradient(to right, #f1f8dd, #eafdef,#f8dee1)  
  }
- #prais{
-     margin-top: 5%;
-    color: black;
+ /* #prais{ */
+    
+    /* color: black;
     background: #ff829d; 
     background: -webkit-linear-gradient(to right, #bbf4f8, #5cd1ff);
-    background: linear-gradient(to right, #e2f8a6, #cef8da,#72fd3b);
+    background: linear-gradient(to right, #e2f8a6, #cef8da,#72fd3b); */
     /* padding-left: 47%; */
- }
+ /* } */
 
  #unauthorized{
  margin-left: 25%;
     /* width: 30%; */
  }
- #labes{
-     width: 43%;
-     height: 45%;
-    margin-left: 30%;
-    /* padding-left: 40%; */
-    color: rgb(2, 27, 2);
-    background: #f31142;
-    background: -webkit-linear-gradient(to right, #61f83b, #36d0ff);
-    background: linear-gradient(to right, #87ff91, #8de4ff);
-     padding-left: 10%; 
-    font-size: 28px;
-}
+ 
 
 #formTim{
 
@@ -294,28 +282,8 @@
     margin-left: 30%;
 }
 
-#revers1{
-     /* margin-left: 39%;  */
-     /* padding-left: 24px; */
-    width: 25%; 
-    /* padding-left: 12%; */
-    font-size: 24px;
-   color: black;
-   background: #d6fc7f; 
-   background: -webkit-linear-gradient(to right, #bbf4f8, #5cd1ff);
-   background: linear-gradient(to right, #e2f8a6, #cef8da,#35d4fc);
-}
-#exit_button{
-    /* display: none; */
-    margin-left: 90%;
-    padding-left: 10%;
-    width: 200px;
-   background: #fc6335;
-   background: -webkit-linear-gradient(to right, #dffa56, #d6fd29);
-   background: linear-gradient(to right, #71f1c9, #fafc90);
-   color: rgb(2, 27, 2);
-   
-}
+
+
 #service{
     color: black;
     font-size: 20px;
@@ -345,7 +313,7 @@
     background: linear-gradient(to right, #e0f892, #6feaee);
 } 
 #adm_clock{
-    margin-left: 45%;
+   margin-left: 24%;
     font-size: 28px;
     color: black;
   }
