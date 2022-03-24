@@ -45,12 +45,12 @@ for ($i = 0; $i < 5; $i++) {
 
         <div class="container">
           <div class="carousel-caption text-start">
-          <div class="camp-inf">
-          <div class="sec-tl text-center">
-            <h1 class="waie"><?= $mas['title'][0]; ?></h1>
+            <div class="camp-inf">
+              <div class="sec-tl text-center">
+                <h1 class="waie"><?= $mas['title'][0]; ?></h1>
+              </div>
+              <p class="text-center"><?= $mas['description'][0]; ?></p>
             </div>
-            <p class="text-center"><?= $mas['description'][0]; ?></p>          
-          </div>
           </div>
         </div>
       </div>
@@ -62,13 +62,13 @@ for ($i = 0; $i < 5; $i++) {
 
         <div class="container">
           <div class="carousel-caption">
-          <div class="camp-inf">
-          <div class="sec-tl text-center">
-            <h1 class="waie"><?= $mas['title'][1]; ?></h1>
+            <div class="camp-inf">
+              <div class="sec-tl text-center">
+                <h1 class="waie"><?= $mas['title'][1]; ?></h1>
+              </div>
+              <p class="text-center"><?= $mas['description'][1]; ?></p>
             </div>
-            <p class="text-center"><?= $mas['description'][1]; ?></p>
           </div>
-        </div>
         </div>
       </div>
       <div class="carousel-item">
@@ -79,13 +79,13 @@ for ($i = 0; $i < 5; $i++) {
 
         <div class="container">
           <div class="carousel-caption text-end">
-          <div class="camp-inf">
-          <div class="sec-tl text-center">
-            <h1 class="waie"><?= $mas['title'][2]; ?></h1>
+            <div class="camp-inf">
+              <div class="sec-tl text-center">
+                <h1 class="waie"><?= $mas['title'][2]; ?></h1>
+              </div>
+              <p class="text-center"><?= $mas['description'][2]; ?></p>
             </div>
-            <p class="text-center"><?= $mas['description'][2]; ?></p>
           </div>
-        </div>
         </div>
       </div>
       <div class="carousel-item">
@@ -94,14 +94,14 @@ for ($i = 0; $i < 5; $i++) {
           <img src="imge/stock/<?= $mas['imge'][3]; ?>">
         </svg>
 
-        <div class="container">        
+        <div class="container">
           <div class="carousel-caption">
-          <div class="camp-inf">
-          <div class="sec-tl text-center">
-            <h1 class="waie"><?= $mas['title'][3]; ?></h1>
+            <div class="camp-inf">
+              <div class="sec-tl text-center">
+                <h1 class="waie"><?= $mas['title'][3]; ?></h1>
+              </div>
+              <p class="text-center"><?= $mas['description'][3]; ?></p>
             </div>
-            <p class="text-center"><?= $mas['description'][3]; ?></p>
-          </div>
           </div>
         </div>
       </div>
@@ -111,13 +111,14 @@ for ($i = 0; $i < 5; $i++) {
           <img src="imge/stock/<?= $mas['imge'][4]; ?>">
         </svg>
 
-        <div class="container">       
+        <div class="container">
           <div class="carousel-caption text-end">
-          <div class="camp-inf">
-          <div class="sec-tl text-center">
-            <h1 class="waie"><?= $mas['title'][4]; ?></h1>
+            <div class="camp-inf">
+              <div class="sec-tl text-center">
+                <h1 class="waie"><?= $mas['title'][4]; ?></h1>
+              </div>
+              <p class="text-center"><?= $mas['description'][4]; ?></p>
             </div>
-            <p class="text-center"><?= $mas['description'][4]; ?></p></div>
           </div>
         </div>
       </div>
@@ -131,16 +132,48 @@ for ($i = 0; $i < 5; $i++) {
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </a>
+    
   </div>
-  <!-- часы -->
-  <link href="css/clock.css" rel="stylesheet">
+ 
+    
+
+  <script>
+    $(document).ready(function() {
+      $('#myclock').thooClock({
+        size: $(document).width() / 1.4,
+        dialColor: '#000000',
+        dialBackgroundColor: 'transparent',
+        secondHandColor: '#F3A829',
+        minuteHandColor: '#e74c3c',
+        hourHandColor: '#8bad4e',
+        showNumerals: true,
+        brandText: 'BootstrapTema',
+        brandText2: 'Russia',
+      });
+
+    });
+  </script>
+  <link href="css/clock.css" rel="stylesheet"> 
   <!-- /clock -->
   <div class="sec-tl text-center">
     <span class="theme-clr">Цените своё время!!!</span>
+    <!-- часы -->
+  <div class="container" id="clock_ind">
+    <div class="row">
+      
+      <div class="col-md-6 col-md-offset-3">
+
+        <div id="myclock"></div>
+
+      </div>
+    
+    </div><!-- ./row -->
+  </div><!-- ./container -->
     <h2 itemprop="headline">Делаем быстро и <span class="theme-clr">Качественно</span></h2>
   </div><!-- Sec Title -->
   <div class="srv-wrp remove-ext7">
 
+   
 
     <div class="camp-wrp remove-ext5" id="load_products">
       <div class="row">
@@ -173,24 +206,12 @@ for ($i = 0; $i < 5; $i++) {
               <div class="col-md-6 col-sm-12 col-lg-6">
                 <div class="fcts-wrp">
                   <div class="sec-tl">
-                    <span>Youth Fire Stop Prevention & Intervention Program.</span>
-                    <h2 itemprop="headline">Few Facts About Naar</h2>
+                    <div class="logo" style="width: 100%;"><a title="Logo" itemprop="url"><img src="imge/JPEG-removebg-preview.png" alt="logo.png" itemprop="image"></a></div>
+                    <p text text-center>ООО "Техник-сервис" Мы работаем на совесть.</p>
+                    <h2 itemprop="headline"><?= $mas['title'][3]; ?></h2>
                   </div>
-                  <p itemprop="description">Every live, every property we save does matter, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                  <ul class="fcts-lst">
-                    <li><span class="counter">369</span>
-                      <h6 itemprop="headline">Emergencies</h6>
-                    </li>
-                    <li><span class="counter">421</span>
-                      <h6 itemprop="headline">Traffic Crashes</h6>
-                    </li>
-                    <li><span class="counter">275</span>
-                      <h6 itemprop="headline">Fire Emergencies</h6>
-                    </li>
-                    <li><span class="counter">50</span>
-                      <h6 itemprop="headline">Year of Experience</h6>
-                    </li>
-                  </ul>
+                  <p class="text-center"><?= $mas['description'][3]; ?></p>
+
                 </div>
               </div>
               <div class="col-md-1 col-sm-12 col-lg-1"></div>

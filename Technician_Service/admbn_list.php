@@ -103,9 +103,7 @@ if(isset($_POST['submit']) and $_FILES){
         </div>
         <br>
         <div>
-          <!--<input type="button" class="btn btn-primary" value="Добавить сервис" id="insert_task" onclick="add_task();">-->
-         <input type="submit" class="btn btn-success" name="submit" id="fotoS" value="Отправить">
-        
+         <input type="submit"  class='theme-btn brd-rd5'  name="submit" id="fotoS" value="Отправить">
         </div>
       </div>
     </div>

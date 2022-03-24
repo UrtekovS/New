@@ -2,7 +2,10 @@
 include("header.php");
 ?>
 
+
+
 <link href="css/catalog.css" rel="stylesheet">
+`<div class="text-lift" class="container">`
 <div class="sec-tl text-center"></div>
 
 <div class="srv-wrp remove-ext7"></div>
@@ -49,8 +52,8 @@ include("header.php");
 </form>
 <!-- конец формы для заявки -->
 
-  <br/>
-<div class="text-center" class="container">
+  
+  <div class="text-center" class="container">
   <h3><a class='theme-btn brd-rd5' aria-current="page" href="katalog.php" id="revers1">Вернуться в каталог</a></h3>
   <div class="sec-tl text-center">
     <span class="theme-clr">Цените своё время!!!</span>
@@ -69,12 +72,13 @@ include("header.php");
             </div>
             <div class="col-md-6 col-sm-12 col-lg-6">
               <div class="fcts-wrp">
-                <div class="sec-tl">
-                  <span>Youth Fire Stop Prevention & Intervention Program.</span>
-                  <h2 itemprop="headline">Few Facts About Naar</h2>
+                <div class="sec-tl"><div class="logo" style="width: 100%;"><a title="Logo" itemprop="url"><img src="imge/JPEG-removebg-preview.png" alt="logo.png" itemprop="image"></a></div>
+                
+                <span>ООО "Техник-сервис" Мы работаем на совесть.</span>
+                  <h2 itemprop="headline">Безопасность и надёжность прежде всего!</h2>
                 </div><!-- Sec Title -->
-                <p itemprop="description">Every live, every property we save does matter, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                <ul class="fcts-lst">
+                <p class="text text-center">Подключение эл.проводов к приборам</p>
+                <!-- <ul class="fcts-lst">
                   <li><span class="counter">369</span>
                     <h6 itemprop="headline">Emergencies</h6>
                   </li>
@@ -87,7 +91,7 @@ include("header.php");
                   <li><span class="counter">50</span>
                     <h6 itemprop="headline">Year of Experience</h6>
                   </li>
-                </ul>
+                </ul> -->
               </div>
             </div>
             <div class="col-md-1 col-sm-12 col-lg-1"></div>
@@ -96,9 +100,11 @@ include("header.php");
       </div>
     </div>
   </section>
-</div>
+  </div>
+  </div>
+
 <script src="js/js2.js"></script>
-<!-- <script src="js/js.js"></script> -->
+
 <?php
-include("footer.php");
+  include("footer.php");
 ?>

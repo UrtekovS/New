@@ -21,7 +21,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!-- /clock admin_list-->
-
+  <!-- clock_indez -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" /> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://bootstraptema.ru/plugins/2017/thooclock/jquery.thooClock.js"></script>
+  <!-- finisht clock -->
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -66,7 +70,7 @@
   <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
 
   <!-- Color Scheme -->
-   <link rel="stylesheet" href="assets/css/colors/color.css" title="color" />
+   <link rel="stylesheet" href="assets/css/colors/color.css" title="color" /> 
   <link rel="alternate stylesheet" href="assets/css/colors/color2.css" title="color2" /> 
   <link rel="alternate stylesheet" href="assets/css/colors/color3.css" title="color3" /> 
   <link rel="alternate stylesheet" href="assets/css/colors/color4.css" title="color4" /> 
@@ -90,7 +94,7 @@
     </div><!-- Topbar -->
     <div class="lg-mnu-sec sticky">
       <div class="container" id="lg-mnu-sec sticky">
-        <div class="logo"><a href="admbn_list.php" title="Logo" itemprop="url"><img src="imge/JPEG-removebg-preview.png" alt="logo.png" itemprop="image">
+        <div class="logo"><a title="Logo" itemprop="url"><img src="imge/JPEG-removebg-preview.png" alt="logo.png" itemprop="image">
           </a></div><!-- Logo -->
         <nav>
           <div id="topbar">

@@ -37,7 +37,7 @@ include("header.php");
 </body>
 <script src="js/js3.js"></script>
 <script src="js/pisk.js"></script>
-
+<script src="js/js.js"></script>
 <?php
 include("footer.php");
 ?>

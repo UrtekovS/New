@@ -76,13 +76,7 @@ function load_table_zacaz() {
   });
   
 }
-function to_excel() {
-  $(document).ready(function () {
-    $("#task_history").table2excel({
-      filename: "new.xls",
-    });
-  });
-}
+
 
 function delet_task(id) {
   $.ajax({
@@ -99,7 +93,13 @@ function delet_task(id) {
   });
 }
 
-
+function to_excel() {
+  $(document).ready(function () {
+    $("#task_history").table2excel({
+      filename: "new.xls",
+    });
+  });
+}
 
 
 

@@ -82,6 +82,11 @@ body {
   background: linear-gradient(to right, #8ffada, #e9c0fa);
 }
 
+#clock_ind{
+  margin-left: 25%;
+ 
+ }
+
 #cent{
   margin-right: 50%;
 }

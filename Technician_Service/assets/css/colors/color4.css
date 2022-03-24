@@ -35,13 +35,13 @@ a.comment-reply-link:before,
 .tm-bx2 .tm-thmb > h4,
 .rspn-mnu-btn
 {
-	background-color: #f64243;
+	background-color: #09daf6;
 }
 
 
-{
+/* {
 	background: #f64243;
-}
+} */
 
 /*===== Text Color =====*/
 .theme-clr,
@@ -94,7 +94,7 @@ a.comment-reply-link:before,
 .tm-inf2 > h5 a:focus,
 .rspn-mnu-btn:hover
 {
-	color: #f64243;
+	color: #09daf6;
 }
 
 /*===== Border Color =====*/
@@ -104,29 +104,29 @@ a.comment-reply-link:before,
 .pagination > li.page-item a.page-link:focus, 
 .pagination > li.page-item span
 {
-	border-color: #f64243;
+	border-color: #09daf6;
 }
 
 /*===== Border Top Color =====*/ 
 .tl-shp:before
 {
-	border-top-color: #f64243;
+	border-top-color: #09daf6;
 }
 
 /*===== Border Right Color =====*/ 
 
-{
-	border-right-color: #f64243;
+/* {
+	border-right-color: #42eaf6;
 }
 
 /*===== Border Bottom Color =====*/
 
-{
-	border-bottom-color: #f64243;
-}
+/* {
+	border-bottom-color: #42eaf6;
+} */
 
 /*===== Border Left Color =====*/ 
 
-{
-	border-left-color: #f64243;
-}
+/* {
+	border-left-color:#42eaf6;
+} */ 

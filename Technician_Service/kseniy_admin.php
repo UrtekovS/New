@@ -4,7 +4,7 @@ session_start();
 
 ?>
 
-
+<script src = "http://cdn.rawgit.com/rainabba/jquery-table2excel/1.1.0/dist/jquery.table2excel.min.js"> </script>
 
 <link rel="alternate stylesheet" href="assets/css/colors/color2.css" title="color2" /> <!-- Color2 -->
 <link rel="alternate stylesheet" href="assets/css/colors/color3.css" title="color3" /> <!-- Color3 -->
@@ -20,8 +20,7 @@ if (isset($_SESSION['login'])) {
   <div class="container" class="text-centr" id="kseniy">
 
     <link href="Css/style(t).css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />  -->
-    <script src="http://cdn.rawgit.com/rainabba/jquery-table2excel/1.1.0/dist/jquery.table2excel.min.js"> </script>
+    
 
 
 
@@ -55,12 +54,12 @@ if (isset($_SESSION['login'])) {
         <div class="col-auto">
           <button type="button" class='theme-btn brd-rd5' id="return" onclick="tab_time();">Назад</button>
         </div>
-        <!-- <div class="col-auto">
-            <button class='theme-btn brd-rd5'id="Exel" onclick="to_excel();">Выгрузить excel</button>
-          </div> -->
         <div class="col-auto">
           <a class='theme-btn brd-rd5' href='admbn_list.php' id="service" role='button'>Добавить сервис</a>
         </div>
+        <div class="col-auto">
+        <button class='theme-btn brd-rd5' id="Exel" onclick="to_excel();">Выгрузить excel</button>
+       </div>
     </form><br>
     <!-- clock-start -->
     <div class="row">

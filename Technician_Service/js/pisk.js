@@ -22,7 +22,7 @@ function poisck(){
                   "<div class='prg-wrp'>"+            
                       
                       "<span><i class='fas fa-map-marker-alt theme-clr'></i><p>Стоимость:"+d[i]['price']+"</p></span>"+
-                    "<a class='btn  btn-success' href='product_details.php?id_tovar="+d[i]['id']+"' title='' itemprop='url'>Подробние</a>"+
+                    "<a class='theme-btn brd-rd5'   btn-success' href='product_details.php?id_tovar="+d[i]['id']+"' title='' itemprop='url'>Подробние</a>"+
                   "</div>"+
                 "</div>"+
                 "</div><!-- /.col-lg-4 -->";
