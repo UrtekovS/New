@@ -83,11 +83,11 @@ if(isset($_POST['submit']) and $_FILES){
           <p class="my_message" id="message_add_taskc"></p>
           <div id="form_load_task">
           <p class="text-lift">Название</p>
-            <input type="text" id="task" name="task" class="form-control">
+            <input type="text" id="task" name="task" class="form-control"required>
             <p class="text-lift">Стоимость</p>
-            <input type="text" id="pricew" name="pricew" class="form-control">
+            <input type="text" id="pricew" name="pricew" class="form-control"required>
             <br/>
-            <p><input type="file" name="file" multiple accept="image/*,image/jpeg,image/png,image/jpg,image/jfif">
+            <p><input type="file" name="file" multiple accept="image/*,image/jpeg,image/png,image/jpg,image/jfif" required>
 
             <p class="text-lift">Категория</p>
             <div id="select_status_id">

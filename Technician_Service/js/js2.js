@@ -151,12 +151,15 @@ function add_tovar_korzina() {
                                 let z = "";
                                 if (data !== 0) {
 
-                                    z += "<p class='text-lift'>Имя</p>" +
+                                    z +="<div class='sec-tl text-center'>"+
+                                        "<h4 itemprop='headline'>Заполните форму <span class='theme-clr'>с точным адресом, для выезда специалиста!</span></h4>"+
+                                         "</div>"+
+                                        "<p class='text-lift'>Имя</p>" +
                                         "<input type='text' id='last_name' class='form-control' required>" +
                                         "<p class='text-lift'>Телефон</p>" +
-                                        "<input type='text' id='phone' class='form-control' required value='+7  '>" +
-                                        "<p class='text-lift'>Адрес</p>" +
-                                        "<input type='text' id='first_name' class='form-control' value='Город     ,ул     ,дм    ,кв    '>" +
+                                        "<input type='text' id='phone' class='form-control' value='+7  '>" +
+                                        "<p class='text-lift'>Адрес, для выезда специалиста </p>" +
+                                        "<input type='text' id='first_name' class='form-control' value='Город     ,ул     ,дм    ,кв    'required>" +
                                         "<p class='text-lift'>Укажите дату и время удобную вам!</p>" +
                                         "<input id='date_of_brith' class='form-control' type='datetime-local' value='2021-00-00T00:00:00' required>" +
                                         "<p class='text-lift'>№Тех.сервис</p>" +

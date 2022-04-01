@@ -163,12 +163,12 @@ function load_nformation_top(){
             let d=JSON.parse(data);
             let s="";
             for(let i=0; i<d.length; i++){
-            s+="<div class='col-lg-4'>"+
-            "<img class='rounded-circle' src='img/info_img/"+d[i]["img"]+"' alt='Generic placeholder image' width='140' height='140'>"+
-            "<h2>"+d[i]['name_inf']+"</h2>"+
-            "<p>"+d[i]['informat']+"</p>"+
+            s+="<div class='col-lg-3'>"+
+            "<img  class='text-center'  src='img/info_img/"+d[i]["img"]+"' alt='Generic placeholder image' width='140' height='140'>"+
+            "<h3 class='text-start'>"+d[i]['name_inf']+"</h3>"+
+            "<p class='text-start'>"+d[i]['informat']+"</p>"+
             // "<p><a class='btn btn-secondary' href='write_feedback.php?id="+d[i]['id']+"' role='button' >Оставить отзыв, или рекомендации для улучшения сайта &raquo;</a></p>"+
-          "</div><!-- /.col-lg-4 -->";
+          "</div><!-- /.col-lg-3 -->";
         }
         let load_nformation=document.getElementById("load_nformation");
         load_nformation.innerHTML=s;

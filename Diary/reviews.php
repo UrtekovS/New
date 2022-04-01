@@ -24,7 +24,7 @@ include("header.php");
             <label for="foto">Фото</label>
             <input type="foto" id="foto" class="form-control"  placeholder="Foto"> 
           </div>
-          <div class="form-group" div="form_reviews">
+          <div class="form-group" id="form_reviews">
             <label for="ваше имя">Ваше имя</label>
             <input type="foto" id="name_inf" class="form-control"  placeholder="name">
           </div>
@@ -36,7 +36,7 @@ include("header.php");
             <label for="message">Сообщение:</label>
             <textarea class="form-control" id="informat" rows="3"></textarea>
           </div>
-          <div class="form-group" div="form_reviews">
+          <div class="form-group" id="form_reviews">
             <label for="email">E-mai>:</E-mai></label>
             <input type="foto" id="email2" class="form-control"  placeholder="email">
           </div>

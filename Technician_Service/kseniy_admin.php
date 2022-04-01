@@ -11,7 +11,7 @@ session_start();
 <link rel="alternate stylesheet" href="assets/css/colors/color4.css" title="color4" /> <!-- Color4 -->
 
 <link href="css/admin.css" rel="stylesheet">
-<link href="css/style(t).css" rel="stulesheet" <body>
+<link href="css/style(t).css" rel="stulesheet">
 <?php
 if (isset($_SESSION['login'])) {
 
@@ -34,7 +34,7 @@ if (isset($_SESSION['login'])) {
     <a href='#' class='theme-btn brd-rd5' id="serviceexit" onclick="exit();"> Выход </a>
     <form class="row gy-2 gx-3 align-items-center">
       <div class="sec-tl text-center">
-        <h4 itemprop="headline">Вывод заявок <span class="theme-clr">за определённый периуд</span></h4>
+        <h4 itemprop="headline">Вывод заявок <span class="theme-clr">за определённый период</span></h4>
       </div>
       <tr>
         <div class="col-auto">
@@ -57,9 +57,7 @@ if (isset($_SESSION['login'])) {
         <div class="col-auto">
           <a class='theme-btn brd-rd5' href='admbn_list.php' id="service" role='button'>Добавить сервис</a>
         </div>
-        <div class="col-auto">
-        <button class='theme-btn brd-rd5' id="Exel" onclick="to_excel();">Выгрузить excel</button>
-       </div>
+        
     </form><br>
     <!-- clock-start -->
     <div class="row">
@@ -101,6 +99,9 @@ if (isset($_SESSION['login'])) {
         <h4 itemprop="headline"><span class="theme-clr">Итоговая сумма всех заявок</span></h4>
       <input class="text-center" disabled type="text" id="all_summa_zayvoc" value="0">
       </div>
+      <div class="col-auto">
+        <button class='theme-btn brd-rd5' id="Exel" onclick="to_excel();">Выгрузить excel</button>
+       </div>
     </div>
 
     <div class="tabel" id="zacaz_history">
@@ -135,10 +136,10 @@ if (isset($_SESSION['login'])) {
                   <form method="$_POST">
                     <div class="row">
                       <div class="col-md-12 col-sm-12 col-lg-12">
-                        <input type="text" id="login" placeholder="Login">
+                        <input type="text" id="login" placeholder="Login" required>
                       </div>
                       <div class="col-md-12 col-sm-12 col-lg-12">
-                        <input type="password" id="password" placeholder="password">
+                        <input type="password" id="password" placeholder="Password" required>
                       </div>
                       <div class="col-md-12 col-sm-12 col-lg-12">
                         <input type="button" id="avtoriz" class="theme-btn brd-rd5" onclick="avtoriz_us();" value="Авторизоваться">
@@ -186,6 +187,7 @@ if (isset($_SESSION['login'])) {
 <script src="js/avtoriz.js"></script>
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/diary_tb.js"></script>
+<script src="js/jquery.table2excel.min.js"></script>
 <script src="js/period_of_time.js"></script>
 
 

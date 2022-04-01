@@ -28,6 +28,7 @@ include("header.php");
       <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
       <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
       <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -40,7 +41,7 @@ include("header.php");
         <div class="container">
           <div class="carousel-caption text-start">
             <h1><?= $mas['title'][0]; ?></h1>
-            <h3><?= $mas['description'][0]; ?></h3>
+            <h4><?= $mas['description'][0]; ?></h4>
 
           </div>
         </div>
@@ -54,7 +55,7 @@ include("header.php");
         <div class="container">
           <div class="carousel-caption">
             <h1><?= $mas['title'][1]; ?></h1>
-            <h2><?= $mas['description'][1]; ?></h2>
+            <h3><?= $mas['description'][1]; ?></h3>
 
           </div>
         </div>
@@ -82,7 +83,7 @@ include("header.php");
         <div class="container">
           <div class="carousel-caption text-end">
             <h1><?= $mas['title'][3]; ?></h1>
-            <h3><?= $mas['description'][3]; ?></h3>
+            <h4><?= $mas['description'][3]; ?></h4>
           </div>
         </div>
       </div </div>
@@ -159,7 +160,7 @@ include("header.php");
     </div>
 </form><br>
     <!-- Three columns of text below the carousel -->
-    <div class="row" id="load_nformation" class="card mb-3" >
+    <div class="row" id="load_nformation" class="card mb-6" >
 
     </div><!-- /.row -->
     <script src="jsj/js.js"></script>

@@ -1,21 +1,15 @@
 <?php
 include("header.php");
 ?>
-
-
-
 <link href="css/catalog.css" rel="stylesheet">
 `<div class="text-lift" class="container">`
-<div class="sec-tl text-center"></div>
+<div class="sec-tl text-center">
+<h2 itemprop="headline">Делаем быстро и <span class="theme-clr">Качественно</span></h2>
+</div>
 
 <div class="srv-wrp remove-ext7"></div>
 <div class="container" id="prod_detalis">
-  <div id="tovar">
-
-
-  </div>
-
-
+  <div id="tovar"></div>
   <br>
   <div class="sec-tl text-center" id="form_not">
     <h5 itemprop="headline" id="centnot">К сожалению этот день занят! Можете выбрать другую дату!</h5> 
@@ -29,9 +23,9 @@ include("header.php");
   <!-- Форма для заявки -->
   <form onsubmit="return registration();">
     <div class="form-group" id="form_registration">
-      <h4 class="modal-title" id="exampleModalLabel">Форма, выезда бригады в удобное для вас время!</h4>
-      <label for="inputName">Как к вам обращаться</label>
-      <input type="name" class="form-control" id="last_name" placeholder="имя">
+      <!-- <h4 class="modal-title" id="exampleModalLabel">Форма, выезда бригады в удобное для вас время!</h4> -->
+      <!-- <label for="inputName">Как к вам обращаться</label> -->
+      <input type="name" class="form-control" id="last_name" placeholder="имя"required>
     
       <label for="inputPhone">Номер телефона</label>
       <input type="text" class="form-control" id="phone" class="form-control" value="+7 ">
@@ -39,7 +33,7 @@ include("header.php");
 
    
       <label for="inputHome">Точный Адрес</label>
-      <input type="text" class="form-control" id="first_name" class="form-control" placeholder="Город улица дом кв">
+      <input type="name" class="form-control" id="first_name" class="form-control" placeholder="Город         улица          дом     кв"required>
     
     
       <label for="inputDate">Укажите дату и врея удобное вам!</label>
@@ -57,7 +51,7 @@ include("header.php");
   <h3><a class='theme-btn brd-rd5' aria-current="page" href="katalog.php" id="revers1">Вернуться в каталог</a></h3>
   <div class="sec-tl text-center">
     <span class="theme-clr">Цените своё время!!!</span>
-    <h2 itemprop="headline">Делаем быстро и <span class="theme-clr">Качественно</span></h2>
+    <h2 itemprop="headline">Здесь возможно веруться в каталог <span class="theme-clr">и выбрать заявку!</span></h2>
   </div><!-- Sec Title -->
 
   <section>
